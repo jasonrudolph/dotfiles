@@ -1,0 +1,7 @@
+colorscheme molokai
+
+" Visual Bell
+set vb
+
+set guioptions=aAce
+set guifont=Mensch-Regular:h11
