@@ -18,3 +18,10 @@ set t_Co=256
 "color xoria256
 color molokai
 
+" Configure vimclojure bits
+let vimclojure#HighlightBuiltins=1
+let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = expand($HOME) . "/dev/vimclojure-nailgun/nailgun/ng"
+

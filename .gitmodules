@@ -1,0 +1,3 @@
+[submodule "janus/VimClojure"]
+	path = janus/VimClojure
+	url = https://github.com/vim-scripts/VimClojure.git
