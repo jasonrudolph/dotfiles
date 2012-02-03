@@ -8,3 +8,6 @@ gem: --no-ri --no-rdoc
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false
+install: --env-shebang
+update: --env-shebang
+
