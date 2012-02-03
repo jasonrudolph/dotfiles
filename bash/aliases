@@ -13,3 +13,4 @@ function railsapp {
 
 # misc
 alias reload='. ~/.bash_profile'
+alias tmux="TERM=screen-256color-bce tmux"
