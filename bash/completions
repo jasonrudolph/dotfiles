@@ -1,5 +1,8 @@
+PROJECT_PARENT_DIRS[0]="$HOME/src"
+PROJECT_PARENT_DIRS[1]="$HOME/src/ip"
+source ~/.bash/completion_scripts/project_completion
+
 source ~/.bash/completion_scripts/git_completion
 source ~/.bash/completion_scripts/ssh_completion
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
-complete -C ~/.bash/completion_scripts/project_completion -o default c
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
