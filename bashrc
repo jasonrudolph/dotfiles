@@ -9,3 +9,8 @@ source ~/.bash/functionjunction
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+# Added for rvm
+# =============
+# Place the folowing line at the end of your bash_profile after all PATH/variable settings:
+[[ -s "${HOME}/.rvm/scripts/rvm" ]] && source "${HOME}/.rvm/scripts/rvm"
