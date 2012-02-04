@@ -1,3 +1,9 @@
+PLATFORM='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Darwin' ]]; then
+  PLATFORM='osx'
+fi
+
 source ~/.bash/aliases
 source ~/.bash/completions
 source ~/.bash/paths
