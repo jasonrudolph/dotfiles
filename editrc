@@ -1,0 +1,3 @@
+# Fix Control-R in irb
+# Credit: http://hints.macworld.com/article.php?story=20080313113705760
+bind "^R" em-inc-search-prev
