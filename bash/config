@@ -1,7 +1,19 @@
 export PS1="\w$ "
 export EDITOR="vim"
 
+# Set the term to xterm-color, and enable linux-style ls/cli colors
+export TERM=xterm-color
+export CLICOLOR=true
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+# See http://blog.macromates.com/2008/working-with-history-in-bash/
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
 if [[ "$PLATFORM" == 'osx' ]]; then
+  export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-62
+
   # CC setting suggested by rvm
   # ===========================
   # For Lion, Rubies should be built using gcc rather than llvm-gcc. Since
