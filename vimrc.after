@@ -15,7 +15,6 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Color profile
 set t_Co=256
-"color xoria256
 color molokai
 
 " Configure vimclojure bits
