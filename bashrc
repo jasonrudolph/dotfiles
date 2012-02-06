@@ -2,6 +2,8 @@ PLATFORM='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then
   PLATFORM='osx'
+elif [[ "$unamestr" == 'Linux' ]]; then
+  PLATFORM='linux'
 fi
 
 source ~/.bash/aliases
