@@ -7,6 +7,8 @@ These are config files to set up a system the way I like it.
 
     git clone git://github.com/jasonrudolph/dotfiles ~/.dotfiles
     cd ~/.dotfiles
+    git submodule init
+    git submodule update
     rake install
 
 
