@@ -3,4 +3,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="~/bin:~/src/etc/scripts:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
-export CLASSPATH=/usr/local/Cellar/clojure/1.3.0/clojure-1.3.0.jar:~/dev/vimclojure-nailgun/server-2.3.0.jar
+export CLASSPATH=.:/usr/local/Cellar/clojure/1.3.0/clojure-1.3.0.jar:~/dev/vimclojure-nailgun/server-2.3.0.jar
