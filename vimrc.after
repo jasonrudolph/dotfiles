@@ -24,6 +24,9 @@ let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = expand($HOME) . "/dev/vimclojure-nailgun/nailgun/ng"
 
+" Recognize ClojureScript files as Clojure
+au BufNewFile,BufRead *.cljs setf clojure
+
 " Fix issue that occurs when trying to edit the crontab with vim
 " See http://vim.wikia.com/wiki/Editing_crontab
 au BufEnter /private/tmp/crontab.* setl backupcopy=yes
