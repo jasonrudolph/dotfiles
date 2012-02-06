@@ -1,4 +1,9 @@
-export JAVA_HOME=$(/usr/libexec/java_home)
+if [[ "$PLATFORM" == 'osx' ]]; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
+elif [[ "$PLATFORM" == 'linux' ]]; then
+  # Credit: http://serverfault.com/a/143838
+  export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+fi
 
 export PATH="~/bin:~/src/etc/scripts:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
