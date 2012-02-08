@@ -10,7 +10,7 @@ nnoremap <F2> :Set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-" \W - remove trailing whitespace
+" <leader>W - remove trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Color profile
