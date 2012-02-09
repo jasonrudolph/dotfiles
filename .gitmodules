@@ -1,3 +1,6 @@
 [submodule "janus/VimClojure"]
 	path = janus/VimClojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "janus/preview"]
+	path = janus/preview
+	url = https://github.com/vim-scripts/preview.git
