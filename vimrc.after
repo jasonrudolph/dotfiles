@@ -10,7 +10,7 @@ nnoremap <F2> :Set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-" \W - remove trailing whitespace
+" <leader>W - remove trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Color profile
@@ -23,6 +23,9 @@ let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = expand($HOME) . "/dev/vimclojure-nailgun/nailgun/ng"
+
+" Recognize ClojureScript files as Clojure
+au BufNewFile,BufRead *.cljs setf clojure
 
 " Fix issue that occurs when trying to edit the crontab with vim
 " See http://vim.wikia.com/wiki/Editing_crontab
