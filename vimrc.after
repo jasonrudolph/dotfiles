@@ -17,6 +17,10 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 set t_Co=256
 color molokai
 
+" Put the cursor in the main window (rather than the NERDTree window)
+" Credit: https://groups.google.com/group/vim_use/msg/404d6560aae55156
+autocmd VimEnter * wincmd p
+
 " Configure vimclojure bits
 let vimclojure#HighlightBuiltins=1
 let vimclojure#DynamicHighlighting=1
