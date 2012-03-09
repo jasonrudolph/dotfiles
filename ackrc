@@ -1,1 +1,4 @@
 --type-set=clojurescript=.cljs
+--ignore-dir=.lein-git-deps
+--ignore-dir=.repl
+--ignore-dir=public/javascripts/out/
