@@ -14,6 +14,9 @@ set cursorline
 set list
 set listchars=tab:▸\ ,trail:·
 
+" Copy to system clipboard
+map <leader>y "*y
+
 " Toggle paste mode (Paste without auto indent)
 nnoremap <F2> :Set invpaste paste?<CR>
 set pastetoggle=<F2>
