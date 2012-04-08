@@ -7,6 +7,9 @@ nnoremap <c-l> <c-w>l
 " Map jj to escape
 imap jj <Esc>
 
+" Highlight current line
+set cursorline
+
 " Show invisibles
 set list
 set listchars=tab:▸\ ,trail:·
