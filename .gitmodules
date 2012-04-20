@@ -1,9 +1,12 @@
 [submodule "janus/VimClojure"]
 	path = janus/VimClojure
 	url = https://github.com/vim-scripts/VimClojure.git
+	ignore = untracked
 [submodule "janus/preview"]
 	path = janus/preview
 	url = https://github.com/vim-scripts/preview.git
+	ignore = untracked
 [submodule "janus/yankring"]
 	path = janus/yankring
 	url = https://github.com/vim-scripts/YankRing.vim
+	ignore = untracked
