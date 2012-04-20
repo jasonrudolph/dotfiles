@@ -4,3 +4,6 @@
 [submodule "janus/preview"]
 	path = janus/preview
 	url = https://github.com/vim-scripts/preview.git
+[submodule "janus/yankring"]
+	path = janus/yankring
+	url = https://github.com/vim-scripts/YankRing.vim
