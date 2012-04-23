@@ -54,3 +54,8 @@ au BufNewFile,BufRead *.cljs setf clojure
 " Fix issue that occurs when trying to edit the crontab with vim
 " See http://vim.wikia.com/wiki/Editing_crontab
 au BufEnter /private/tmp/crontab.* setl backupcopy=yes
+
+" Add keybindings for tslime.vim
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
