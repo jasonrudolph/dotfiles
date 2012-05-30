@@ -18,7 +18,7 @@
   # show staged and unstaged changes (what would be committed with "git commit -a")
   both = diff HEAD
 
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative
 [color]
   diff = auto
   status = auto
