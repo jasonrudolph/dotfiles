@@ -13,12 +13,4 @@ shopt -s histappend
 
 if [[ "$PLATFORM" == 'osx' ]]; then
   export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-62
-
-  # CC setting suggested by rvm
-  # ===========================
-  # For Lion, Rubies should be built using gcc rather than llvm-gcc. Since
-  # /usr/bin/gcc is now linked to /usr/bin/llvm-gcc-4.2, add the following to
-  # your shell's start-up file.  (The situation with LLVM and Ruby may improve. 
-  # This is as of 07-23-2011.)
-  export CC=gcc-4.2
 fi
