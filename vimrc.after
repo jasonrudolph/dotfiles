@@ -32,6 +32,9 @@ color molokai
 set wildignore+=*/.lein-git-deps/*
 set wildignore+=*/public/javascripts/out/*
 
+" Remember more than the default number (20) of commands
+set history=200
+
 " Put the cursor in the main window (rather than the NERDTree window)
 " Credit: https://groups.google.com/group/vim_use/msg/404d6560aae55156
 autocmd VimEnter * wincmd p
