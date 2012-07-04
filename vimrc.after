@@ -50,6 +50,7 @@ let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = expand($HOME) . "/dev/vimclojure-nailgun/nailgun/ng"
+let vimclojure#SplitPos = "left"
 
 " Recognize ClojureScript files as Clojure
 au BufNewFile,BufRead *.cljs setf clojure
