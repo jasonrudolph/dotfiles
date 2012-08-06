@@ -29,6 +29,10 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 set t_Co=256
 color molokai
 
+" Show (subtle) column width marker
+set colorcolumn=120
+hi ColorColumn ctermbg=232
+
 set wildignore+=*/.lein-git-deps/*
 set wildignore+=*/public/javascripts/out/*
 
