@@ -5,7 +5,7 @@ alias bu="b update"
 alias be="b exec"
 
 # git
-alias gl='git pull'
+alias gl='git pull --prune'
 alias gp='git push'
 alias gd='git diff'
 alias gdh='git diff HEAD'
