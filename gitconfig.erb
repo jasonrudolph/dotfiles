@@ -19,6 +19,14 @@
   both = diff HEAD
 
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative
+
+  # Rename [branch] to z-[branch]
+  #
+  # Useful for renaming old branches (that you're not yet ready to delete) in a
+  # way that puts them at the bottom of the list when you run `git branch`
+  #
+  # Credit: http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/#rename_branch_to_donebranch
+  z = "!f() { git branch | grep "$1" | cut -c 3- | grep -v z- | xargs -I{} git branch -m {} z-{}; }; f"
 [color]
   diff = auto
   status = auto
