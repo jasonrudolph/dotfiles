@@ -1,6 +1,12 @@
-PROJECT_PARENT_DIRS[0]="$HOME/src"
-PROJECT_PARENT_DIRS[1]="$HOME/src/ip"
-source ~/.bash/completion_scripts/project_completion
+export CDPATH=~/src:~/src/ip
+
+function command_exists {
+  type "$1" &> /dev/null
+}
+
+if command_exists brew && [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 source ~/.bash/completion_scripts/git_completion
 source ~/.bash/completion_scripts/ssh_completion
