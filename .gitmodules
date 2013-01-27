@@ -6,10 +6,7 @@
 	path = janus/preview
 	url = https://github.com/vim-scripts/preview.git
 	ignore = untracked
-[submodule "janus/yankring"]
-	path = janus/yankring
-	url = https://github.com/vim-scripts/YankRing.vim
-	ignore = untracked
 [submodule "janus/tslime"]
 	path = janus/tslime
 	url = https://github.com/jgdavey/tslime.vim.git
+	ignore = untracked
