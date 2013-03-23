@@ -15,15 +15,6 @@ Options:
 
 STR
 
-  RANDOM_SPECIALS = [
-    %w(! @ # $ % ^),
-    %w{& * ( ) - =},
-    "+ [ ] { } \\".split(' '), # syntax highlighting for github
-    %w(| ` ; : ' "),
-    %w(< > / ? . ,),
-    %w(~ _ 3 5 7 9),
-  ]
-
   def initialize
     @wordlist = {}
   end
@@ -36,10 +27,6 @@ STR
     @wordlist[[roll, roll, roll, roll, roll]]
   end
 
-  def random_special
-    RANDOM_SPECIALS[rand(6)][rand(6)]
-  end
-
   def load_wordlist
     while line = DATA.gets
       line.chomp
@@ -50,28 +37,12 @@ STR
     end
   end
 
-  def munge_case(str, factor=0.3)
-    char_ary    = str.split('')
-    alpha_idxs  = char_ary.inject([[],0]) { |(ary,i),ch| ((ch[0] >= ?a) and (ch[0] <= ?z)) and (ary << i); [ary,i+1] }.first
-
-    (alpha_idxs.length * factor).round.times do
-      idx = alpha_idxs.choice
-      alpha_idxs.delete(idx)
-
-      char_ary[idx] = char_ary[idx].upcase
-    end
-
-    char_ary.join('')
-  end
-
   def main
     @num_rounds = 1
-    @case = false
 
     OptionParser.new do |o|
       o.banner = BANNER
       o.on('-n', '--num N', Integer, 'number of passwords to generate') { |n| @num_rounds = n }
-      o.on('-c', '--case', Integer,  'provide extra random up/down case manipulation') { @case = true }
       o.on('-h', '--help', "You're reading it") do
         $stderr.puts o
         exit 1
@@ -83,10 +54,8 @@ STR
     phrases = []
 
     @num_rounds.times do
-      ary = [random_word, random_special, random_word, random_special, random_word]
-      phrase = ary.join('')
-
-      phrase = munge_case(phrase) if @case
+      ary = [random_word, random_word, random_word, random_word, random_word]
+      phrase = ary.join('-')
 
       phrases << phrase
     end
