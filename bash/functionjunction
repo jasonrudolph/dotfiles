@@ -1,6 +1,6 @@
 # Welcome to Function Junction: home of useful functions
 
-# Source: https://gist.github.com/1321338
+# Credit: https://gist.github.com/1321338
 function extract {
   echo Extracting $1 ...
   if [ -f $1 ] ; then
