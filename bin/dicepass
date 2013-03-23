@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Credit: https://github.com/pengwynn/dotfiles/blob/86c625d/bin/dicepass
+
 require 'pp'
 require 'optparse'
 
