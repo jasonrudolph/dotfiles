@@ -1,3 +1,6 @@
+# sublime text
+alias e="subl -n ."
+
 # bundler
 alias b="bundle"
 alias bl="b --local"
