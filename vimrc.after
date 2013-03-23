@@ -45,8 +45,8 @@ autocmd VimEnter * wincmd p
 
 let NERDTreeIgnore=['\.class$', '\~$', '^out$[[dir]]']
 
-" :NTF - Reveal the current file in NERDTree
-command! -nargs=* NTF NERDTreeFind
+" :Ntf - Reveal the current file in NERDTree
+command! -nargs=* Ntf NERDTreeFind
 
 " Configure vimclojure bits
 let vimclojure#HighlightBuiltins=1
