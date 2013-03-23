@@ -49,7 +49,7 @@ function ss() {
   if [ -x script/rails ]; then
     script/rails server
   elif [ -x script/server ]; then
-    script/server
+    ./script/server
   else
     echo "no script/rails or script/server found" >&2
   fi
