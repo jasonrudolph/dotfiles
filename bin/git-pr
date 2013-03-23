@@ -1,3 +1,5 @@
+# Credit: https://github.com/pengwynn/dotfiles/blob/a549f0e/bin/git-pr
+
 #!/bin/sh
 #/ Usage: git pr [<branch>]
 #/ Open the pull request page for <branch>, or the current branch if not
