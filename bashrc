@@ -17,6 +17,3 @@ source ~/.bash/functionjunction
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
-
-# Configure RVM "at the end of your bash_profile after all PATH/variable settings"
-source ~/.bash/rvm
