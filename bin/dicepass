@@ -38,11 +38,13 @@ STR
   end
 
   def main
+    @num_dicewords = 5
     @num_rounds = 1
 
     OptionParser.new do |o|
       o.banner = BANNER
-      o.on('-n', '--num N', Integer, 'number of passwords to generate') { |n| @num_rounds = n }
+      o.on('-n', '--num N', Integer, 'number of dicewords to include in password') { |n| @num_dicewords = n }
+      o.on('-p', '--passwords N', Integer, 'number of passwords to generate') { |n| @num_rounds = n }
       o.on('-h', '--help', "You're reading it") do
         $stderr.puts o
         exit 1
@@ -54,7 +56,7 @@ STR
     phrases = []
 
     @num_rounds.times do
-      ary = [random_word, random_word, random_word, random_word, random_word]
+      ary = (0...@num_dicewords).map { random_word }
       phrase = ary.join('-')
 
       phrases << phrase
