@@ -2,3 +2,8 @@
 --ignore-dir=.lein-git-deps
 --ignore-dir=.repl
 --ignore-dir=public/javascripts/out/
+
+# Search markdown files
+--type-set=md=.md
+--type-add=md=.mkd
+--type-add=md=.markdown
