@@ -1,5 +1,0 @@
-# option + left arrow
-"\e\e[D": backward-word
-
-# option + right arrow
-"\e\e[C": forward-word
