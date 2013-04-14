@@ -23,9 +23,8 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 # ls
-alias l='ls -al'
-alias ll='ls -al'
-alias ltr='ls -ltr'
+alias l='ls -alh'
+alias ltr='ls -ltrh'
 
 # tail
 alias tf='tail -f -n 100'
