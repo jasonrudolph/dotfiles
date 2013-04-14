@@ -1,4 +1,4 @@
-# Credit: 
+# Credit:
 #   http://gist.github.com/31934
 #   http://henrik.nyh.se/2008/12/git-dirty-prompt
 #   http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/
@@ -53,4 +53,4 @@ function prompt_func() {
     fi
 }
 
-PROMPT_COMMAND=prompt_func 
+PROMPT_COMMAND=prompt_func
