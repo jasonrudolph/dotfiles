@@ -1,7 +1,6 @@
 export EDITOR="vim"
 
-# Set the term to xterm-color, and enable linux-style ls/cli colors
-export TERM=xterm-color
+# Enable linux-style ls/cli colors
 export CLICOLOR=true
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
