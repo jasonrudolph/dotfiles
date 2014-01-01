@@ -7,6 +7,13 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsBackgroundColor "0;0;0;0"
+config windowHintsFontName Futura
+config windowHintsFontSize 70
+config windowHintsDuration 5
 
 # Left, Right, Top, Bottom
 bind h:ctrl,s  push left  bar-resize:screenSizeX*0.6
@@ -31,7 +38,7 @@ bind u:ctrl,s  throw left resize
 bind p:ctrl,s  throw right resize
 
 # Window Hints
-bind esc:cmd hint
+bind esc:cmd  hint ASDFGHJKLQWERTYUIOPZXCVBNM
 
 # Relaunch Slate and reload .slate file
 bind r:ctrl,s  relaunch
