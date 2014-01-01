@@ -1,0 +1,4 @@
+#!/bin/sh
+
+curl http://bot.whatismyipaddress.com
+echo
