@@ -7,6 +7,7 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
+config secondsBetweenRepeat 0.05
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
@@ -36,6 +37,12 @@ bind .:ctrl,s  corner bottom-right resize:screenSizeX*0.4;screenSizeY/2
 # Throw to left/right screen
 bind u:ctrl,s  throw left resize
 bind p:ctrl,s  throw right resize
+
+# Resize
+bind left:ctrl,s:toggle   resize -10  +0
+bind right:ctrl,s:toggle  resize +10  +0
+bind down:ctrl,s:toggle   resize  +0 +10
+bind up:ctrl,s:toggle     resize  +0 -10
 
 # Window Hints
 bind esc:cmd  hint ASDFGHJKLQWERTYUIOPZXCVBNM
