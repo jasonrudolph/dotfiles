@@ -40,5 +40,8 @@ bind p:ctrl,s  throw right resize
 # Window Hints
 bind esc:cmd  hint ASDFGHJKLQWERTYUIOPZXCVBNM
 
+# Undo last Slate operation
+bind z:ctrl,s  undo
+
 # Relaunch Slate and reload .slate file
 bind r:ctrl,s  relaunch
