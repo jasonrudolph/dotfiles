@@ -43,3 +43,6 @@ bind down:cmd;alt focus behind
 
 # Window Hints
 bind esc:cmd hint
+
+# Relaunch Slate and reload .slate file
+bind r:ctrl,s  relaunch
