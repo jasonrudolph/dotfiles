@@ -22,10 +22,10 @@ bind j:ctrl,s  push down  bar-resize:screenSizeY/2
 bind k:ctrl,s  push up    bar-resize:screenSizeY/2
 
 # Center
-bind space:ctrl,s  move screenSizeX*0.2;0 screenSizeX*0.6;screenSizeY
+bind space:ctrl,s  move screenSizeX*0.2;screenOriginY screenSizeX*0.6;screenSizeY
 
 # Fullscreen
-bind return:ctrl,s  move 0;0 screenSizeX;screenSizeY
+bind return:ctrl,s  move screenOriginX;screenOriginY screenSizeX;screenSizeY
 
 # Corners
 bind i:ctrl,s  corner top-left     resize:screenSizeX*0.6;screenSizeY/2
