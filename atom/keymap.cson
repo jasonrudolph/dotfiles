@@ -13,6 +13,9 @@
   'ctrl-. h':       'dot-atom:move-to-top-visible-line'
   'ctrl-. m':       'dot-atom:move-to-middle-visible-line'
   'ctrl-. l':       'dot-atom:move-to-bottom-visible-line'
+  'ctrl-. t':       'dot-atom:scroll-cursor-to-top'
+  'ctrl-. z':       'dot-atom:scroll-cursor-to-center'
+  'ctrl-. b':       'dot-atom:scroll-cursor-to-bottom'
 
 '.workspace, .command-palette .editor':
   'cmd-p': 'command-palette:toggle'
