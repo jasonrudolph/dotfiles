@@ -1,0 +1,11 @@
+'.workspace':
+  'ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-j': 'window:focus-pane-below'
+  'ctrl-k': 'window:focus-pane-above'
+  'ctrl-l': 'window:focus-pane-on-right'
+
+  'ctrl-|': 'pane:split-right'
+  'ctrl--': 'pane:split-down'
+
+'.workspace, .command-palette .editor':
+  'cmd-p': 'command-palette:toggle'

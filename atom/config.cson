@@ -1,0 +1,37 @@
+'core':
+  'hideGitIgnoredFiles': true
+  'ignoredNames': [
+    '.DS_Store'
+    '.git'
+    'vendor'
+  ]
+  'themes': [
+    'atom-dark-ui'
+    'solarized-dark-syntax'
+  ]
+  'disabledPackages': []
+  'destroyEmptyPanes': true
+'editor':
+  'fontSize': 13
+  'hideGitIgnoredFiles': true
+'whitespace':
+  'ensureSingleTrailingNewline': true
+'spell-check':
+  'grammars': [
+    'text.plain'
+    'source.gfm'
+    'text.git-commit'
+  ]
+'welcome':
+  'showOnStartup': false
+'find-and-replace':
+  'openProjectFindResultsInRightPane': true
+'wrap-guide':
+  'columns': [
+    {
+      'pattern': 'COMMIT_EDITMSG'
+      'column': 72
+    }
+  ]
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
