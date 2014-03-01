@@ -10,6 +10,9 @@
   # Declare keymaps for the commands defined in init.coffee
   'alt-cmd-ctrl-b': 'dot-atom:demo'
   'ctrl-;':         'dot-atom:delete-to-end-of-line'
+  'ctrl-. h':       'dot-atom:move-to-top-visible-line'
+  'ctrl-. m':       'dot-atom:move-to-middle-visible-line'
+  'ctrl-. l':       'dot-atom:move-to-bottom-visible-line'
 
 '.workspace, .command-palette .editor':
   'cmd-p': 'command-palette:toggle'
