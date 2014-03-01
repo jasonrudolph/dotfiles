@@ -35,3 +35,5 @@
   ]
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
+'release-notes':
+  'viewedVersion': '0.62.0'
