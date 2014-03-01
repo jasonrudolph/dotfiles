@@ -15,3 +15,10 @@
 #   want to share for some reason).
 atom.workspaceView.command 'dot-atom:demo', ->
   console.log "Hello from dot-atom:demo"
+
+# Delete to end of line **without** modifying the pasteboard. Useful as an
+# alternative to Atom's built-in 'editor:cut-to-end-of-line' command.
+atom.workspaceView.command 'dot-atom:delete-to-end-of-line', '.editor', ->
+  editor = atom.workspaceView.getActiveView().getEditor()
+  editor.selectToEndOfLine()
+  editor.delete()
