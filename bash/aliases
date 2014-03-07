@@ -26,6 +26,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gco='git branch | cut -c 3- | selecta | xargs git checkout'
 
 # ls
 alias l='ls -alh'
