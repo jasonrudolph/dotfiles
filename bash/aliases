@@ -1,5 +1,5 @@
-# sublime text
-alias e="subl -n ."
+# atom
+alias e="atom ."
 
 # boxen
 alias boxon='boxen --enable-services'
