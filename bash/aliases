@@ -83,3 +83,4 @@ alias rmate='mate *.rb *.yml *.watchr Guardfile Rakefile README Gemfile *.markdo
 alias reload='. ~/.bash_profile'
 alias tmux="TERM=screen-256color-bce tmux"
 alias h?="history | grep "
+alias top-10-shell-commands="history | cut -c8- | cut -d' ' -f1 | sort | uniq -c | sort -nr | head"
