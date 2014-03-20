@@ -80,6 +80,7 @@ alias rst='touch tmp/restart.txt'
 alias rmate='mate *.rb *.yml *.watchr Guardfile Rakefile README Gemfile *.markdown *.md app bin config doc examples db lib public script spec test stories features *.taskpaper'
 
 # misc
+alias c=cd
 alias reload='. ~/.bash_profile'
 alias tmux="TERM=screen-256color-bce tmux"
 alias h?="history | grep "
