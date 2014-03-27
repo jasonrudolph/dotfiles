@@ -10,7 +10,7 @@
     'solarized-dark-syntax'
   ]
   'disabledPackages': []
-  'destroyEmptyPanes': true
+  'destroyEmptyPanes': false
 'editor':
   'fontSize': 13
   'hideGitIgnoredFiles': true
@@ -36,4 +36,4 @@
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
 'release-notes':
-  'viewedVersion': '0.71.0'
+  'viewedVersion': '0.78.0'
