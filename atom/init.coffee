@@ -16,6 +16,17 @@
 atom.workspaceView.command 'dot-atom:demo', ->
   console.log "Hello from dot-atom:demo"
 
+# Close all panes.
+#
+# Atom's built-in 'pane:close-other-items' is super handy. But sometimes you
+# just really want a completely clean slate.
+#
+# "Shut down all the [panes] on the detention level! ... Shut them all down.
+# Hurry!"
+atom.workspaceView.command 'dot-atom:close-all-panes', ->
+  atom.workspace.getPanes().forEach (pane) ->
+    pane.destroyItems()
+
 # Delete to end of line **without** modifying the pasteboard. Useful as an
 # alternative to Atom's built-in 'editor:cut-to-end-of-line' command.
 #
