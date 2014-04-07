@@ -4,6 +4,19 @@
 
 ################################################################################
 
+{$} = require 'atom'
+
+# Cause a pane to flash briefly when it becomes active.
+#
+# When working with split panes, this effect calls attention to the
+# newly-focused pane, making it easier to keep track of your navigation between
+# panes.
+atom.workspaceView.on 'pane:became-active', (event) ->
+  pane = event.target
+  opacity = $(pane).css('opacity')
+  duration = 150 # milliseconds
+  $(pane).fadeTo(duration/2, opacity/2).fadeTo(duration/2, opacity)
+
 # An example command to demonstrate the ability to define commands in
 # init.coffee. See the corresponding keymap in keymap.cson.
 #
