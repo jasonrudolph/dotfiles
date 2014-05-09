@@ -29,6 +29,21 @@ atom.workspaceView.on 'pane:became-active', (event) ->
 atom.workspaceView.command 'dot-atom:demo', ->
   console.log "Hello from dot-atom:demo"
 
+# Toggle between light and dark syntax theme.
+atom.workspaceView.command 'dot-atom:toggle-theme', ->
+  lightTheme = "solarized-light-syntax"
+  darkTheme  = "solarized-dark-syntax"
+
+  enabledthemes = atom.themes.getEnabledThemeNames();
+  if lightTheme in enabledthemes
+    index = enabledthemes.indexOf(lightTheme)
+    enabledthemes[index] = darkTheme
+  else
+    index = enabledthemes.indexOf(darkTheme)
+    enabledthemes[index] = lightTheme
+
+  atom.themes.setEnabledThemes(enabledthemes)
+
 # Close all panes.
 #
 # Atom's built-in 'pane:close-other-items' is super handy. But sometimes you
