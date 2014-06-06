@@ -5,6 +5,16 @@
  * when it is changed.
  */
 
+/*
+ * De-emphasize inactive panes, in order to make it easy to quickly see which
+ * pane is active.
+ *
+ * Credit: http://discuss.atom.io/t/how-to-know-which-pane-is-focused/10577/2
+ */
+.pane:not(.active) {
+  opacity: 0.6;
+}
+
 .tree-view {
 
 }
