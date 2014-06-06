@@ -4,6 +4,11 @@
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-l': 'window:focus-pane-on-right'
 
+  # The maximize-panes package (https://atom.io/packages/maximize-panes)
+  # overwrites Atom's default keybinding for the 'editor:newline-above' command.
+  # Let's restore that keybinding.
+  'shift-cmd-enter': 'editor:newline-above'
+
 '.workspace':
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
