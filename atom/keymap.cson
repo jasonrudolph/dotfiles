@@ -1,4 +1,4 @@
-'.workspace, .editor':
+'.workspace .editor:not(.mini)':
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'
