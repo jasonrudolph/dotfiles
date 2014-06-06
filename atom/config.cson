@@ -35,5 +35,5 @@
   ]
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
-'release-notes':
-  'viewedVersion': '0.78.0'
+'scroll-past-end':
+  'retainHalfScreen': true
