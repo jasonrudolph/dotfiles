@@ -14,6 +14,7 @@
 'editor':
   'fontSize': 13
   'hideGitIgnoredFiles': true
+  'normalizeIndentOnPaste': false
 'whitespace':
   'ensureSingleTrailingNewline': true
 'spell-check':
