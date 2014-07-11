@@ -42,16 +42,6 @@ atom.workspaceView.command 'dot-atom:close-all-panes', ->
   atom.workspace.getPanes().forEach (pane) ->
     pane.destroyItems()
 
-# Delete to end of line **without** modifying the pasteboard. Useful as an
-# alternative to Atom's built-in 'editor:cut-to-end-of-line' command.
-#
-# TODO Change this to delete to the VERY end of the line, regardless of whether
-# the line is wrapped.
-atom.workspaceView.command 'dot-atom:delete-to-end-of-line', '.editor', ->
-  editor = atom.workspaceView.getActiveView().getEditor()
-  editor.selectToEndOfLine()
-  editor.delete()
-
 # Approximate Vim's "H" motion: Move the cursor to the topmost line that is
 # currently visible.
 atom.workspaceView.command 'dot-atom:move-to-top-visible-line', '.editor', ->
