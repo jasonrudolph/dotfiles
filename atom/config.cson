@@ -11,6 +11,7 @@
   ]
   'disabledPackages': []
   'destroyEmptyPanes': false
+  'useReactEditor': true
 'editor':
   'fontSize': 13
   'hideGitIgnoredFiles': true
