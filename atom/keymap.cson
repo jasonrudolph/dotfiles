@@ -15,8 +15,8 @@
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
 
-  'alt-g j': 'git-diff:move-to-next-diff'
-  'alt-g k': 'git-diff:move-to-previous-diff'
+  'alt-g j': 'dot-atom:center-next-diff'
+  'alt-g k': 'dot-atom:center-previous-diff'
 
   # Declare keymaps for the commands defined in init.coffee
   'alt-cmd-ctrl-b': 'dot-atom:demo'

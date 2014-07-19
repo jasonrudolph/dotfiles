@@ -100,3 +100,17 @@ atom.workspaceView.command 'dot-atom:scroll-cursor-to-bottom', '.editor', ->
   pixelPositionForScrollBottomPosition =
     view.pixelPositionForScreenPosition(scrollBottomPosition)
   view.scrollBottom pixelPositionForScrollBottomPosition.top
+
+# Move the cursor to the next diff in the editor, and then scroll the view such
+# that the line containing the cursor is vertically centered in the view.
+atom.workspaceView.command 'dot-atom:center-next-diff', ->
+  view = atom.workspaceView.getActiveView()
+  view.trigger('git-diff:move-to-next-diff')
+  view.trigger('dot-atom:scroll-cursor-to-center')
+
+# Move the cursor to the previous diff in the editor, and then scroll the view
+# such that the line containing the cursor is vertically centered in the view.
+atom.workspaceView.command 'dot-atom:center-previous-diff', ->
+  view = atom.workspaceView.getActiveView()
+  view.trigger('git-diff:move-to-previous-diff')
+  view.trigger('dot-atom:scroll-cursor-to-center')
