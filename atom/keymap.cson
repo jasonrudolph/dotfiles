@@ -6,26 +6,26 @@
 
   'ctrl-;': 'editor:delete-to-end-of-line'
 
-  # The maximize-panes package (https://atom.io/packages/maximize-panes)
-  # overwrites Atom's default keybinding for the 'editor:newline-above' command.
-  # Let's restore that keybinding.
-  'shift-cmd-enter': 'editor:newline-above'
-
-'.workspace':
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
 
   'alt-g j': 'dot-atom:center-next-diff'
   'alt-g k': 'dot-atom:center-previous-diff'
 
-  # Declare keymaps for the commands defined in init.coffee
+  'ctrl-. h': 'dot-atom:move-to-top-visible-line'
+  'ctrl-. m': 'dot-atom:move-to-middle-visible-line'
+  'ctrl-. l': 'dot-atom:move-to-bottom-visible-line'
+  'ctrl-. t': 'dot-atom:scroll-cursor-to-top'
+  'ctrl-. z': 'dot-atom:scroll-cursor-to-center'
+  'ctrl-. b': 'dot-atom:scroll-cursor-to-bottom'
+
+  # The maximize-panes package (https://atom.io/packages/maximize-panes)
+  # overwrites Atom's default keybinding for the 'editor:newline-above' command.
+  # Let's restore that keybinding.
+  'shift-cmd-enter': 'editor:newline-above'
+
+'.workspace':
   'alt-cmd-ctrl-b': 'dot-atom:demo'
-  'ctrl-. h':       'dot-atom:move-to-top-visible-line'
-  'ctrl-. m':       'dot-atom:move-to-middle-visible-line'
-  'ctrl-. l':       'dot-atom:move-to-bottom-visible-line'
-  'ctrl-. t':       'dot-atom:scroll-cursor-to-top'
-  'ctrl-. z':       'dot-atom:scroll-cursor-to-center'
-  'ctrl-. b':       'dot-atom:scroll-cursor-to-bottom'
 
 '.workspace, .command-palette .editor':
   'cmd-p': 'command-palette:toggle'
