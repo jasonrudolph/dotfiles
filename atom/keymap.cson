@@ -9,8 +9,8 @@
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
 
-  'alt-g j': 'dot-atom:center-next-diff'
-  'alt-g k': 'dot-atom:center-previous-diff'
+  'ctrl-g j': 'dot-atom:center-next-diff'
+  'ctrl-g k': 'dot-atom:center-previous-diff'
 
   'ctrl-. h': 'dot-atom:move-to-top-visible-line'
   'ctrl-. m': 'dot-atom:move-to-middle-visible-line'
