@@ -12,7 +12,7 @@
  * Credit: http://discuss.atom.io/t/how-to-know-which-pane-is-focused/10577/2
  */
 .pane:not(.active) {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .tree-view {
