@@ -1,13 +1,14 @@
-'.workspace .editor:not(.mini)':
+'.workspace .pane, .workspace .editor:not(.mini)':
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-l': 'window:focus-pane-on-right'
 
-  'ctrl-;': 'editor:delete-to-end-of-line'
-
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
+
+'.workspace .editor:not(.mini)':
+  'ctrl-;': 'editor:delete-to-end-of-line'
 
   'ctrl-g j': 'dot-atom:center-next-diff'
   'ctrl-g k': 'dot-atom:center-previous-diff'
