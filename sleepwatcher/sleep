@@ -1,0 +1,16 @@
+#!/usr/bin/osascript
+
+# Turn off the microphone in Dragon Dictate.
+#
+# In my experience, if Dragon Dictate is listening for audio when OS X attempts
+# to sleep, OS X will fail to go to sleep. It will keep attempting to sleep, and
+# keep waking up. To fix that, we tell Dragon Dictate to stop listening when
+# OS X goes to sleep.
+#
+# Credit: http://www.macspeech.com/extensions/forums/topic.php?id=1443#post-6611
+tell application "Dragon Dictate"
+    if microphone is sleep then
+				set microphone to dictation
+		end if
+		set listening to false
+end tell
