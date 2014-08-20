@@ -8,9 +8,11 @@
 # OS X goes to sleep.
 #
 # Credit: http://www.macspeech.com/extensions/forums/topic.php?id=1443#post-6611
-tell application "Dragon Dictate"
-    if microphone is sleep then
-        set microphone to dictation
-    end if
-    set listening to false
-end tell
+if application "Dragon Dictate" is running then
+    tell application "Dragon Dictate"
+        if microphone is sleep then
+            set microphone to dictation
+        end if
+        set listening to false
+    end tell
+end if
