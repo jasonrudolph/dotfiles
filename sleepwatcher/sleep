@@ -10,7 +10,7 @@
 # Credit: http://www.macspeech.com/extensions/forums/topic.php?id=1443#post-6611
 tell application "Dragon Dictate"
     if microphone is sleep then
-				set microphone to dictation
-		end if
-		set listening to false
+        set microphone to dictation
+    end if
+    set listening to false
 end tell
