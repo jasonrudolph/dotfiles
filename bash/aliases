@@ -40,40 +40,10 @@ alias t500='tail -n 500'
 alias t1000='tail -n 1000'
 alias t2000='tail -n 2000'
 
-# rails console
-function sc() {
-  if [ -x script/rails ]; then
-    script/rails console
-  elif [ -x script/console ]; then
-    script/console
-  else
-    echo "no script/rails or script/console found" >&2
-  fi
-}
-
-# rails server
-function ss() {
-  if [ -x script/rails ]; then
-    script/rails server
-  elif [ -x script/server ]; then
-    ./script/server
-  else
-    echo "no script/rails or script/server found" >&2
-  fi
-}
-
-# rails generate
-function sg() {
-  if [ -x script/rails ]; then
-    script/rails generate
-  elif [ -x script/generate ]; then
-    script/generate
-  else
-    echo "no script/rails or script/server found" >&2
-  fi
-}
-
 # rails
+alias rs='script/rails server'
+alias rc='script/rails console'
+alias rg='script/rails generate'
 alias rdfl='rake db:fixtures:load'
 alias rdm='rake db:migrate'
 alias rst='touch tmp/restart.txt'
