@@ -24,6 +24,7 @@
   # overwrites Atom's default keybinding for the 'editor:newline-above' command.
   # Let's restore that keybinding.
   'shift-cmd-enter': 'editor:newline-above'
+  'alt-cmd-m': 'maximize-panes:maximize'
 
 '.workspace':
   'alt-cmd-ctrl-b': 'dot-atom:demo'
