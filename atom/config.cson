@@ -1,41 +1,47 @@
-'core':
-  'hideGitIgnoredFiles': true
-  'ignoredNames': [
-    '.DS_Store'
-    '.git'
-    'vendor'
-  ]
-  'themes': [
-    'atom-dark-ui'
-    'solarized-dark-syntax'
-  ]
-  'disabledPackages': []
-  'destroyEmptyPanes': false
-  'useReactEditor': true
-'editor':
-  'fontSize': 13
-  'hideGitIgnoredFiles': true
-  'normalizeIndentOnPaste': false
-'whitespace':
-  'ensureSingleTrailingNewline': true
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
-'find-and-replace':
-  'openProjectFindResultsInRightPane': true
-'wrap-guide':
-  'columns': [
-    {
-      'pattern': 'COMMIT_EDITMSG'
-      'column': 72
-    }
-  ]
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
-'scroll-past-end':
-  'retainHalfScreen': true
+'global':
+  'core':
+    'hideGitIgnoredFiles': true
+    'ignoredNames': [
+      '.DS_Store'
+      '.git'
+      'vendor'
+    ]
+    'themes': [
+      'atom-dark-ui'
+      'solarized-dark-syntax'
+    ]
+    'disabledPackages': [
+      'center-line'
+      'branch-status'
+      'open-in-atom'
+      'terminal'
+    ]
+    'destroyEmptyPanes': false
+    'useReactEditor': true
+  'editor':
+    'hideGitIgnoredFiles': true
+    'normalizeIndentOnPaste': false
+    'scrollPastEnd': true
+    'fontSize': 13
+    'invisibles': {}
+  'spell-check':
+    'grammars': [
+      'text.plain'
+      'source.gfm'
+      'text.git-commit'
+    ]
+  'welcome':
+    'showOnStartup': false
+  'find-and-replace':
+    'openProjectFindResultsInRightPane': true
+  'wrap-guide':
+    'columns': [
+      {
+        'pattern': 'COMMIT_EDITMSG'
+        'column': 72
+      }
+    ]
+  'autocomplete':
+    'includeCompletionsFromAllBuffers': true
+  'merge-conflicts':
+    'gitPath': 'bin/git'
