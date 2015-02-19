@@ -1,47 +1,44 @@
-'global':
-  'core':
-    'hideGitIgnoredFiles': true
-    'ignoredNames': [
-      '.DS_Store'
-      '.git'
-      'vendor'
+"*":
+  core:
+    ignoredNames: [
+      ".DS_Store"
+      ".git"
+      "vendor"
     ]
-    'themes': [
-      'atom-dark-ui'
-      'solarized-dark-syntax'
+    disabledPackages: [
+      "center-line"
+      "branch-status"
+      "open-in-atom"
+      "terminal"
     ]
-    'disabledPackages': [
-      'center-line'
-      'branch-status'
-      'open-in-atom'
-      'terminal'
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
     ]
-    'destroyEmptyPanes': false
-    'useReactEditor': true
-  'editor':
-    'hideGitIgnoredFiles': true
-    'normalizeIndentOnPaste': false
-    'scrollPastEnd': true
-    'autoIndentOnPaste': false
-    'fontSize': 13
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+    destroyEmptyPanes: false
+  editor:
+    fontSize: 13
+    autoIndentOnPaste: false
+    scrollPastEnd: true
+    invisibles: {}
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'welcome':
-    'showOnStartup': false
-  'find-and-replace':
-    'openProjectFindResultsInRightPane': true
-  'wrap-guide':
-    'columns': [
+  welcome:
+    showOnStartup: false
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "wrap-guide":
+    columns: [
       {
-        'pattern': 'COMMIT_EDITMSG'
-        'column': 72
+        pattern: "COMMIT_EDITMSG"
+        column: 72
       }
     ]
-  'autocomplete':
-    'includeCompletionsFromAllBuffers': true
-  'merge-conflicts':
-    'gitPath': 'bin/git'
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "merge-conflicts":
+    gitPath: "bin/git"
