@@ -105,11 +105,15 @@ atom.commands.add 'atom-text-editor',
   # Move the cursor to the next diff in the editor, and then scroll the view
   # such that the line containing the cursor is vertically centered in the view.
   'dot-atom:center-next-diff': ->
-    editorView.trigger('git-diff:move-to-next-diff')
-    editorView.trigger('dot-atom:scroll-cursor-to-center')
+    editor = atom.workspace.getActiveTextEditor()
+    editorView = atom.views.getView(editor)
+    atom.commands.dispatch editorView, "git-diff:move-to-next-diff"
+    atom.commands.dispatch editorView, "dot-atom:scroll-cursor-to-center"
 
   # Move the cursor to the previous diff in the editor, and then scroll the view
   # such that the line containing the cursor is vertically centered in the view.
-  'dot-atom:center-previous-diff', ->
-    editorView.trigger('git-diff:move-to-previous-diff')
-    editorView.trigger('dot-atom:scroll-cursor-to-center')
+  'dot-atom:center-previous-diff': ->
+    editor = atom.workspace.getActiveTextEditor()
+    editorView = atom.views.getView(editor)
+    atom.commands.dispatch editorView, "git-diff:move-to-previous-diff"
+    atom.commands.dispatch editorView, "dot-atom:scroll-cursor-to-center"
