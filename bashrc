@@ -6,8 +6,8 @@ elif [[ "$unamestr" == 'Linux' ]]; then
   PLATFORM='linux'
 fi
 
-source ~/.bash/aliases
 source ~/.bash/completions
+source ~/.bash/aliases
 source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/gitprompt
