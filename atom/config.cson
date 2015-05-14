@@ -42,3 +42,7 @@
     includeCompletionsFromAllBuffers: true
   "merge-conflicts":
     gitPath: "bin/git"
+  "one-light-ui":
+    layoutMode: "Compact"
+  "one-dark-ui":
+    layoutMode: "Compact"
