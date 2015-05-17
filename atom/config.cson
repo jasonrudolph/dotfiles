@@ -10,17 +10,20 @@
       "branch-status"
       "open-in-atom"
       "terminal"
+      "merge-conflicts"
+      "terminal-panel"
     ]
+    destroyEmptyPanes: false
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
     ]
-    destroyEmptyPanes: false
   editor:
-    fontSize: 13
     autoIndentOnPaste: false
     scrollPastEnd: true
-    invisibles: {}
+    invisibles:
+      {}
+    fontSize: 13
   "spell-check":
     grammars: [
       "text.plain"
@@ -44,3 +47,5 @@
     layoutMode: "Compact"
   "one-dark-ui":
     layoutMode: "Compact"
+  "autocomplete-plus":
+    enableAutoActivation: false
