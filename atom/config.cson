@@ -38,8 +38,6 @@
         column: 72
       }
     ]
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
   "merge-conflicts":
     gitPath: "bin/git"
   "one-light-ui":
