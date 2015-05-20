@@ -34,13 +34,6 @@
     showOnStartup: false
   "find-and-replace":
     openProjectFindResultsInRightPane: true
-  "wrap-guide":
-    columns: [
-      {
-        pattern: "COMMIT_EDITMSG"
-        column: 72
-      }
-    ]
   "merge-conflicts":
     gitPath: "bin/git"
   "one-light-ui":
@@ -49,3 +42,6 @@
     layoutMode: "Compact"
   "autocomplete-plus":
     enableAutoActivation: false
+".text.git-commit":
+  editor:
+    preferredLineLength: 72
