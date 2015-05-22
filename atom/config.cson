@@ -7,7 +7,6 @@
     ]
     disabledPackages: [
       "center-line"
-      "branch-status"
       "open-in-atom"
       "terminal"
       "merge-conflicts"
