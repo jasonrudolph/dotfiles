@@ -1,4 +1,4 @@
-'atom-workspace .pane, atom-workspace atom-text-editor:not(.mini)':
+'atom-workspace atom-pane, atom-workspace atom-text-editor:not(.mini)':
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'

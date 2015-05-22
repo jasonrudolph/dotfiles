@@ -11,7 +11,7 @@
  *
  * Credit: http://discuss.atom.io/t/how-to-know-which-pane-is-focused/10577/2
  */
-.pane:not(.active) {
+atom-pane:not(.active) {
   opacity: 0.75;
 }
 
