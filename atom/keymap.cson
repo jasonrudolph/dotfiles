@@ -1,4 +1,4 @@
-'.workspace .pane, .workspace .editor:not(.mini)':
+'atom-workspace .pane, atom-workspace .editor:not(.mini)':
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'
@@ -7,7 +7,7 @@
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
 
-'.workspace .editor:not(.mini)':
+'atom-workspace .editor:not(.mini)':
   'ctrl-;': 'editor:delete-to-end-of-line'
 
   'ctrl-g j': 'dot-atom:center-next-diff'
@@ -26,8 +26,8 @@
   'shift-cmd-enter': 'editor:newline-above'
   'alt-cmd-m': 'maximize-panes:maximize'
 
-'.workspace':
+'atom-workspace':
   'alt-cmd-ctrl-b': 'dot-atom:demo'
 
-'.workspace, .command-palette .editor':
+'atom-workspace, .command-palette .editor':
   'cmd-p': 'command-palette:toggle'
