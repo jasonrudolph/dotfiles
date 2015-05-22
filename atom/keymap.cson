@@ -1,4 +1,4 @@
-'atom-workspace .pane, atom-workspace .editor:not(.mini)':
+'atom-workspace .pane, atom-workspace atom-text-editor:not(.mini)':
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'
@@ -7,7 +7,7 @@
   'ctrl-|': 'pane:split-right'
   'ctrl--': 'pane:split-down'
 
-'atom-workspace .editor:not(.mini)':
+'atom-workspace atom-text-editor:not(.mini)':
   'ctrl-;': 'editor:delete-to-end-of-line'
 
   'ctrl-g j': 'dot-atom:center-next-diff'
@@ -29,5 +29,5 @@
 'atom-workspace':
   'alt-cmd-ctrl-b': 'dot-atom:demo'
 
-'atom-workspace, .command-palette .editor':
+'atom-workspace, .command-palette atom-text-editor':
   'cmd-p': 'command-palette:toggle'
