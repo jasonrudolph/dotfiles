@@ -16,20 +16,14 @@
 atom.commands.add 'atom-workspace', 'dot-atom:demo', ->
   console.log "Hello from dot-atom:demo"
 
-# Toggle between light and dark syntax theme.
+# Toggle between light and dark theme.
 atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
-  lightTheme = "solarized-light-syntax"
-  darkTheme  = "solarized-dark-syntax"
+  activeThemes = atom.themes.getActiveNames()
 
-  enabledthemes = atom.themes.getEnabledThemeNames();
-  if lightTheme in enabledthemes
-    index = enabledthemes.indexOf(lightTheme)
-    enabledthemes[index] = darkTheme
+  if activeThemes[0].indexOf("dark") is -1
+    atom.themes.setEnabledThemes(["one-dark-ui", "one-dark-syntax"])
   else
-    index = enabledthemes.indexOf(darkTheme)
-    enabledthemes[index] = lightTheme
-
-  atom.themes.setEnabledThemes(enabledthemes)
+    atom.themes.setEnabledThemes(["one-light-ui", "one-light-syntax"])
 
 # Close all panes.
 #
