@@ -14,15 +14,3 @@
 atom-pane:not(.active) {
   opacity: 0.75;
 }
-
-.tree-view {
-
-}
-
-.editor {
-
-}
-
-.editor .cursor {
-
-}
