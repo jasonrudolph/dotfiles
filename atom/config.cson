@@ -41,6 +41,6 @@
     layoutMode: "Compact"
   "autocomplete-plus":
     enableAutoActivation: false
-".text.git-commit":
+".git-commit.text":
   editor:
     preferredLineLength: 72
