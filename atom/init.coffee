@@ -20,7 +20,7 @@ atom.commands.add 'atom-workspace', 'dot-atom:demo', ->
 atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
   activeThemes = atom.themes.getActiveNames()
 
-  if activeThemes[0].indexOf("dark") is -1
+  if activeThemes[0].indexOf("light") > 0
     atom.themes.setEnabledThemes(["one-dark-ui", "one-dark-syntax"])
   else
     atom.themes.setEnabledThemes(["one-light-ui", "one-light-syntax"])
