@@ -11,6 +11,9 @@
       "terminal"
       "merge-conflicts"
       "terminal-panel"
+      "git-projects"
+      "outdoor-theme"
+      "error-status"
     ]
     destroyEmptyPanes: false
     themes: [
@@ -41,6 +44,11 @@
     layoutMode: "Compact"
   "autocomplete-plus":
     enableAutoActivation: false
+  "git-projects":
+    rootPath: "~/github;~/src"
+    maxDepth: 1
+  "outdoor-theme":
+    lightLevelToSwitch: 5904360
 ".git-commit.text":
   editor:
     preferredLineLength: 72
