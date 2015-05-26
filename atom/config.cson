@@ -16,10 +16,6 @@
       "error-status"
     ]
     destroyEmptyPanes: false
-    themes: [
-      "atom-dark-ui"
-      "solarized-dark-syntax"
-    ]
   editor:
     autoIndentOnPaste: false
     scrollPastEnd: true
