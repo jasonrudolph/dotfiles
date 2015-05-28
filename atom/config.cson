@@ -45,6 +45,8 @@
     maxDepth: 1
   "outdoor-theme":
     lightLevelToSwitch: 5904360
+  "notational-velocity":
+    directory: "/Users/j/.notes"
 ".git-commit.text":
   editor:
     preferredLineLength: 72
