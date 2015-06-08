@@ -18,12 +18,12 @@ atom.commands.add 'atom-workspace', 'dot-atom:demo', ->
 
 # Toggle between light and dark theme.
 atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
-  activeThemes = atom.themes.getActiveNames()
+  activeThemes = atom.themes.getActiveThemeNames()
 
   if activeThemes[0].indexOf("light") > 0
-    atom.themes.setEnabledThemes(["one-dark-ui", "one-dark-syntax"])
+    atom.config.set("core.themes", ["one-dark-ui", "one-dark-syntax"])
   else
-    atom.themes.setEnabledThemes(["one-light-ui", "one-light-syntax"])
+    atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"])
 
 # Close all panes.
 #
