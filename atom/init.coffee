@@ -68,10 +68,12 @@ atom.commands.add 'atom-text-editor',
   # Approximate Vim's "zt" motion: Scroll the view such that the line containing
   # the cursor is at the top of the view.
   'dot-atom:scroll-cursor-to-top': ->
-    editor = atom.workspace.getActiveTextEditor()
+    textEditor = atom.workspace.getActiveTextEditor()
+    textEditorElement = atom.views.getView(textEditor)
+    cursorPosition = textEditor.getCursorScreenPosition()
     pixelPositionForCursorPosition =
-      editor.pixelPositionForScreenPosition(editor.getCursorScreenPosition())
-    editor.setScrollTop(pixelPositionForCursorPosition.top)
+      textEditorElement.pixelPositionForScreenPosition(cursorPosition)
+    textEditor.setScrollTop(pixelPositionForCursorPosition.top)
 
   # Approximate Vim's "zz" motion: Scroll the view such that the line containing
   # the cursor is vertically centered in the view.
