@@ -90,12 +90,13 @@ atom.commands.add 'atom-text-editor',
   # Approximate Vim's "zb" motion: Scroll the view such that the line containing
   # the cursor is at the bottom of the view.
   'dot-atom:scroll-cursor-to-bottom': ->
-    editor = atom.workspace.getActiveTextEditor()
-    cursorPosition = editor.getCursorScreenPosition()
+    textEditor = atom.workspace.getActiveTextEditor()
+    textEditorElement = atom.views.getView(textEditor)
+    cursorPosition = textEditor.getCursorScreenPosition()
     scrollBottomPosition = [cursorPosition.row + 1, cursorPosition.column]
     pixelPositionForScrollBottomPosition =
-      editor.pixelPositionForScreenPosition(scrollBottomPosition)
-    editor.setScrollBottom(pixelPositionForScrollBottomPosition.top)
+      textEditor.pixelPositionForScreenPosition(scrollBottomPosition)
+    textEditor.setScrollBottom(pixelPositionForScrollBottomPosition.top)
 
   # Move the cursor to the next diff in the editor, and then scroll the view
   # such that the line containing the cursor is vertically centered in the view.
