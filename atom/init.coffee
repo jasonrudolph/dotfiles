@@ -78,15 +78,14 @@ atom.commands.add 'atom-text-editor',
   # Approximate Vim's "zz" motion: Scroll the view such that the line containing
   # the cursor is vertically centered in the view.
   'dot-atom:scroll-cursor-to-center': ->
-    editor = atom.workspace.getActiveTextEditor()
-    # TODO Why can't we implement this command using: `editorView.scrollToScreenPosition editorView.getCursorScreenPosition(), center: true`
-    #      This line seems to be the culprit: https://github.com/atom/atom/blob/9fce6a2f1cea680d69bc3181774bc98c541f00b7/src/editor-view.coffee#L1133
-    #      Because of that line, if the cursor is currently visible, no
-    #      scrolling occurs.
+    textEditor = atom.workspace.getActiveTextEditor()
+    textEditorElement = atom.views.getView(textEditor)
+    cursorPosition = textEditor.getCursorScreenPosition()
     pixelPositionForCursorPosition =
-      editor.pixelPositionForScreenPosition(editor.getCursorScreenPosition())
-    halfScreenHeight = editor.getHeight() / 2
-    editor.setScrollTop(pixelPositionForCursorPosition.top - halfScreenHeight)
+      textEditorElement.pixelPositionForScreenPosition(cursorPosition)
+    halfScreenHeight = textEditor.getHeight() / 2
+    scrollTop = pixelPositionForCursorPosition.top - halfScreenHeight
+    textEditor.setScrollTop(scrollTop)
 
   # Approximate Vim's "zb" motion: Scroll the view such that the line containing
   # the cursor is at the bottom of the view.
