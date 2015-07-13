@@ -34,7 +34,7 @@ atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
 # Hurry!"
 atom.commands.add 'atom-workspace', 'dot-atom:close-all-panes', ->
   atom.workspace.getPanes().forEach (pane) ->
-    pane.destroyItems()
+    pane.destroy()
 
 # Define commands that should only be available in an editor view (and should
 # not be available in a tree view, for example).
