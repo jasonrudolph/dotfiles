@@ -20,9 +20,10 @@
   'ctrl-. z': 'dot-atom:scroll-cursor-to-center'
   'ctrl-. b': 'dot-atom:scroll-cursor-to-bottom'
 
-  # The maximize-panes package (https://atom.io/packages/maximize-panes)
-  # overwrites Atom's default keybinding for the 'editor:newline-above' command.
-  # Let's restore that keybinding.
+# The maximize-panes package (https://atom.io/packages/maximize-panes)
+# overwrites Atom's default keybinding for the 'editor:newline-above' command.
+# Let's restore that keybinding.
+'.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'shift-cmd-enter': 'editor:newline-above'
   'alt-cmd-m': 'maximize-panes:maximize'
 
