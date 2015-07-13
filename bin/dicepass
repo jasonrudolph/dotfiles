@@ -59,7 +59,7 @@ STR
 
     @num_rounds.times do
       ary = (0...@num_dicewords).map { random_word }
-      phrase = ary.join('-')
+      phrase = ary.join(' ')
 
       phrases << phrase
     end
