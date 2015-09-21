@@ -20,6 +20,8 @@
   'ctrl-. z': 'dot-atom:scroll-cursor-to-center'
   'ctrl-. b': 'dot-atom:scroll-cursor-to-bottom'
 
+  'ctrl-d': 'toggle-markdown-task:toggle'
+
 # The maximize-panes package (https://atom.io/packages/maximize-panes)
 # overwrites Atom's default keybinding for the 'editor:newline-above' command.
 # Let's restore that keybinding.
