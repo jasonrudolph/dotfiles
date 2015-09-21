@@ -6,14 +6,6 @@
       "vendor"
     ]
     disabledPackages: [
-      "center-line"
-      "open-in-atom"
-      "terminal"
-      "merge-conflicts"
-      "terminal-panel"
-      "git-projects"
-      "outdoor-theme"
-      "error-status"
     ]
     destroyEmptyPanes: false
   editor:
