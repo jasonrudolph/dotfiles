@@ -3,6 +3,14 @@
     prefix: "="
     body: " => "
 
+  "Test block":
+    prefix: "test"
+    body: """
+      test "$1" do
+        $2
+      end
+    """
+
 ".source.coffee":
   "Describe block":
     prefix: "de"
