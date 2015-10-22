@@ -12,7 +12,7 @@
     autoIndentOnPaste: false
     scrollPastEnd: true
     invisibles: {}
-    fontSize: 13
+    fontSize: 11
   "spell-check":
     grammars: [
       "text.plain"
