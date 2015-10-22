@@ -2,10 +2,27 @@
 require 'irb/completion'
 require 'irb/ext/save-history'
 
-IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+begin
+  IRB.conf[:SAVE_HISTORY] = 1000
+  IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 
-IRB.conf[:PROMPT_MODE] = :SIMPLE
+  if RUBY_VERSION && RUBY_PATCHLEVEL
+    version = [RUBY_VERSION, RUBY_PATCHLEVEL].join('-p')
+  else
+    version = nil
+  end
+
+  IRB.conf[:PROMPT][:CUSTOM] = {
+    :PROMPT_N => "#{version}> ",
+    :PROMPT_I => "#{version}> ",
+    :PROMPT_S => nil,
+    :PROMPT_C => ' ?> ',
+    :RETURN => " => %s\n"
+  }
+
+  IRB.conf[:PROMPT_MODE] = :CUSTOM
+rescue LoadError
+end
 
 class Object
   # list methods which aren't in superclass
