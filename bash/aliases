@@ -1,5 +1,5 @@
 # atom
-alias e="atom ."
+alias e="atom-beta ."
 
 # boxen
 alias boxon='boxen --enable-services'
