@@ -1,7 +1,0 @@
-let mapleader=','
-
-" The css-color plugin seems to cause unbearable slowdowns when opening files
-call janus#disable_plugin('css-color')
-
-call janus#disable_plugin('snipmate')
-call janus#disable_plugin('snipmate-snippets')

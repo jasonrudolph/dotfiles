@@ -8,7 +8,3 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
-
-if [[ "$PLATFORM" == 'osx' ]]; then
-  export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-62
-fi
