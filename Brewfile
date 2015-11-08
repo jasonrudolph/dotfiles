@@ -9,6 +9,7 @@
 brew "bash"
 brew "git"
 brew "hub"
+brew "jq"
 brew "tree"
 brew "the_silver_searcher"
 brew "switchaudio-osx"
