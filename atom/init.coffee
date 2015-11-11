@@ -36,6 +36,16 @@ atom.commands.add 'atom-workspace', 'dot-atom:close-all-panes', ->
   atom.workspace.getPanes().forEach (pane) ->
     pane.destroy()
 
+# Save all open buffers, even if they're not modified. This behavior is useful
+# when you're using a file watcher to trigger scripts (e.g., using guard to
+# run your Ruby tests).
+#
+# Atom's built-in "window:save-all" command previously provided this behavior,
+# but it was removed in https://github.com/atom/atom/pull/9249.
+atom.commands.add 'atom-workspace', 'dot-atom:save-all', ->
+  atom.workspace.getPanes().forEach (pane) ->
+    pane.saveItem(item) for item in pane.getItems()
+
 # Define commands that should only be available in an editor view (and should
 # not be available in a tree view, for example).
 atom.commands.add 'atom-text-editor',

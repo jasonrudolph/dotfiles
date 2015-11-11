@@ -31,6 +31,7 @@
 
 'atom-workspace':
   'alt-cmd-ctrl-b': 'dot-atom:demo'
+  'alt-cmd-s': 'dot-atom:save-all'
 
 'atom-workspace, .command-palette atom-text-editor':
   'cmd-p': 'command-palette:toggle'
