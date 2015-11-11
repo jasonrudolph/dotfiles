@@ -3,6 +3,14 @@
     prefix: "="
     body: " => "
 
+  "Context block":
+    prefix: "context"
+    body: """
+      context "$1" do
+        $2
+      end
+    """
+
   "Test block":
     prefix: "test"
     body: """
