@@ -56,3 +56,7 @@ alias reload='. ~/.bash_profile'
 alias tmux="TERM=screen-256color-bce tmux"
 alias h?="history | grep "
 alias top-10-shell-commands="history | cut -c8- | cut -d' ' -f1 | sort | uniq -c | sort -nr | head"
+
+# ip addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
