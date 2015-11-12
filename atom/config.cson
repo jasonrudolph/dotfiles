@@ -44,6 +44,8 @@
   "autocomplete-emojis":
     enableUnicodeEmojis: false
   "markdown-writer": {}
+  nvatom:
+    directory: "/Users/j/.notes"
 ".git-commit.text":
   editor:
     preferredLineLength: 72
