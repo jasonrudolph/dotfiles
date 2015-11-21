@@ -14,7 +14,7 @@
 # - Define commands for your own private use (e.g., commands that you might not
 #   want to share for some reason).
 atom.commands.add 'atom-workspace', 'dot-atom:demo', ->
-  console.log "Hello from dot-atom:demo"
+  atom.notifications.addInfo "Hello from dot-atom:demo"
 
 # Toggle between light and dark theme.
 atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
