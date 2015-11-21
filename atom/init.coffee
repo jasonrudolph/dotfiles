@@ -46,6 +46,33 @@ atom.commands.add 'atom-workspace', 'dot-atom:save-all', ->
   atom.workspace.getPanes().forEach (pane) ->
     pane.saveItem(item) for item in pane.getItems()
 
+# Generate ctags.
+atom.commands.add 'atom-text-editor', 'dot-atom:generate-ctags', =>
+  sys = require('sys')
+  exec = require('child_process').exec
+
+  tag_command = "
+    /usr/local/bin/ctags      \
+      --exclude=log           \
+      --exclude=node_modules  \
+      --exclude=tmp           \
+      --exclude=vendor        \
+      --tag-relative -R
+  "
+
+  atom.notifications.addInfo('Generating ctags')
+  for path in atom.project.getPaths()
+    child = exec tag_command, {cwd: path}, (error, stdout, stderr) ->
+      if error
+        atom.notifications.addError 'ctags exited with error',
+          {detail: error, dismissable: true}
+      else if !!stderr
+        atom.notifications.addWarning 'Generated ctags (with warnings)',
+          {detail: stderr, dismissable: true}
+      else
+        atom.notifications.addSuccess 'Finished generating ctags',
+          {detail: stdout}
+
 # Define commands that should only be available in an editor view (and should
 # not be available in a tree view, for example).
 atom.commands.add 'atom-text-editor',
