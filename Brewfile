@@ -7,6 +7,7 @@
 # brew bundle --file=<path-to-Brewfile>
 
 brew "bash"
+brew "ctags"
 brew "git"
 brew "hub"
 brew "jq"
