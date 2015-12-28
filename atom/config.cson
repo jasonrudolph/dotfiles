@@ -1,51 +1,52 @@
 "*":
+  "autocomplete-emojis":
+    enableUnicodeEmojis: false
+  "autocomplete-plus":
+    enableAutoActivation: false
+    minimumWordLength: 1
   core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "nvatom"
+    ]
     ignoredNames: [
       ".DS_Store"
       ".git"
       "vendor"
     ]
-    disabledPackages: [
-    ]
-    destroyEmptyPanes: false
   editor:
     autoIndentOnPaste: false
-    scrollPastEnd: true
-    invisibles: {}
     fontSize: 11
+    invisibles: {}
+    scrollPastEnd: true
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "git-projects":
+    maxDepth: 1
+    rootPath: "~/github;~/src"
+  "markdown-writer": {}
+  "merge-conflicts":
+    gitPath: "bin/git"
+  "notational-velocity":
+    directory: "/Users/j/.notes"
+  nvatom:
+    directory: "/Users/j/.notes"
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "one-light-ui":
+    layoutMode: "Compact"
+  "outdoor-theme":
+    lightLevelToSwitch: 5904360
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
     ]
-  welcome:
-    showOnStartup: false
-  "find-and-replace":
-    openProjectFindResultsInRightPane: true
-  "merge-conflicts":
-    gitPath: "bin/git"
-  "one-light-ui":
-    layoutMode: "Compact"
-  "one-dark-ui":
-    layoutMode: "Compact"
-  "autocomplete-plus":
-    enableAutoActivation: false
-    minimumWordLength: 1
-  "git-projects":
-    rootPath: "~/github;~/src"
-    maxDepth: 1
-  "outdoor-theme":
-    lightLevelToSwitch: 5904360
-  "notational-velocity":
-    directory: "/Users/j/.notes"
   tabs:
     enableVcsColoring: true
-  "autocomplete-emojis":
-    enableUnicodeEmojis: false
-  "markdown-writer": {}
-  nvatom:
-    directory: "/Users/j/.notes"
+  welcome:
+    showOnStartup: false
 ".git-commit.text":
   editor:
     preferredLineLength: 72
