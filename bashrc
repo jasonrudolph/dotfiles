@@ -6,6 +6,8 @@ elif [[ "$unamestr" == 'Linux' ]]; then
   PLATFORM='linux'
 fi
 
+eval "$(rbenv init -)"
+
 source ~/.bash/completions
 source ~/.bash/aliases
 source ~/.bash/paths
