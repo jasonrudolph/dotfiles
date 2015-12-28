@@ -14,3 +14,12 @@
 atom-pane:not(.active) {
   opacity: 0.75;
 }
+
+.results-view {
+  font-size: 13px;
+}
+
+.search-result .highlight-info {
+  color: #000;
+  background-color: yellow;
+}
