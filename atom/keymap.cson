@@ -4,8 +4,8 @@
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-l': 'window:focus-pane-on-right'
 
-  'ctrl-|': 'pane:split-right'
-  'ctrl--': 'pane:split-down'
+  'ctrl-|': 'pane:split-right-and-copy-active-item'
+  'ctrl--': 'pane:split-down-and-copy-active-item'
 
 'atom-workspace atom-text-editor:not(.mini)':
   'ctrl-;': 'editor:delete-to-end-of-line'
