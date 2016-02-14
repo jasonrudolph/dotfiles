@@ -6,6 +6,9 @@
 #
 # brew bundle --file=<path-to-Brewfile>
 
+tap "caskroom/cask"
+tap "homebrew/bundle"
+
 brew "bash"
 brew "ctags"
 brew "git"
@@ -15,3 +18,9 @@ brew "switchaudio-osx"
 brew "the_silver_searcher"
 brew "tree"
 brew "wget"
+
+cask "betterzipql"
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "quicklook-json"
