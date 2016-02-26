@@ -8,6 +8,7 @@
   'ctrl--': 'pane:split-down-and-copy-active-item'
 
 'atom-workspace atom-text-editor:not(.mini)':
+  'ctrl-a': 'editor:move-to-beginning-of-line'
   'ctrl-;': 'editor:delete-to-end-of-line'
 
   'ctrl-g j': 'dot-atom:center-next-diff'
