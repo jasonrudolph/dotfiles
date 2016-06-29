@@ -66,6 +66,8 @@
   token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
 [push]
   default = tracking
+[diff]
+  compactionHeuristic = true
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [url "git@github.com:"]
