@@ -70,6 +70,12 @@
   compactionHeuristic = true
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
+[interactive]
+  diffFilter = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight
+[pager]
+  log = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less
+  show = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less
+  diff = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "github:"
