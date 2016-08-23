@@ -3,6 +3,10 @@
     prefix: "="
     body: " => "
 
+  "Curly braces block":
+    prefix: "{"
+    body: "{ |${1:variable}| $2 "
+
   "Context block":
     prefix: "context"
     body: """
