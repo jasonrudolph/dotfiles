@@ -9,6 +9,7 @@
 tap "caskroom/cask"
 tap "homebrew/bundle"
 
+brew "bash-git-prompt"
 brew "bash"
 brew "ctags"
 brew "git"
