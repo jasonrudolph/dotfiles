@@ -20,11 +20,10 @@ if [ -f ~/.localrc ]; then
 fi
 
 # configure magicmonty/bash-git-prompt
-GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_FETCH_REMOTE_STATUS=0
 GIT_PROMPT_SHOW_UNTRACKED_FILES=all
 GIT_PROMPT_SHOW_CHANGED_FILES_COUNT=0
-GIT_PROMPT_THEME=Solarized
+GIT_PROMPT_THEME=Custom
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
