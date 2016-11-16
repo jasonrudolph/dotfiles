@@ -120,7 +120,7 @@ atom.commands.add 'atom-text-editor',
     cursorPosition = textEditor.getCursorScreenPosition()
     pixelPositionForCursorPosition =
       textEditorElement.pixelPositionForScreenPosition(cursorPosition)
-    halfScreenHeight = textEditor.getHeight() / 2
+    halfScreenHeight = textEditorElement.getHeight() / 2
     scrollTop = pixelPositionForCursorPosition.top - halfScreenHeight
     textEditorElement.setScrollTop(scrollTop)
 
