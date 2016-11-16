@@ -132,7 +132,7 @@ atom.commands.add 'atom-text-editor',
     cursorPosition = textEditor.getCursorScreenPosition()
     scrollBottomPosition = [cursorPosition.row + 1, cursorPosition.column]
     pixelPositionForScrollBottomPosition =
-      textEditor.pixelPositionForScreenPosition(scrollBottomPosition)
+      textEditorElement.pixelPositionForScreenPosition(scrollBottomPosition)
     textEditorElement.setScrollBottom(pixelPositionForScrollBottomPosition.top)
 
   # Move the cursor to the next diff in the editor, and then scroll the view
