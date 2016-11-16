@@ -110,7 +110,7 @@ atom.commands.add 'atom-text-editor',
     cursorPosition = textEditor.getCursorScreenPosition()
     pixelPositionForCursorPosition =
       textEditorElement.pixelPositionForScreenPosition(cursorPosition)
-    textEditor.setScrollTop(pixelPositionForCursorPosition.top)
+    textEditorElement.setScrollTop(pixelPositionForCursorPosition.top)
 
   # Approximate Vim's "zz" motion: Scroll the view such that the line containing
   # the cursor is vertically centered in the view.
