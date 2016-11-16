@@ -133,7 +133,7 @@ atom.commands.add 'atom-text-editor',
     scrollBottomPosition = [cursorPosition.row + 1, cursorPosition.column]
     pixelPositionForScrollBottomPosition =
       textEditor.pixelPositionForScreenPosition(scrollBottomPosition)
-    textEditor.setScrollBottom(pixelPositionForScrollBottomPosition.top)
+    textEditorElement.setScrollBottom(pixelPositionForScrollBottomPosition.top)
 
   # Move the cursor to the next diff in the editor, and then scroll the view
   # such that the line containing the cursor is vertically centered in the view.
