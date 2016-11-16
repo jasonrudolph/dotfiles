@@ -122,7 +122,7 @@ atom.commands.add 'atom-text-editor',
       textEditorElement.pixelPositionForScreenPosition(cursorPosition)
     halfScreenHeight = textEditor.getHeight() / 2
     scrollTop = pixelPositionForCursorPosition.top - halfScreenHeight
-    textEditor.setScrollTop(scrollTop)
+    textEditorElement.setScrollTop(scrollTop)
 
   # Approximate Vim's "zb" motion: Scroll the view such that the line containing
   # the cursor is at the bottom of the view.
