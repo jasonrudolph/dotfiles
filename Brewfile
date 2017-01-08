@@ -21,6 +21,8 @@ brew "tree"
 brew "wget"
 
 cask "betterzipql"
+cask "hammerspoon"
+cask "karabiner-elements"
 cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlstephen"
