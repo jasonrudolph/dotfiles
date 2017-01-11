@@ -5,6 +5,9 @@
     enableAutoActivation: false
     minimumWordLength: 1
   core:
+    customFileTypes: {
+      "source.ruby": ["god"]
+    }
     destroyEmptyPanes: false
     disabledPackages: [
       "nvatom"
