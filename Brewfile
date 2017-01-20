@@ -20,6 +20,7 @@ brew "the_silver_searcher"
 brew "tree"
 brew "wget"
 
+cask "atom"
 cask "betterzipql"
 cask "hammerspoon"
 cask "karabiner-elements"
