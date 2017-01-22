@@ -1,32 +1,46 @@
 "*":
+  "activate-power-mode":
+    autoToggle: false
   "autocomplete-emojis":
     enableUnicodeEmojis: false
   "autocomplete-plus":
     enableAutoActivation: false
     minimumWordLength: 1
   core:
-    customFileTypes: {
-      "source.ruby": ["god"]
-    }
+    customFileTypes:
+      "source.ruby": [
+        "god"
+      ]
     destroyEmptyPanes: false
     disabledPackages: [
       "nvatom"
+      "branch-status"
+      "linter"
+      "linter-rubocop"
+      "indent-guide-improved"
     ]
     ignoredNames: [
       ".DS_Store"
       ".git"
       "vendor"
     ]
+    telemetryConsent: "no"
+    useCustomTitleBar: true
   editor:
     autoIndentOnPaste: false
     fontSize: 11
     invisibles: {}
     scrollPastEnd: true
+    showIndentGuide: true
+  "file-icons":
+    onChanges: true
   "find-and-replace":
     openProjectFindResultsInRightPane: true
   "git-projects":
     maxDepth: 1
     rootPath: "~/github;~/src"
+  "highlight-line":
+    enableBackgroundColor: false
   "markdown-writer": {}
   "merge-conflicts":
     gitPath: "bin/git"
@@ -46,6 +60,12 @@
       "source.gfm"
       "text.git-commit"
     ]
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   tabs:
     enableVcsColoring: true
   welcome:
