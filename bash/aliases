@@ -60,3 +60,6 @@ alias top-10-shell-commands="history | cut -c8- | cut -d' ' -f1 | sort | uniq -c
 # ip addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
+
+# kill stuff to fix camera detection in Zoom video conferencing
+alias kill-camera="sudo killall VDCAssistant"
