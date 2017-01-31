@@ -53,6 +53,10 @@ override_git_prompt_colors() {
   # GIT_PROMPT_SYMBOLS_BEHIND="↓·"            # The symbol for "n versions behind of origin"
   # GIT_PROMPT_SYMBOLS_PREHASH=":"            # Written before hash of commit, if no name could be found
   # GIT_PROMPT_SYMBOLS_NO_REMOTE_TRACKING="L" # This symbol is written after the branch, if the branch is not tracked
+
+  function prompt_callback {
+    gp_set_window_title "$(gp_truncate_pwd)"
+  }
 }
 
 reload_git_prompt_colors "Custom"
