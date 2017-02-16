@@ -45,7 +45,6 @@ alias rg='script/rails generate'
 alias rdfl='rake db:fixtures:load'
 alias rdm='rake db:migrate'
 alias rst='touch tmp/restart.txt'
-alias rmate='mate *.rb *.yml *.watchr Guardfile Rakefile README Gemfile *.markdown *.md app bin config doc examples db lib public script spec test stories features *.taskpaper'
 
 # misc
 alias c=cd
