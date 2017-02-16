@@ -18,6 +18,7 @@ brew "jq"
 brew "switchaudio-osx"
 brew "the_silver_searcher"
 brew "tree"
+brew "watch"
 brew "wget"
 
 cask "atom"
