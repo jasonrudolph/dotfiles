@@ -1,10 +1,6 @@
 # atom
 alias e="atom-beta ."
 
-# boxen
-alias boxon='boxen --enable-services'
-alias boxoff='boxen --disable-services'
-
 # bundler
 alias b="bundle"
 alias bl="b --local"
