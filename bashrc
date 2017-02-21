@@ -1,11 +1,3 @@
-PLATFORM='unknown'
-unamestr=`uname`
-if [[ "$unamestr" == 'Darwin' ]]; then
-  PLATFORM='osx'
-elif [[ "$unamestr" == 'Linux' ]]; then
-  PLATFORM='linux'
-fi
-
 eval "$(rbenv init -)"
 
 source ~/.bash/completions
