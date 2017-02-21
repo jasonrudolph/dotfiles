@@ -2,5 +2,3 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH="bin:~/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-
-export CLASSPATH=.:/usr/local/Cellar/clojure/1.4.0/clojure-1.4.0.jar
