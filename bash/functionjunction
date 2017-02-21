@@ -2,6 +2,12 @@
 
 # Welcome to Function Junction: home of useful functions
 
+# echo the given command and then run it
+echo_and_run() {
+  echo "🐳  $@"
+  eval "$@"
+}
+
 # Credit: https://gist.github.com/1321338
 function extract {
   echo Extracting $1 ...
