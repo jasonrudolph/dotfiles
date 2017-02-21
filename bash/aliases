@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # atom
 alias e="atom-beta ."
 
