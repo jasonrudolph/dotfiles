@@ -12,8 +12,7 @@ These are config files to set up a system the way I like it.
 
 ## Environment
 
-I am running on Mac OS X, but I hope to gradually adapt this project to
-work on my Linux systems as well.
+I am running on macOS, but I hope to gradually adapt this project to work on my Linux systems as well.
 
 I use bash as my shell.
 
