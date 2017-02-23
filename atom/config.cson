@@ -9,7 +9,8 @@
   core:
     customFileTypes:
       "source.ruby": [
-        "god"
+        "god",
+        "pp"
       ]
     destroyEmptyPanes: false
     disabledPackages: [
