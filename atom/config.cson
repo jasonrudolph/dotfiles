@@ -26,7 +26,11 @@
       "vendor"
     ]
     telemetryConsent: "no"
-    useCustomTitleBar: true
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+    titleBar: "custom"
   editor:
     autoIndentOnPaste: false
     fontSize: 11
