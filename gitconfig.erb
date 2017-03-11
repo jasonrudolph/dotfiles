@@ -29,7 +29,7 @@
   # call `git show --format=full <ref>`.
   #
   # If no ref is specified, use HEAD as the ref.
-  showf = "!f() { ref="$@"; if [ $# -eq 0 ]; then ref="HEAD"; fi; git rev-parse $ref | pbcopy; git show --format=full $ref; }; f"
+  showf = "!f() { ref="$@"; if [ $# -eq 0 ]; then ref="HEAD"; fi; git rev-parse $ref | pbcopy; git show --format=fuller $ref; }; f"
 
   # Rename [branch] to z-[branch]
   #
