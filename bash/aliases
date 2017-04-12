@@ -13,7 +13,7 @@ alias be="b exec"
 alias g='hub'
 __git_complete g _git # enable bash completion for the `g` alias
 alias gl='git pull --prune'
-alias gp='git push'
+alias gp='git push -u origin head'
 alias gd='git diff'
 alias gdh='git diff HEAD'
 alias gap="git add -p"
