@@ -10,9 +10,13 @@
 '.github-StagingView':
   'ctrl-j': 'core:focus-next'
   'ctrl-k': 'core:focus-previous'
+  'ctrl-h': 'core:move-left'
 
 '.github-CommitView-editor atom-text-editor:not([mini])':
   'ctrl-k': 'core:focus-previous'
+
+'.github-FilePatchView':
+  'ctrl-l': 'core:move-right'
 
 'atom-workspace atom-text-editor:not(.mini)':
   'ctrl-a': 'editor:move-to-beginning-of-line'
