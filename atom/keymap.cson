@@ -7,6 +7,13 @@
   'ctrl-|': 'pane:split-right-and-copy-active-item'
   'ctrl--': 'pane:split-down-and-copy-active-item'
 
+'.github-StagingView':
+  'ctrl-j': 'core:focus-next'
+  'ctrl-k': 'core:focus-previous'
+
+'.github-CommitView-editor atom-text-editor:not([mini])':
+  'ctrl-k': 'core:focus-previous'
+
 'atom-workspace atom-text-editor:not(.mini)':
   'ctrl-a': 'editor:move-to-beginning-of-line'
   'ctrl-;': 'editor:delete-to-end-of-line'
