@@ -150,3 +150,13 @@ atom.commands.add 'atom-text-editor',
     editorView = atom.views.getView(editor)
     atom.commands.dispatch editorView, "git-diff:move-to-previous-diff"
     atom.commands.dispatch editorView, "dot-atom:scroll-cursor-to-center"
+
+focusTracer = (event) ->
+  console.log 'window.focus =', event.target
+
+atom.commands.add 'atom-workspace',
+  # Log each time focus changes to a new element in Atom's UI.
+  'me:trace-focus': (event) -> window.addEventListener 'focusin', focusTracer
+
+  # Stop logging each time focus changes to a new element in Atom's UI.
+  'me:untrace-focus': (event) -> window.removeEventListener 'focusin', focusTracer
