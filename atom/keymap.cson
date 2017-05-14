@@ -22,15 +22,15 @@
   'ctrl-a': 'editor:move-to-beginning-of-line'
   'ctrl-;': 'editor:delete-to-end-of-line'
 
-  'ctrl-g j': 'dot-atom:center-next-diff'
-  'ctrl-g k': 'dot-atom:center-previous-diff'
+  'ctrl-g j': 'me:center-next-diff'
+  'ctrl-g k': 'me:center-previous-diff'
 
-  'ctrl-. h': 'dot-atom:move-to-top-visible-line'
-  'ctrl-. m': 'dot-atom:move-to-middle-visible-line'
-  'ctrl-. l': 'dot-atom:move-to-bottom-visible-line'
-  'ctrl-. t': 'dot-atom:scroll-cursor-to-top'
-  'ctrl-. z': 'dot-atom:scroll-cursor-to-center'
-  'ctrl-. b': 'dot-atom:scroll-cursor-to-bottom'
+  'ctrl-. h': 'me:move-to-top-visible-line'
+  'ctrl-. m': 'me:move-to-middle-visible-line'
+  'ctrl-. l': 'me:move-to-bottom-visible-line'
+  'ctrl-. t': 'me:scroll-cursor-to-top'
+  'ctrl-. z': 'me:scroll-cursor-to-center'
+  'ctrl-. b': 'me:scroll-cursor-to-bottom'
 
   'ctrl-/': 'smalls:start'
 
@@ -44,8 +44,8 @@
   'alt-cmd-m': 'maximize-panes:maximize'
 
 'atom-workspace':
-  'alt-cmd-ctrl-b': 'dot-atom:demo'
-  'alt-cmd-s': 'dot-atom:save-all'
+  'alt-cmd-ctrl-b': 'me:demo'
+  'alt-cmd-s': 'me:save-all'
 
 'atom-workspace, .command-palette atom-text-editor':
   'cmd-p': 'command-palette:toggle'
