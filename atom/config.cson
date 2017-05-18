@@ -54,10 +54,8 @@
     directory: "/Users/j/.notes"
   nvatom:
     directory: "/Users/j/.notes"
-  "one-dark-ui":
-    layoutMode: "Compact"
-  "one-light-ui":
-    layoutMode: "Compact"
+  "one-dark-ui": {}
+  "one-light-ui": {}
   "outdoor-theme":
     lightLevelToSwitch: 5904360
   "spell-check":
@@ -72,6 +70,7 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     syncHorizontalScroll: true
+  "status-bar": {}
   tabs:
     enableVcsColoring: true
   welcome:
