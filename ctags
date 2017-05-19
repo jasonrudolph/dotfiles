@@ -23,5 +23,6 @@
 --regex-JavaScript=/(,|^|\*\/)[ \t]*(while|if|for|function|([A-Za-z_$][A-Za-z0-9_$]+))[ \t]*\([^)]*\)[ \t]*\{/\3/,function/
 --regex-JavaScript=/(,|^|\*\/)[ \t]*get[ \t]+([A-Za-z_$][A-Za-z0-9_$]+)[ \t]*\([ \t]*\)[ \t]*\{/get \2/,function/
 --regex-JavaScript=/(,|^|\*\/)[ \t]*set[ \t]+([A-Za-z_$][A-Za-z0-9_$]+)[ \t]*\([ \t]*([A-Za-z_$][A-Za-z0-9_$]+)?[ \t]*\)[ \t]*\{/set \2/,function/
+--regex-JavaScript=/class[ \t]+([A-Za-z0-9._$]+)[ \t]*/\1/c,class/
 
 --regex-ruby=/^[ \t]*scope[ \t]*:([a-zA-Z0-9_]+)/\1/
