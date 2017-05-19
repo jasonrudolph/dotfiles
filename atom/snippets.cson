@@ -66,3 +66,23 @@
   "Create Jasmine spy":
     prefix: "spy"
     body: 'jasmine.createSpy("${1:description}")$2'
+
+".source.js": {
+  "It block": {
+    prefix: "i"
+    body: """
+      it('$1', () => {
+        $2
+      })
+    """
+  }
+
+  "Describe block": {
+    prefix: "de"
+    body: """
+      describe('${1:description}', () => {
+        ${2:body}
+      })
+    """
+  }
+}
