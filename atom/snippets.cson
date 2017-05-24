@@ -85,4 +85,8 @@
       })
     """
   }
+
+  "Expectation":
+    prefix: "ex"
+    body: "expect($1).to$2($3)"
 }
