@@ -31,7 +31,7 @@
         ${2:body}
     """
   "It block":
-    prefix: "i"
+    prefix: "it"
     body: """
       it "$1", ->
         $2
@@ -69,7 +69,7 @@
 
 ".source.js": {
   "It block": {
-    prefix: "i"
+    prefix: "it"
     body: """
       it('$1', () => {
         $2
