@@ -53,3 +53,7 @@ function toggleDoNotDisturb()
   hs.osascript.applescript(applescript)
 end
 hs.urlevent.bind("toggle-do-not-disturb", toggleDoNotDisturb)
+
+-- TODO Consider auto-generating an HTML bookmarks file containing all of URLs
+-- that are bound to Hammerspoon functions, so that LaunchBar can automatically
+-- add those URLs to its index.
