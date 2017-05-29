@@ -54,6 +54,25 @@ function toggleDoNotDisturb()
 end
 hs.urlevent.bind("toggle-do-not-disturb", toggleDoNotDisturb)
 
+--------------------------------------------------------------------------------
+--- Function
+--- Determine whether "Do Not Disturb" is enabled.
+---
+--- Parameters:
+---  * None
+---
+--- Returns:
+---  * A boolean value indicating whether "Do Not Disturb" is enabled.
+--------------------------------------------------------------------------------
+function isDoNotDisturbEnabled()
+  local command =
+    'defaults -currentHost read com.apple.notificationcenterui doNotDisturb'
+
+  mode, _, _, _ = hs.execute(command)
+
+  return tonumber(mode) == 1
+end
+
 -- TODO Consider auto-generating an HTML bookmarks file containing all of URLs
 -- that are bound to Hammerspoon functions, so that LaunchBar can automatically
 -- add those URLs to its index.
