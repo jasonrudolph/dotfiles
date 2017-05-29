@@ -1,4 +1,4 @@
-require('keyboard/init') -- Load Hammerspoon bits from https://github.com/jasonrudolph/keyboard
+require('keyboard') -- Load Hammerspoon bits from https://github.com/jasonrudolph/keyboard
 
 --------------------------------------------------------------------------------
 -- Display a reminder every 15 minutes encouraging excellent posture.
