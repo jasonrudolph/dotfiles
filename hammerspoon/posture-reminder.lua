@@ -2,6 +2,8 @@
 -- Display a reminder every 15 minutes encouraging excellent posture.
 --------------------------------------------------------------------------------
 function showPostureReminder()
+  if isScreenSharingModeEnabled() then return end
+
   local focusedWindow = hs.window.focusedWindow()
 
   -- Display the reminder in a way that is hard to ignore and requires

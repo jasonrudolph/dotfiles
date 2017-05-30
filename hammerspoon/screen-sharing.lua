@@ -1,5 +1,22 @@
 require('do-not-disturb')
-require('posture-reminder')
+
+-- At startup, use "Do Not Disturb" mode to determine whether we're in screen
+-- sharing mode
+_isScreenSharingModeEnabled = isDoNotDisturbEnabled()
+
+--------------------------------------------------------------------------------
+--- Function
+--- Determine whether screen sharing mode is enabled.
+---
+--- Parameters:
+---  * None
+---
+--- Returns:
+---  * A boolean value indicating whether screen sharing mode is enabled.
+--------------------------------------------------------------------------------
+function isScreenSharingModeEnabled()
+  return _isScreenSharingModeEnabled
+end
 
 --------------------------------------------------------------------------------
 --- Function
@@ -68,18 +85,17 @@ end
 -- dog person.
 --------------------------------------------------------------------------------
 function toggleScreenSharingMode()
-  -- Use "Do Not Disturb" mode to determine whether we're in screen sharing mode
-  if isDoNotDisturbEnabled() then
-    postureReminderTimer:start()
-    toggleDoNotDisturb()
+  if _isScreenSharingModeEnabled then
+    setDoNotDisturb(false)
 
     hs.alert('Say goodbye to screen sharing mode 👋')
   else
-    postureReminderTimer:stop()
     killAppsNotWhitelistedForScreenSharing()
-    toggleDoNotDisturb()
+    setDoNotDisturb(true)
 
     hs.alert("It's probably safe to share your screen now. Just don't do anything stupid, OK? 😇")
   end
+
+  _isScreenSharingModeEnabled = (not _isScreenSharingModeEnabled)
 end
 hs.urlevent.bind("toggle-screen-sharing-mode", toggleScreenSharingMode)
