@@ -86,6 +86,24 @@
     """
   }
 
+  "Before each": {
+    prefix: "be"
+    body: """
+      beforeEach(() => {
+        $1
+      }
+    """
+  }
+
+  "After each": {
+    prefix: "ae"
+    body: """
+      afterEach(() => {
+        $1
+      }
+    """
+  }
+
   "Expectation":
     prefix: "ex"
     body: "expect($1).to$2($3)"
