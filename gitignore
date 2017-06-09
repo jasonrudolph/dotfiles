@@ -6,4 +6,5 @@
 /.tags_sorted_by_file
 /atom/blob-store
 /atom/compile-cache
+/atom/github.cson
 /tags
