@@ -36,6 +36,23 @@ atom.commands.add 'atom-workspace', 'me:close-all-panes', ->
   atom.workspace.getPanes().forEach (pane) ->
     pane.destroy()
 
+# If the right dock is focused, close it. If the right dock is not focused,
+# display the right dock and focus it.
+#
+# I bind this command a keyboard shortcut so that I can use a single keyboard
+# shortcut to go straight to the Git tab from anywhere inside Atom, and then use
+# that same keyboard shortcut to close the Git tab when I'm done committing my
+# changes.
+atom.commands.add 'atom-workspace', 'me:focus-or-close-right-dock', ->
+  workspaceActivePaneItem = atom.workspace.getActivePaneItem()
+  rightDockActivePaneItem = atom.workspace.getRightDock().getActivePaneItem()
+  isRightDockFocused = workspaceActivePaneItem == rightDockActivePaneItem
+
+  if isRightDockFocused
+    atom.commands.dispatch atom.workspace.getElement(), "window:toggle-right-dock"
+  else
+    atom.workspace.getRightDock().activate()
+
 # Save all open buffers, even if they're not modified. This behavior is useful
 # when you're using a file watcher to trigger scripts (e.g., using guard to
 # run your Ruby tests).

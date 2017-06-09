@@ -7,13 +7,6 @@
   'ctrl-|': 'pane:split-right-and-copy-active-item'
   'ctrl--': 'pane:split-down-and-copy-active-item'
 
-'.github-Panel':
-  # If the github panel is *not* currently focused, the github package maps
-  # ctrl-9 to open and focus the github panel. With the keymap below, we can use
-  # ctrl-9 to *also* do the opposite: If you're in the github panel, ctrl-9 will
-  # close the github panel and return focus to the workspace center.
-  'ctrl-9': 'github:toggle-git-tab'
-
 '.github-StagingView':
   'ctrl-j': 'core:focus-next'
   'ctrl-k': 'core:focus-previous'
@@ -53,6 +46,7 @@
 'atom-workspace':
   'alt-cmd-ctrl-b': 'me:demo'
   'alt-cmd-s': 'me:save-all'
+  'ctrl-9': 'me:focus-or-close-right-dock'
 
 'atom-workspace, .command-palette atom-text-editor':
   'cmd-p': 'command-palette:toggle'
