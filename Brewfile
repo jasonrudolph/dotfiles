@@ -32,3 +32,5 @@ cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-json"
+
+cask "caskroom/versions/sublime-text2"
