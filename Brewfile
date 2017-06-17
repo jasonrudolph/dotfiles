@@ -23,7 +23,6 @@ brew "tree"
 brew "watch"
 brew "wget"
 
-cask "atom"
 cask "bartender"
 cask "betterzipql"
 cask "dropbox"
