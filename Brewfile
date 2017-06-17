@@ -23,6 +23,7 @@ brew "wget"
 
 cask "atom"
 cask "betterzipql"
+cask "dropbox"
 cask "hammerspoon"
 cask "iterm2"
 cask "karabiner-elements"
