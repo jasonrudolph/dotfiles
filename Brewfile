@@ -37,6 +37,7 @@ cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-json"
 cask "remember-the-milk"
+cask "screenhero"
 cask "skype"
 cask "zoomus"
 
