@@ -37,5 +37,6 @@ cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-json"
 cask "remember-the-milk"
+cask "zoomus"
 
 cask "caskroom/versions/sublime-text2"
