@@ -36,7 +36,6 @@
     fontSize: 11
     invisibles: {}
     scrollPastEnd: true
-    showIndentGuide: true
   "file-icons":
     onChanges: true
     revealTreeView: false
