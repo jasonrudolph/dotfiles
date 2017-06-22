@@ -73,6 +73,15 @@
     body: 'jasmine.createSpy("${1:description}")$2'
 
 ".source.js": {
+  "Test block": {
+    prefix: "test"
+    body: """
+      test('$1', function() {
+        $2
+      })
+    """
+  }
+
   "It block": {
     prefix: "it"
     body: """
