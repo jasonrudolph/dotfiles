@@ -56,6 +56,7 @@ function killAppsNotWhitelistedForScreenSharing()
     'LaunchBar',
     'iTerm2',
     'Screenhero',
+    'Slack',
   }
 
   local appsToKill = hs.fnutils.filter(appsWithWindows(), function(app)
