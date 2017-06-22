@@ -1,5 +1,8 @@
 .apm
 .node-gyp
+blob-store
+compile-cache
+github.cson
 packages
 snapshot-cache
 storage
