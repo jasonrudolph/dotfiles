@@ -1,5 +1,9 @@
 require('keyboard') -- Load Hammerspoon bits from https://github.com/jasonrudolph/keyboard
 
+-- Make Hammerspoon accessible via the command line
+-- http://www.hammerspoon.org/docs/hs.ipc.html
+require("hs.ipc")
+
 --------------------------------------------------------------------------------
 -- Load Hammerspoon bits from https://github.com/jasonrudolph/dotfiles
 --------------------------------------------------------------------------------
