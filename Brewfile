@@ -26,6 +26,7 @@ brew "wget"
 
 cask "bartender"
 cask "betterzipql"
+cask "caffeine"
 cask "dropbox"
 cask "hammerspoon"
 cask "iterm2"
