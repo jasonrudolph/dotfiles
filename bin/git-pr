@@ -2,7 +2,7 @@
 #/ Usage: git pr [<branch>]
 #/ Open the pull request page for <branch>, or the current branch if not
 #/ specified. Lands on the new pull request page when no PR exists yet.
-#/ The branch must already be pushed
+#/ The branch must already be pushed.
 
 # Credit: https://github.com/pengwynn/dotfiles/blob/a549f0e/bin/git-pr
 # Based on script from @rtomayko
