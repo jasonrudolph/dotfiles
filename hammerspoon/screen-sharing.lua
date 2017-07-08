@@ -1,5 +1,27 @@
 require('do-not-disturb')
 
+-- If an app has windows, and the app is not in this list, entering screen
+-- sharing mode will quit that app.
+WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
+  'Atom',
+  'Bartender 2',
+  'Dash',
+  'Dashboard',
+  'Google Chrome',
+  'Hackable Slack Client',
+  'Hammerspoon',
+  'LaunchBar',
+  'iTerm2',
+  'Screenhero',
+  'Slack',
+}
+
+-- Apps to kill when entering screen sharing mode and to reopen when exiting
+-- screen sharing mode.
+ESSENTIAL_APPS_ONLY_FOR_NON_SCREEN_SHARING_MODE = {
+  'Time Out'
+}
+
 -- At startup, use "Do Not Disturb" mode to determine whether we're in screen
 -- sharing mode
 _isScreenSharingModeEnabled = isDoNotDisturbEnabled()
@@ -45,29 +67,31 @@ function appsWithWindows()
 end
 
 function killAppsNotWhitelistedForScreenSharing()
-  local APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
-    'Atom',
-    'Bartender 2',
-    'Dash',
-    'Dashboard',
-    'Google Chrome',
-    'Hackable Slack Client',
-    'Hammerspoon',
-    'LaunchBar',
-    'iTerm2',
-    'Screenhero',
-    'Slack',
-  }
-
   local appsToKill = hs.fnutils.filter(appsWithWindows(), function(app)
     local isAppWhitelisted =
-      hs.fnutils.contains(APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE, app:name())
+      hs.fnutils.contains(WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE, app:name())
 
     return (not isAppWhitelisted)
   end)
 
   hs.fnutils.each(appsToKill, function(app)
     app:kill()
+  end)
+end
+
+function killAppsExclusiveToNonScreenSharingMode()
+  local appsToKill = hs.fnutils.filter(hs.application.runningApplications(), function(app)
+    return hs.fnutils.contains(ESSENTIAL_APPS_ONLY_FOR_NON_SCREEN_SHARING_MODE, app:name())
+  end)
+
+  hs.fnutils.each(appsToKill, function(app)
+    app:kill()
+  end)
+end
+
+function openAppsExclusiveToNonScreenSharingMode()
+  hs.fnutils.each(ESSENTIAL_APPS_ONLY_FOR_NON_SCREEN_SHARING_MODE, function(app)
+    hs.application.open(app)
   end)
 end
 
@@ -87,10 +111,12 @@ end
 --------------------------------------------------------------------------------
 function toggleScreenSharingMode()
   if _isScreenSharingModeEnabled then
+    openAppsExclusiveToNonScreenSharingMode()
     setDoNotDisturb(false)
 
     hs.alert('Say goodbye to screen sharing mode 👋')
   else
+    killAppsExclusiveToNonScreenSharingMode()
     killAppsNotWhitelistedForScreenSharing()
     setDoNotDisturb(true)
 
