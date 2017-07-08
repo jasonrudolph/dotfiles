@@ -4,18 +4,6 @@
 
 ################################################################################
 
-# An example command to demonstrate the ability to define commands in
-# init.coffee. See the corresponding keymap in keymap.cson.
-#
-# It's useful to define commands in init.coffee if you want to:
-# - Have a sandbox for experimenting with new commands before publishing them in
-#   a package.
-# - Define tiny commands without the overhead of creating an entire package.
-# - Define commands for your own private use (e.g., commands that you might not
-#   want to share for some reason).
-atom.commands.add 'atom-workspace', 'me:demo', ->
-  atom.notifications.addInfo "Hello from me:demo"
-
 # Toggle between light and dark theme.
 atom.commands.add 'atom-workspace', 'me:toggle-theme', ->
   activeThemes = atom.themes.getActiveThemeNames()
