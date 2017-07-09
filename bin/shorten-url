@@ -1,0 +1,11 @@
+#!/bin/sh
+
+: "${BITLY_LOGIN?Must set BITLY_LOGIN}"
+: "${BITLY_API_TOKEN?Must set BITLY_API_TOKEN}"
+
+if [ $# -ne 1 ]; then
+  echo "Usage: shorten-url <url>"
+  exit 1
+fi
+
+curl "https://api-ssl.bitly.com/v3/shorten?login=$BITLY_LOGIN&apiKey=$BITLY_API_TOKEN" --data-urlencode "longUrl=$1" | jq --raw-output ".data.url"
