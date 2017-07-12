@@ -4,6 +4,10 @@
 // has been restored.
 ////////////////////////////////////////////////////////////////////////////////
 
+atom.commands.add('atom-text-editor', 'me:insert-hashrocket', function () {
+  atom.workspace.getActiveTextEditor().insertText('=>')
+})
+
 // Toggle between light and dark theme.
 atom.commands.add('atom-workspace', 'me:toggle-theme', function () {
   const activeThemes = atom.themes.getActiveThemeNames()

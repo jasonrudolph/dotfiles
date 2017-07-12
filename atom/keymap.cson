@@ -46,3 +46,6 @@
 
 'atom-workspace, .command-palette atom-text-editor':
   'cmd-p': 'command-palette:toggle'
+
+'atom-text-editor':
+  'ctrl-l': 'me:insert-hashrocket'
