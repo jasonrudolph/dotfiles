@@ -1,8 +1,4 @@
 'atom-workspace atom-pane, atom-workspace atom-text-editor:not(.mini)':
-  'ctrl-h': 'window:focus-pane-on-left'
-  'ctrl-j': 'window:focus-pane-below'
-  'ctrl-k': 'window:focus-pane-above'
-  'ctrl-l': 'window:focus-pane-on-right'
 
   'ctrl-|': 'pane:split-right-and-copy-active-item'
   'ctrl--': 'pane:split-down-and-copy-active-item'
