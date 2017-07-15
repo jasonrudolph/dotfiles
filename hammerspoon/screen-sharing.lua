@@ -4,6 +4,7 @@ require('do-not-disturb')
 -- sharing mode will quit that app.
 WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'Atom',
+  'Atom Beta',
   'Bartender 2',
   'Dash',
   'Dashboard',
