@@ -16,19 +16,27 @@
     disabledPackages: [
       "nvatom"
       "branch-status"
-      "linter"
       "linter-rubocop"
       "indent-guide-improved"
+      "linter"
+      "linter-jshint"
+      "linter-ui-default"
+      "busy-signal"
+      "intentions"
+      "nuclide"
     ]
     ignoredNames: [
       ".DS_Store"
       ".git"
       "vendor"
     ]
+    packagesWithKeymapsDisabled: [
+      "platformio-ide-terminal"
+    ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "nucleus-dark-ui"
+      "dracula-syntax"
     ]
     titleBar: "custom"
   editor:
@@ -57,6 +65,12 @@
   "one-light-ui": {}
   "outdoor-theme":
     lightLevelToSwitch: 5904360
+  "project-folder":
+    projectRootDirectories: [
+      "~/github"
+      "~/src"
+      "~/.dotfiles"
+    ]
   "spell-check":
     grammars: [
       "text.plain"
