@@ -8,6 +8,7 @@ require("hs.ipc")
 -- Load Hammerspoon bits from https://github.com/jasonrudolph/dotfiles
 --------------------------------------------------------------------------------
 require('do-not-disturb')
+require('layout')
 require('posture-reminder')
 require('screen-sharing')
 require('wifi')
