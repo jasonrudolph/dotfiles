@@ -76,7 +76,7 @@
   "Test block": {
     prefix: "test"
     body: """
-      test('$1', function() {
+      test('$1', () => {
         $2
       })
     """
