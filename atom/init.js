@@ -11,7 +11,7 @@ atom.commands.add('atom-workspace', 'me:toggle-theme', function () {
   if (activeThemes[0].indexOf('light') > 0) {
     atom.config.set('core.themes', ['nucleus-dark-ui', 'dracula-syntax'])
   } else {
-    atom.config.set('core.themes', ['native-ui', 'one-light-syntax'])
+    atom.config.set('core.themes', ['one-light-ui', 'one-light-syntax'])
   }
 })
 
