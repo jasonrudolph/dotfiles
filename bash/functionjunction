@@ -37,3 +37,9 @@ gcl() {
   hub clone $1 &&
   cd $(basename $1)
 }
+
+# create a file and any intermediary directories
+# Credit: https://gist.github.com/captainsafia/5e9514980a76dba4a20748c79c227f86
+touchp() {
+  mkdir -p "$(dirname "$1")/" && touch "$1"
+}
