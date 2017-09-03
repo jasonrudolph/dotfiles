@@ -32,7 +32,7 @@ function extract {
 }
 
 # git clone and cd
-# Credit https://github.com/raineorshine/dotfiles/blob/657f05e/.bashrc#L240-L244
+# Credit: https://github.com/raineorshine/dotfiles/blob/657f05e/.bashrc#L240-L244
 gcl() {
   hub clone $1 &&
   cd $(basename $1)
