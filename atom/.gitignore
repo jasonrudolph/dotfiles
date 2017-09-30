@@ -4,6 +4,7 @@ blob-store
 compile-cache
 github.cson
 packages
+recovery
 snapshot-cache
 storage
 themes
