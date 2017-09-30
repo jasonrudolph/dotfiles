@@ -47,6 +47,10 @@ alias rdfl='rake db:fixtures:load'
 alias rdm='rake db:migrate'
 alias rst='touch tmp/restart.txt'
 
+# iterm2 profile switching
+alias td='echo -e "\033]50;SetProfile=Dark\a"'
+alias tl='echo -e "\033]50;SetProfile=Light\a"'
+
 # misc
 alias c=cd
 alias reload='. ~/.bash_profile'
