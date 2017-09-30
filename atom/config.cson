@@ -66,6 +66,7 @@
   "outdoor-theme":
     lightLevelToSwitch: 5904360
   "project-folder":
+    closeItemsForRemovedProject: true
     projectRootDirectories: [
       "~/github"
       "~/src"
