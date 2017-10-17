@@ -5,7 +5,7 @@ require('do-not-disturb')
 WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'Atom',
   'Atom Beta',
-  'Bartender 2',
+  'Bartender 3',
   'Dash',
   'Dashboard',
   'Google Chrome',
