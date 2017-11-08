@@ -10,6 +10,8 @@
   "autocomplete-plus":
     enableAutoActivation: false
     minimumWordLength: 1
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
     customFileTypes:
       "source.ruby": [
