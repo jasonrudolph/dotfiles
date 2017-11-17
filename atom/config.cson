@@ -42,7 +42,7 @@
     telemetryConsent: "no"
     themes: [
       "nucleus-dark-ui"
-      "dracula-syntax"
+      "one-dark-syntax"
     ]
     titleBar: "custom"
   editor:
@@ -60,6 +60,8 @@
     rootPath: "~/github;~/src"
   "highlight-line":
     enableBackgroundColor: false
+  "linter-ui-default":
+    panelHeight: 300
   "markdown-writer": {}
   "merge-conflicts":
     gitPath: "bin/git"
@@ -78,6 +80,7 @@
       "~/src"
       "~/.dotfiles"
     ]
+  "real-time": {}
   "spell-check":
     grammars: [
       "text.plain"
