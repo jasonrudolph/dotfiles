@@ -42,6 +42,6 @@ end
 
 updateMenubar()
 
-airpodsBatteryCheckTimer = hs.timer.doEvery(30, function()
+airpodsBatteryCheckTimer = hs.timer.doEvery(15, function()
   updateMenubar()
 end)
