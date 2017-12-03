@@ -2,7 +2,6 @@
 -- Display AirPods battery charge in the macOS menubar.
 --------------------------------------------------------------------------------
 
--- TODO Style menu bar item nicely
 -- TODO Detect when airpods connect/disconnect so that we can immediately refresh the menubar
 
 function getAirpodsBatteryInfo(callback)
