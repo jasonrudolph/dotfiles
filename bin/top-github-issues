@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 # TODO Document usage 😇
+# TODO Get the repo (or other search terms) via args; don't hardcode it to atom/teletype
 
 gem "octokit", "~> 4.7.0"
 require "octokit"
