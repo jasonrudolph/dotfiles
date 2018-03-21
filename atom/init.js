@@ -26,6 +26,14 @@ atom.commands.add('atom-workspace', 'me:close-all-panes', () =>
   atom.workspace.getPanes().forEach(pane => pane.destroy())
 )
 
+// Share a Teletype portal to the workspace and copy the portal URL to the
+// clipboard for easy sharing.
+atom.commands.add('atom-workspace', 'me:share-portal-and-copy-url', async () => {
+  const teletype = atom.packages.getLoadedPackage('teletype').mainModule
+  await teletype.sharePortal()
+  atom.commands.dispatch(atom.workspace.getElement(), 'teletype:copy-portal-url')
+})
+
 // If the right dock is focused, close it. If the right dock is not focused,
 // display the right dock and focus it.
 //
