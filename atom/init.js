@@ -36,6 +36,11 @@ atom.commands.add('atom-workspace', 'teletype:share-portal', async () => {
   atom.commands.dispatch(atom.workspace.getElement(), 'teletype:copy-portal-url')
 })
 
+// Open the Settings View for Teletype.
+atom.commands.add('atom-workspace', 'teletype:open-settings', async () => {
+  atom.workspace.open(`atom://config/packages/teletype`)
+})
+
 // If the right dock is focused, close it. If the right dock is not focused,
 // display the right dock and focus it.
 //
