@@ -28,7 +28,9 @@ atom.commands.add('atom-workspace', 'me:close-all-panes', () =>
 
 // Share a Teletype portal to the workspace and copy the portal URL to the
 // clipboard for easy sharing.
-atom.commands.add('atom-workspace', 'me:share-portal-and-copy-url', async () => {
+//
+// Overrides Teletype's default 'Share Portal' command.
+atom.commands.add('atom-workspace', 'teletype:share-portal', async () => {
   const teletype = atom.packages.getLoadedPackage('teletype').mainModule
   await teletype.sharePortal()
   atom.commands.dispatch(atom.workspace.getElement(), 'teletype:copy-portal-url')
