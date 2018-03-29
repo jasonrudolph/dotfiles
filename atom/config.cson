@@ -5,6 +5,10 @@
     width: 120
   "activate-power-mode":
     autoToggle: false
+  "atom-ide-ui":
+    "atom-ide-datatip":
+      datatipDebounceDelay: 500
+    use: {}
   "autocomplete-emojis":
     enableUnicodeEmojis: false
   "autocomplete-plus":
@@ -18,6 +22,7 @@
         "god"
         "pp"
       ]
+    debugLSP: true
     destroyEmptyPanes: false
     disabledPackages: [
       "nvatom"
@@ -45,6 +50,7 @@
       "one-dark-syntax"
     ]
     titleBar: "custom"
+    uriHandlerRegistration: "always"
   editor:
     autoIndentOnPaste: false
     fontSize: 11
@@ -79,6 +85,7 @@
       "~/github"
       "~/src"
       "~/.dotfiles"
+      "~/Dropbox"
     ]
   "real-time": {}
   "spell-check":
@@ -94,8 +101,13 @@
     rightEditorColor: "green"
     syncHorizontalScroll: true
   "status-bar": {}
+  swackets:
+    colorBrackets: false
+    colorParens: true
   tabs:
     enableVcsColoring: true
+  teletype:
+    dev: {}
   welcome:
     showOnStartup: false
 ".git-commit.text":
