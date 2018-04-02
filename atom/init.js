@@ -34,6 +34,9 @@ atom.commands.add('atom-workspace', 'teletype:share-portal', async () => {
   const teletype = atom.packages.getLoadedPackage('teletype').mainModule
   await teletype.sharePortal()
   atom.commands.dispatch(atom.workspace.getElement(), 'teletype:copy-portal-url')
+  atom.notifications.addSuccess('Your portal is open for business', {
+    description: "Invite people to collaborate with you using your portal URL. It's already on your clipboard. 👌"
+  })
 })
 
 // Open the Settings View for Teletype.
