@@ -73,6 +73,10 @@
     body: 'jasmine.createSpy("${1:description}")$2'
 
 ".source.js": {
+  "for":
+    prefix: "for"
+    body: "for (let ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {\n\t${1:array}[${2:i}]$3\n}"
+
   "Test block": {
     prefix: "test"
     body: """
