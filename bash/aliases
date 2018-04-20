@@ -10,7 +10,14 @@ alias bu="b update"
 alias be="b exec"
 
 # git
-alias g='hub'
+_g() {
+  if [[ $# > 0 ]]; then
+    hub "$@"
+  else
+    hub status
+  fi
+}
+alias g=_g
 __git_complete g _git # enable bash completion for the `g` alias
 alias gl='git pull --prune'
 alias gp='git push -u origin head'
