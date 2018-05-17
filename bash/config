@@ -1,4 +1,4 @@
-export EDITOR="atom-beta"
+export EDITOR="atom"
 
 # Enable linux-style ls/cli colors
 export CLICOLOR=true
