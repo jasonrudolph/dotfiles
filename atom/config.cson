@@ -107,6 +107,7 @@
   tabs:
     enableVcsColoring: true
   teletype:
+    askBeforeJoiningPortalViaExternalApp: false
     dev: {}
   welcome:
     showOnStartup: false
