@@ -1,6 +1,23 @@
 // This stylesheet is loaded when Atom starts up and is reloaded automatically
 // when it is changed.
 
+// Zen coding, courtesy of @as-cii 🧘‍♂️💻
+//
+// Focus on your content and avoid visual noise. When you're viewing/editing a
+// file, reduce the opacity of other Atom components, including the docks, the
+// status bar, and inactive tabs. When you focus any of those components or
+// hover over them, restore their full opacity.
+atom-dock, status-bar, .tab-bar .tab {
+  opacity: 0.3;
+  transition: 0.2s;
+  &:hover, &:focus-within {
+    opacity: 1.0;
+  }
+}
+.tab-bar .tab.active {
+  opacity: 1;
+}
+
 // De-emphasize inactive panes, in order to make it easy to quickly see which
 // pane is active.
 //
