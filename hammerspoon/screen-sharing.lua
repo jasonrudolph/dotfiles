@@ -20,7 +20,6 @@ WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
 -- Apps to kill when entering screen sharing mode and to reopen when exiting
 -- screen sharing mode.
 ESSENTIAL_APPS_ONLY_FOR_NON_SCREEN_SHARING_MODE = {
-  'Time Out'
 }
 
 -- At startup, use "Do Not Disturb" mode to determine whether we're in screen
