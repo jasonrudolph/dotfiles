@@ -15,6 +15,7 @@ WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'iTerm2',
   'Screenhero',
   'Slack',
+  'Zoom',
 }
 
 -- Apps to kill when entering screen sharing mode and to reopen when exiting
