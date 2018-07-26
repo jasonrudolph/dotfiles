@@ -77,6 +77,10 @@
     prefix: 'cl'
     body: "$4console.${3:log}('${2:$1}', $1);$0"
 
+  "f":
+    prefix: "x"
+    body: '() => ${1:\\{$2\\}}'
+
   "for":
     prefix: "for"
     body: "for (let ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {\n\t${1:array}[${2:i}]$3\n}"
