@@ -1,4 +1,4 @@
-export EDITOR="atom"
+export EDITOR="atom-nightly"
 
 # Enable linux-style ls/cli colors
 export CLICOLOR=true
