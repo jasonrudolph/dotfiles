@@ -44,7 +44,7 @@
     packagesWithKeymapsDisabled: [
       "platformio-ide-terminal"
     ]
-    telemetryConsent: "no"
+    telemetryConsent: "limited"
     themes: [
       "nucleus-dark-ui"
       "one-dark-syntax"
