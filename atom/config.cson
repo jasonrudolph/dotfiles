@@ -24,18 +24,7 @@
       ]
     debugLSP: true
     destroyEmptyPanes: false
-    disabledPackages: [
-      "nvatom"
-      "branch-status"
-      "linter-rubocop"
-      "indent-guide-improved"
-      "linter"
-      "linter-jshint"
-      "linter-ui-default"
-      "busy-signal"
-      "intentions"
-      "nuclide"
-    ]
+    disabledPackages: []
     ignoredNames: [
       ".DS_Store"
       ".git"
