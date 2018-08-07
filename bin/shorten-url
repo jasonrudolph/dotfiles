@@ -8,4 +8,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-curl "https://api-ssl.bitly.com/v3/shorten?login=$BITLY_LOGIN&apiKey=$BITLY_API_TOKEN" --data-urlencode "longUrl=$1" | jq --raw-output ".data.url"
+curl "https://api-ssl.bitly.com/v3/shorten?login=$BITLY_LOGIN&apiKey=$BITLY_API_TOKEN" --data-urlencode "longUrl=$1" | jq --raw-output ".data.url" | sed 's/http:/https:/'
