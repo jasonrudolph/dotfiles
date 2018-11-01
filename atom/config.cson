@@ -1,7 +1,6 @@
 "*":
   Zen:
     softWrap: true
-    typewriter: true
     width: 120
   "activate-power-mode":
     autoToggle: false
@@ -24,21 +23,16 @@
       ]
     debugLSP: true
     destroyEmptyPanes: false
-    disabledPackages: []
     ignoredNames: [
       ".DS_Store"
       ".git"
       "vendor"
-    ]
-    packagesWithKeymapsDisabled: [
-      "platformio-ide-terminal"
     ]
     telemetryConsent: "limited"
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
     autoIndentOnPaste: false
-    fontSize: 11
     invisibles: {}
     scrollPastEnd: true
   "file-icons":
