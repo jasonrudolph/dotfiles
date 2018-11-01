@@ -34,10 +34,6 @@
       "platformio-ide-terminal"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "nucleus-dark-ui"
-      "one-dark-syntax"
-    ]
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
