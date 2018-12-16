@@ -47,6 +47,8 @@
     enableBackgroundColor: false
   "linter-ui-default":
     panelHeight: 300
+  "markdown-preview":
+    useGitHubStyle: true
   "markdown-writer": {}
   "merge-conflicts":
     gitPath: "bin/git"
