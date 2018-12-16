@@ -21,8 +21,6 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
-eval "$(nodenv init -)"
-
 # Make this lazy 'cause it adds too much slowness to starting a new shell
 nvmify() {
   export NVM_DIR="$HOME/.nvm"
