@@ -23,4 +23,4 @@ function showPostureReminder()
 
   focusedWindow:focus()
 end
-postureReminderTimer = hs.timer.doAt('00:00', '15m', showPostureReminder)
+postureReminderTimer = hs.timer.doAt('00:00', '30m', showPostureReminder)
