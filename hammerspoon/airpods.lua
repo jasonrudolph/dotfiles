@@ -2,6 +2,7 @@
 -- Display AirPods battery charge in the macOS menubar.
 --------------------------------------------------------------------------------
 
+-- TODO Once hs.battery.privateBluetoothBatteryInfo() is available in Hammerspoon 0.9.58, remove AirPodsBatteryCLI dependency and replace it with hs.battery.privateBluetoothBatteryInfo()
 -- TODO Detect when airpods connect/disconnect so that we can immediately refresh the menubar
 
 function getAirpodsBatteryInfo(callback)
