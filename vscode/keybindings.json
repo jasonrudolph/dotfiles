@@ -1,0 +1,53 @@
+[
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.showCommands"
+    },
+
+    // Semantic pane splitting
+    // - Use control+| to split panes vertically
+    // - Use control+- to split panes horizontally
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl--",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+
+    // Vim-style navigation between editor groups
+    // - Use control+h to focus the editor group on the left
+    // - Use control+j to focus the editor group on the left
+    // - Use control+k to focus the editor group on the left
+    // - Use control+l to focus the editor group on the left
+    {
+        "key": "ctrl-h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl-j",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl-k",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl-l",
+        "command": "workbench.action.focusRightGroup"
+    },
+
+    // Use control+g j to go down to the next change
+    // Use control+g k to go up to the previous change
+    {
+        "key": "ctrl+g j",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+g k",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+]
