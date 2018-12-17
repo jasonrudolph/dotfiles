@@ -1,9 +1,4 @@
 [
-    {
-        "key": "cmd+p",
-        "command": "workbench.action.showCommands"
-    },
-
     // Semantic pane splitting
     // - Use control+| to split panes vertically
     // - Use control+- to split panes horizontally
@@ -56,9 +51,16 @@
         "key": "ctrl+9",
         "command": "workbench.view.scm",
         "when": "activeViewlet != 'workbench.view.scm'"
-    }, {
+    },
+    {
         "key": "ctrl+9",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "activeViewlet == 'workbench.view.scm'"
+    },
+
+    // Other customizations
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.showCommands"
     },
 ]
