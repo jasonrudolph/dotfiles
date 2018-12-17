@@ -75,4 +75,12 @@
         "key": "cmd+p",
         "command": "workbench.action.showCommands"
     },
+    {
+        "key": "cmd+k cmd+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "editor.action.transformToLowercase"
+    },
 ]
