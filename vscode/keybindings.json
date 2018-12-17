@@ -46,6 +46,18 @@
         "when": "editorTextFocus"
     },
 
+    // Use command+\ to show/hide the explorer sidebar
+    {
+        "key": "cmd+\\",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "activeViewlet != 'workbench.view.explorer'"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "activeViewlet = 'workbench.view.explorer'"
+    },
+
     // Use control+9 to show/hide the SCM sidebar
     {
         "key": "ctrl+9",
