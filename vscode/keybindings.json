@@ -50,4 +50,15 @@
         "command": "workbench.action.editor.previousChange",
         "when": "editorTextFocus"
     },
+
+    // Use control+9 to show/hide the SCM sidebar
+    {
+        "key": "ctrl+9",
+        "command": "workbench.view.scm",
+        "when": "activeViewlet != 'workbench.view.scm'"
+    }, {
+        "key": "ctrl+9",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
 ]
