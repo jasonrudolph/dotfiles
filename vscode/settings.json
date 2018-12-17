@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontSize": 11,
+    "telemetry.enableTelemetry": false,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "openInGitHub.providerType": "github",
+    "openInGitHub.useCommitSHAInURL": true,
+    "eslint.autoFixOnSave": true,
+    "git.enableCommitSigning": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on"
+}
