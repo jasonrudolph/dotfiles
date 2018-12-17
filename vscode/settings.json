@@ -11,5 +11,10 @@
     "git.enableCommitSigning": true,
     "workbench.colorTheme": "Visual Studio Dark",
     "editor.tabSize": 2,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
     "editor.tabCompletion": "on"
 }
