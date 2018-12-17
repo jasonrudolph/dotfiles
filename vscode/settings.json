@@ -4,7 +4,6 @@
     "telemetry.enableTelemetry": false,
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
     "openInGitHub.providerType": "github",
     "openInGitHub.useCommitSHAInURL": true,
     "eslint.autoFixOnSave": true,
@@ -16,5 +15,6 @@
         "statusBar.noFolderBackground": "#222225",
         "statusBar.debuggingBackground": "#511f1f"
     },
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "editor.autoIndent": false
 }
