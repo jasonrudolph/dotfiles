@@ -70,7 +70,7 @@
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
-    // Other customizations
+    // Miscellaneous core customizations
     {
         "key": "cmd+p",
         "command": "workbench.action.showCommands"
@@ -82,5 +82,11 @@
     {
         "key": "cmd+k cmd+l",
         "command": "editor.action.transformToLowercase"
+    },
+
+    // Miscellaneous extension customizations
+    {
+        "key": "alt+g c",
+        "command": "extension.copyGitHubLinkToClipboard"
     },
 ]
