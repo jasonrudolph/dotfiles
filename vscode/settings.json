@@ -8,7 +8,6 @@
     "openInGitHub.useCommitSHAInURL": true,
     "eslint.autoFixOnSave": true,
     "git.enableCommitSigning": true,
-    "workbench.colorTheme": "Visual Studio Dark",
     "editor.tabSize": 2,
     "workbench.colorCustomizations": {
         "statusBar.background": "#303030",
@@ -16,5 +15,18 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "editor.tabCompletion": "on",
-    "editor.autoIndent": false
+    "editor.autoIndent": false,
+    "workbench.colorTheme": "Default Dark+",
+    "dayNightThemeSwitcher.dayTheme": "Default Light+",
+    "dayNightThemeSwitcher.nightTheme": "Default Dark+",
+    "dayNightThemeSwitcher.dayThemeCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "dayNightThemeSwitcher.nightThemeCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
 }
