@@ -30,4 +30,9 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
 }
