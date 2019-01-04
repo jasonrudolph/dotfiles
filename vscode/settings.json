@@ -35,4 +35,7 @@
         "comments": false,
         "strings": false
     },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+    },
 }
