@@ -38,4 +38,5 @@
     "[markdown]": {
         "editor.wordWrap": "on",
     },
+    "cSpell.diagnosticLevel": "Warning",
 }
