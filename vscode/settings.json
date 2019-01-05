@@ -39,4 +39,6 @@
         "editor.wordWrap": "on",
     },
     "cSpell.diagnosticLevel": "Warning",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
 }
