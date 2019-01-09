@@ -70,10 +70,54 @@
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
+    // Use command+enter to stage selected changes in the diff view
+    {
+        "key": "cmd+enter",
+        "command": "git.stageSelectedRanges",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
+
+    // Use standard macOS tab navigation to go to previous/next "tabs" in the panel
+    {
+        "key": "cmd+shift+[",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "cmd+shift+]",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+
+    // Use alt+command+down to go to definition
+    // Use alt+command+up to go back
+    {
+        "key": "alt+cmd+down",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+
     // Miscellaneous core customizations
     {
         "key": "cmd+p",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.togglePanel"
     },
     {
         "key": "cmd+k cmd+u",
