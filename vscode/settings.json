@@ -43,4 +43,8 @@
     "files.trimFinalNewlines": true,
     "search.location": "panel",
     "cSpell.diagnosticLevel": "Warning",
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "plaintext",
+    ],
 }
