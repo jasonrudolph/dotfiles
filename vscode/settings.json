@@ -38,8 +38,9 @@
     "[markdown]": {
         "editor.wordWrap": "on",
     },
-    "cSpell.diagnosticLevel": "Warning",
     "workbench.statusBar.feedback.visible": false,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
+    "search.location": "panel",
+    "cSpell.diagnosticLevel": "Warning",
 }
