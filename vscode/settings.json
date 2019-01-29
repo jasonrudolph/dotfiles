@@ -6,7 +6,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "openInGitHub.providerType": "github",
     "openInGitHub.useCommitSHAInURL": true,
-    "eslint.autoFixOnSave": true,
     "git.enableCommitSigning": true,
     "editor.tabSize": 2,
     "workbench.colorCustomizations": {
@@ -37,6 +36,7 @@
     },
     "[markdown]": {
         "editor.wordWrap": "on",
+        "editor.formatOnSave": false
     },
     "workbench.statusBar.feedback.visible": false,
     "files.trimTrailingWhitespace": true,
@@ -47,4 +47,17 @@
         "markdown",
         "plaintext",
     ],
+    "emmet.triggerExpansionOnTab": true,
+    "ruby.useLanguageServer": true,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate",
+    "workbench.iconTheme": "file-icons",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "emmet.includeLanguages": {
+        "erb": "html"
+    },
 }
