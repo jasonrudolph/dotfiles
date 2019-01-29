@@ -1,0 +1,25 @@
+{
+	"attr_reader": {
+		"prefix": "r",
+		"body": [
+			"attr_reader :",
+		],
+		"description": "attr_reader",
+	},
+	"attr_accessor": {
+		"prefix": "rw",
+		"body": [
+			"attr_accessor :",
+		],
+		"description": "attr_accessor",
+	},
+	"it_block": {
+		"prefix": "it",
+		"body": [
+			"it '${1:description}' do",
+			"\t$0",
+			"end"
+		],
+		"description": "'it' block for testing with minispec",
+	},
+}
