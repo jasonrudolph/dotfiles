@@ -15,7 +15,6 @@ WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'Hammerspoon',
   'LaunchBar',
   'iTerm2',
-  'Screenhero',
   'Slack',
   'Zoom',
 }
