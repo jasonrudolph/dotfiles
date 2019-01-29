@@ -7,6 +7,7 @@ WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'Atom Beta',
   'Atom Nightly',
   'Bartender 3',
+  'Code',
   'Dash',
   'Dashboard',
   'Google Chrome',
