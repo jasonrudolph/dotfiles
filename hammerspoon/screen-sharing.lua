@@ -16,7 +16,7 @@ WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
   'LaunchBar',
   'iTerm2',
   'Slack',
-  'Zoom',
+  'zoom.us',
 }
 
 -- Apps to kill when entering screen sharing mode and to reopen when exiting
