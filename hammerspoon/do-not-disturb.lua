@@ -21,6 +21,9 @@ end
 --- Function
 --- Toggle "Do Not Disturb".
 ---
+--- Depends on https://github.com/sindresorhus/do-not-disturb-cli being
+--- installed on the system.
+---
 --- Parameters:
 ---  * None
 ---
@@ -28,15 +31,19 @@ end
 ---  * Nothing
 --------------------------------------------------------------------------------
 function toggleDoNotDisturb()
-  local applescript = [[
-    tell application "System Events" to tell process "SystemUIServer"
-    	key down option
-    	click menu bar item 1 of menu bar 1
-    	key up option
-    end tell
-  ]]
+  local _, status, exit, code = hs.execute('/usr/local/bin/do-not-disturb toggle', true)
 
-  hs.osascript.applescript(applescript)
+  if (not (status == true and exit == 'exit' and code == 0)) then
+    hs.alert("Whoops! Toggling 'Do Not Disturb' failed.")
+
+    local alertDurationInSeconds = 4
+    hs.alert(
+      "Make sure you have sindresorhus/do-not-disturb-cli installed and try again.",
+      hs.alert.defaultStyle,
+      hs.screen.mainScreen(),
+      alertDurationInSeconds
+    )
+  end
 end
 
 --------------------------------------------------------------------------------
