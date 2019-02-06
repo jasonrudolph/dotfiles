@@ -40,22 +40,12 @@
     revealTreeView: false
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
-  "git-projects":
-    maxDepth: 1
-    rootPath: "~/github;~/src"
   "highlight-line":
     enableBackgroundColor: false
-  "linter-ui-default":
-    panelHeight: 300
   "markdown-preview":
     useGitHubStyle: true
-  "markdown-writer": {}
   "merge-conflicts":
     gitPath: "bin/git"
-  "notational-velocity":
-    directory: "/Users/j/.notes"
-  nvatom:
-    directory: "/Users/j/.notes"
   "one-dark-ui": {}
   "one-light-ui": {}
   "outdoor-theme":
@@ -75,16 +65,7 @@
       "source.gfm"
       "text.git-commit"
     ]
-  "split-diff":
-    diffWords: true
-    ignoreWhitespace: true
-    leftEditorColor: "red"
-    rightEditorColor: "green"
-    syncHorizontalScroll: true
   "status-bar": {}
-  swackets:
-    colorBrackets: false
-    colorParens: true
   tabs:
     enableVcsColoring: true
   teletype:
