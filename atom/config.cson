@@ -4,6 +4,8 @@
     width: 120
   "activate-power-mode":
     autoToggle: false
+  "atom-beautify":
+    ruby: {}
   "atom-ide-ui":
     "atom-ide-datatip":
       datatipDebounceDelay: 500
@@ -50,6 +52,13 @@
   "one-light-ui": {}
   "outdoor-theme":
     lightLevelToSwitch: 5904360
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      excludedGlobs: [
+        "*.md"
+      ]
+    useEslint: true
   "project-folder":
     closeItemsForRemovedProject: true
     projectRootDirectories: [
