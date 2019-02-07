@@ -70,6 +70,16 @@
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
+    // Use control-p to show/hide the panel (i.e., the terminal, the debug console, etc.)
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.togglePanel"
+    },
+
     // Use command+enter to stage selected changes in the diff view
     {
         "key": "cmd+enter",
@@ -116,10 +126,6 @@
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "cmd+j",
-        "command": "workbench.action.togglePanel"
-    },
-    {
         "key": "cmd+k cmd+u",
         "command": "editor.action.transformToUppercase"
     },
@@ -132,5 +138,23 @@
     {
         "key": "alt+g c",
         "command": "extension.copyGitHubLinkToClipboard"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "markdown.todo.toggleDone",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+d",
+        "command": "-markdown.todo.toggleDone",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+i",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
     },
 ]
