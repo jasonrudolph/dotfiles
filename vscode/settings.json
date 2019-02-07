@@ -4,8 +4,6 @@
     "telemetry.enableTelemetry": false,
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "openInGitHub.providerType": "github",
-    "openInGitHub.useCommitSHAInURL": true,
     "git.enableCommitSigning": true,
     "editor.tabSize": 2,
     "workbench.colorCustomizations": {
@@ -36,7 +34,7 @@
     },
     "[markdown]": {
         "editor.wordWrap": "on",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
     },
     "workbench.statusBar.feedback.visible": false,
     "files.trimTrailingWhitespace": true,
@@ -60,4 +58,5 @@
     "emmet.includeLanguages": {
         "erb": "html"
     },
+    "explorer.openEditors.visible": 0,
 }
