@@ -1,2 +1,5 @@
-export PATH="node_modules/.bin:bin:$(readlink ~/.bin):~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+
+export PATH="bin:$(readlink ~/.bin):~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
