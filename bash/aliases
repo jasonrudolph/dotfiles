@@ -47,12 +47,12 @@ alias t1000='tail -n 1000'
 alias t2000='tail -n 2000'
 
 # rails
-alias rs='script/rails server'
-alias rc='script/rails console'
-alias rg='script/rails generate'
+alias r='rails'
+alias rs='rails server'
+alias rc='rails console'
+alias rg='rails generate'
 alias rdfl='rake db:fixtures:load'
-alias rdm='rake db:migrate'
-alias rst='touch tmp/restart.txt'
+alias rdm='rails db:migrate'
 
 # iterm2 profile switching
 alias td='echo -e "\033]50;SetProfile=Dark\a"'
