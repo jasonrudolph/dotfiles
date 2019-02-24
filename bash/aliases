@@ -60,6 +60,7 @@ alias tl='echo -e "\033]50;SetProfile=Light\a"'
 
 # misc
 alias c=cd
+alias dc=docker-compose
 alias reload='. ~/.bash_profile'
 alias tmux="TERM=screen-256color-bce tmux"
 alias h?="history | grep "
