@@ -10,6 +10,10 @@
     "atom-ide-datatip":
       datatipDebounceDelay: 500
     use: {}
+  "atom-package-deps":
+    ignored: [
+      "prettier-atom"
+    ]
   "autocomplete-emojis":
     enableUnicodeEmojis: false
   "autocomplete-plus":
@@ -17,6 +21,8 @@
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
+  "color-picker":
+    randomColor: false
   core:
     customFileTypes:
       "source.ruby": [
@@ -54,7 +60,6 @@
     lightLevelToSwitch: 5904360
   "prettier-atom":
     formatOnSaveOptions:
-      enabled: true
       excludedGlobs: [
         "*.md"
       ]
