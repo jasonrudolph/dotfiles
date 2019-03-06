@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # atom
-alias e="atom-beta ."
+alias e="atom-nightly ."
 
 # bundler
 alias b="bundle"
