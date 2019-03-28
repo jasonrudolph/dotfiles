@@ -48,6 +48,8 @@
     revealTreeView: false
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
+  "fuzzy-finder":
+    useRipGrep: true
   "highlight-line":
     enableBackgroundColor: false
   "markdown-preview":
