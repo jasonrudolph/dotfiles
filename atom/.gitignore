@@ -1,4 +1,5 @@
 .apm
+.atom-socket-secret*
 .node-gyp
 blob-store
 compile-cache
