@@ -90,5 +90,5 @@
   welcome:
     showOnStartup: false
 ".git-commit.text":
-  'wrap-guide':
-    'columns': [50, 72]
+  editor:
+    preferredLineLength: 72
