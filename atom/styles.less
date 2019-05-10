@@ -22,6 +22,10 @@ atom-dock, status-bar, .tab-bar .tab {
 // pane is active.
 //
 // Credit: http://discuss.atom.io/t/how-to-know-which-pane-is-focused/10577/2
+atom-pane:only-of-type {
+  opacity: 1 !important;
+}
+
 atom-pane:not(.active) {
   opacity: 0.75;
 }
