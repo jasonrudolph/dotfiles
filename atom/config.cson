@@ -48,7 +48,9 @@
     revealTreeView: false
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
+    useRipgrep: true
   "fuzzy-finder":
+    scoringSystem: "fast"
     useRipGrep: true
   "highlight-line":
     enableBackgroundColor: false
