@@ -33,6 +33,22 @@
       end
     """
 
+  "describe block":
+    prefix: "desc"
+    body: """
+      describe '$1' do
+        $2
+      end
+    """
+
+  "it block":
+    prefix: "it"
+    body: """
+      it '$1' do
+        $2
+      end
+    """
+
   "Test block":
     prefix: "test"
     body: """
