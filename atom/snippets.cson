@@ -3,6 +3,19 @@
     prefix: "kbd"
     body: "<kbd>$1</kbd>$2"
 
+".text.html.erb .source.ruby":
+  "Scriptlet":
+    prefix: "-"
+    body: "<% $1 %>"
+
+  "Expression":
+    prefix: "="
+    body: "<%= $1 %>"
+
+  "Comment":
+    prefix: "#"
+    body: "<%# $1 %>"
+
 ".source.ruby":
   "Hashrocket":
     prefix: "="
