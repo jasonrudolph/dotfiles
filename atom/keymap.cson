@@ -36,6 +36,8 @@
 
   'ctrl-d': 'toggle-markdown-task:toggle'
 
+  'ctrl-f': 'atom-beautify:beautify-editor'
+
 # The maximize-panes package (https://atom.io/packages/maximize-panes)
 # overwrites Atom's default keybinding for the 'editor:newline-above' command.
 # Let's restore that keybinding.
