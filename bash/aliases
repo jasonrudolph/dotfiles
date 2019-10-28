@@ -51,6 +51,7 @@ alias r='rails'
 alias rs='rails server'
 alias rc='rails console'
 alias rg='rails generate'
+alias rt='rails test'
 alias rdfl='rake db:fixtures:load'
 alias rdm='rails db:migrate'
 
