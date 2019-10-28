@@ -19,6 +19,7 @@
   "autocomplete-plus":
     enableAutoActivation: false
     minimumWordLength: 1
+  autosave: {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "color-picker":
@@ -29,7 +30,7 @@
         "god"
         "pp"
       ]
-    debugLSP: true
+    debugLSP: false
     destroyEmptyPanes: false
     ignoredNames: [
       ".DS_Store"
