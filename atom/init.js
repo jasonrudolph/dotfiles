@@ -9,7 +9,7 @@ atom.commands.add('atom-workspace', 'me:toggle-theme', function () {
   const activeThemes = atom.themes.getActiveThemeNames()
 
   if (activeThemes[0].indexOf('light') > 0) {
-    atom.config.set('core.themes', ['one-dark-ui', 'one-dark-syntax'])
+    atom.config.set('core.themes', ['one-dark-ui', 'monokai'])
   } else {
     atom.config.set('core.themes', ['one-light-ui', 'one-light-syntax'])
   }
