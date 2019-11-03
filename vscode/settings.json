@@ -46,9 +46,16 @@
         "plaintext",
     ],
     "emmet.triggerExpansionOnTab": true,
-    "ruby.useLanguageServer": true,
     "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": true
+        },
+    },
     "ruby.intellisense": "rubyLocate",
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
     "workbench.iconTheme": "file-icons",
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
