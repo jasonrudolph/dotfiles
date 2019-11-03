@@ -46,7 +46,7 @@
         "when": "editorTextFocus"
     },
 
-    // Use command+\ to show/hide the explorer sidebar
+    // Explorer: Use command+\ to show/hide the explorer sidebar
     {
         "key": "cmd+\\",
         "command": "workbench.files.action.focusFilesExplorer",
@@ -58,7 +58,29 @@
         "when": "activeViewlet = 'workbench.view.explorer'"
     },
 
-    // Use control+9 to show/hide the SCM sidebar
+    // Explorer: Use m to rename file
+    {
+        "key": "m",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
+    // Panel: Use control-p to show/hide the panel (i.e., the terminal, the debug console, etc.)
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.togglePanel"
+    },
+
+    // SCM: Use control+9 to show/hide the SCM sidebar
     {
         "key": "ctrl+9",
         "command": "workbench.view.scm",
@@ -70,20 +92,17 @@
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
-    // Use control-p to show/hide the panel (i.e., the terminal, the debug console, etc.)
-    {
-        "key": "cmd+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.togglePanel"
-    },
-
-    // Use command+enter to stage selected changes in the diff view
+    // SCM Workbench: Use command+enter to stage selected changes in the diff view
     {
         "key": "cmd+enter",
         "command": "git.stageSelectedRanges",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
+
+    // SCM Workbench: Misc customizations
+    {
+        "key": "cmd+enter",
+        "command": "git.commit",
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
