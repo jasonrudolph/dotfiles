@@ -59,4 +59,5 @@
         "erb": "html"
     },
     "explorer.openEditors.visible": 0,
+    "diffEditor.renderSideBySide": false,
 }
