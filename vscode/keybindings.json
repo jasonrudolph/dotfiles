@@ -166,11 +166,6 @@
         "command": "extension.copyGitHubLinkToClipboard"
     },
     {
-        "key": "ctrl+d",
-        "command": "markdown.todo.toggleDone",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "alt+d",
         "command": "-markdown.todo.toggleDone",
         "when": "editorTextFocus && editorLangId == 'markdown'"
@@ -182,5 +177,15 @@
     {
         "key": "ctrl+alt+n",
         "command": "-code-runner.run"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+c",
+        "command": "-markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
     },
 ]
