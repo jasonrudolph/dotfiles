@@ -58,6 +58,13 @@
         "when": "activeViewlet = 'workbench.view.explorer'"
     },
 
+    // Explorer: Use d to duplicate file
+    {
+        "key": "d",
+        "command": "fileutils.duplicateFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
     // Explorer: Use m to rename file
     {
         "key": "m",
@@ -99,11 +106,11 @@
         "when": "activeViewlet == 'workbench.view.scm'"
     },
 
-    // SCM Workbench: Misc customizations
+    // SCM Workbench: Use command+enter to commit after typing commit message
     {
         "key": "cmd+enter",
         "command": "git.commit",
-        "when": "activeViewlet == 'workbench.view.scm'"
+        "when": "activeViewlet == 'workbench.view.scm' && !isInDiffEditor"
     },
 
     // Use standard macOS tab navigation to go to previous/next "tabs" in the panel
