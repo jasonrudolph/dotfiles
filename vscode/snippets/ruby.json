@@ -31,4 +31,13 @@
 		],
 		"description": "'it' block for testing with minispec",
 	},
+	"test_block": {
+		"prefix": "test",
+		"body": [
+			"test '${1:description}' do",
+			"\t$0",
+			"end"
+		],
+		"description": "'test' block for testing with minispec",
+	},
 }
