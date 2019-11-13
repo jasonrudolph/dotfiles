@@ -68,5 +68,6 @@
     "explorer.openEditors.visible": 0,
     "diffEditor.renderSideBySide": false,
     "markdown.extension.toc.githubCompatibility": true,
+    "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
 }
