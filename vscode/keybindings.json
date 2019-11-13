@@ -87,6 +87,12 @@
         "command": "workbench.action.togglePanel"
     },
 
+    // Panel: Use control-shift-p to toggle the maximized panel
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+
     // SCM: Use control+9 to show/hide the SCM sidebar
     {
         "key": "ctrl+9",
