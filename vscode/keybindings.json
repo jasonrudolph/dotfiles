@@ -168,10 +168,6 @@
 
     // Miscellaneous extension customizations
     {
-        "key": "alt+g c",
-        "command": "extension.copyGitHubLinkToClipboard"
-    },
-    {
         "key": "alt+d",
         "command": "-markdown.todo.toggleDone",
         "when": "editorTextFocus && editorLangId == 'markdown'"
@@ -193,5 +189,15 @@
         "key": "alt+c",
         "command": "-markdown.extension.checkTaskList",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+g c",
+        "command": "extension.gitHubUrlPerma",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l c",
+        "command": "-extension.gitHubUrlPerma",
+        "when": "editorTextFocus"
     },
 ]
