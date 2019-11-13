@@ -2,43 +2,29 @@
 -- Display AirPods battery charge in the macOS menubar.
 --------------------------------------------------------------------------------
 
--- TODO Once hs.battery.privateBluetoothBatteryInfo() is available in Hammerspoon 0.9.58, remove AirPodsBatteryCLI dependency and replace it with hs.battery.privateBluetoothBatteryInfo()
+local log = hs.logger.new('airpods.lua', 'debug')
+
 -- TODO Detect when airpods connect/disconnect so that we can immediately refresh the menubar
-
-function getAirpodsBatteryInfo(callback)
-  -- TODO Dynamically determine path based on pwd
-  local airpodsCLIPath = '~/.hammerspoon/vendor/AirPodsBatteryCLI/AirPodsPower.sh'
-
-  hs.task.new(airpodsCLIPath, function(exitCode, stdOut, stdErr)
-    local parts = hs.fnutils.split(stdOut, ' ')
-    local leftAirpodBatteryPercentage = parts[7]
-    local rightAirpodBatteryPercentage = parts[9]
-
-    local toNumberOrNull = function(percentageString)
-      if not percentageString then
-        return null
-      else
-        local digitsOnly = string.gsub(percentageString, '[^%d]', '')
-        return tonumber(digitsOnly)
-      end
-    end
-
-    callback({
-      left = toNumberOrNull(leftAirpodBatteryPercentage),
-      right = toNumberOrNull(rightAirpodBatteryPercentage)
-    })
-  end):start()
-end
 
 airpodsBatteryMenubarItem = hs.menubar.new()
 
-function updateMenubar()
-  getAirpodsBatteryInfo(function(batteryInfo)
-    local left = batteryInfo['left'] or '-'
-    local right = batteryInfo['right'] or '-'
+local log = hs.logger.new('airpods.lua', 'debug')
 
-    airpodsBatteryMenubarItem:setTitle(left .. '/' .. right)
+function updateMenubar()
+  local batteryInfoForConnectedDevices = hs.battery.privateBluetoothBatteryInfo()
+
+  local airpodsBatteryInfo = hs.fnutils.find(batteryInfoForConnectedDevices, function(element)
+    return element['productID'] == '8207'
   end)
+
+  left = '-'
+  right = '-'
+  if not (airpodsBatteryInfo == nil) then
+    if airpodsBatteryInfo['batteryPercentLeft'] then left = airpodsBatteryInfo['batteryPercentLeft'] end
+    if airpodsBatteryInfo['batteryPercentRight'] then right = airpodsBatteryInfo['batteryPercentRight'] end
+  end
+
+  airpodsBatteryMenubarItem:setTitle(left .. '/' .. right)
 end
 
 updateMenubar()
