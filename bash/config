@@ -1,5 +1,5 @@
 export ATOM_CHANNEL=${ATOM_CHANNEL:-atom-nightly}
-export EDITOR=$ATOM_CHANNEL
+export EDITOR=code
 
 # Enable linux-style ls/cli colors
 export CLICOLOR=true
