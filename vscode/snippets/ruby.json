@@ -13,6 +13,15 @@
 		],
 		"description": "attr_accessor",
 	},
+	"describe_block": {
+		"prefix": "desc",
+		"body": [
+			"describe '${1:description}' do",
+			"\t$0",
+			"end"
+		],
+		"description": "'describe' block for testing with minispec",
+	},
 	"it_block": {
 		"prefix": "it",
 		"body": [
