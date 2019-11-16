@@ -12,7 +12,6 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "editor.tabCompletion": "on",
-    "editor.autoIndent": false,
     "workbench.colorTheme": "Default Dark+",
     "dayNightThemeSwitcher.dayTheme": "Default Light+",
     "dayNightThemeSwitcher.nightTheme": "Default Dark+",
