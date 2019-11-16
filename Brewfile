@@ -6,7 +6,6 @@
 #
 # brew bundle --file=<path-to-Brewfile>
 
-tap "caskroom/cask"
 tap "homebrew/bundle"
 
 brew "bash-git-prompt"
