@@ -200,4 +200,16 @@
         "command": "-extension.gitHubUrlPerma",
         "when": "editorTextFocus"
     },
+    {
+        "key": "alt+g o",
+        "command": "openInGitHub.openFile"
+    },
+    {
+        "key": "alt+g b",
+        "command": "openInGitHub.openFileBlame"
+    },
+    {
+        "key": "alt+g h",
+        "command": "openInGitHub.openFileHistory"
+    },
 ]
