@@ -19,14 +19,14 @@
   # show staged and unstaged changes (what would be committed with "git commit -a")
   both = diff HEAD
 
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=human
 
-  lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative --all
+  lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=human --all
 
   # git showf <ref>
   #
   # Fetch the full SHA1 for the given ref and copy it to the clipboard. Then,
-  # call `git show --format=full <ref>`.
+	# call `git show --format=fuller <ref>`.
   #
   # If no ref is specified, use HEAD as the ref.
   showf = "!f() { ref="$@"; if [ $# -eq 0 ]; then ref="HEAD"; fi; git rev-parse $ref | pbcopy; git show --format=fuller $ref; }; f"
@@ -57,6 +57,7 @@
   untracked = cyan
 [merge]
   tool = opendiff
+	conflictstyle = diff3
 [core]
   excludesfile = <%= ENV['HOME'] %>/.gitignore
   autocrlf = input
@@ -96,3 +97,7 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
+[commit]
+	gpgsign = true
+[protocol]
+	version = 2
