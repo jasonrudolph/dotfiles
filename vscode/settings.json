@@ -71,5 +71,6 @@
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "git.untrackedChanges": "separate",
+    "editor.copyWithSyntaxHighlighting": false,
     "problems.showCurrentInStatus": true,
 }
