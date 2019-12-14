@@ -72,5 +72,6 @@
     },
     "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "file-icons",
+    "workbench.list.automaticKeyboardNavigation": false,
     "workbench.statusBar.feedback.visible": false,
 }
