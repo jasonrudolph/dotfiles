@@ -15,12 +15,12 @@
         "statusBar.noFolderBackground": "#222225",
         "statusBar.debuggingBackground": "#511f1f"
     },
-    "dayNightThemeSwitcher.nightTheme": "Default Dark+",
     "dayNightThemeSwitcher.nightThemeCustomizations": {
         "statusBar.background": "#303030",
         "statusBar.noFolderBackground": "#222225",
         "statusBar.debuggingBackground": "#511f1f"
     },
+    "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
     "diffEditor.renderSideBySide": false,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.fontSize": 11,
@@ -69,8 +69,8 @@
         "statusBar.noFolderBackground": "#222225",
         "statusBar.debuggingBackground": "#511f1f"
     },
-    "workbench.colorTheme": "Default Dark+",
-    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.statusBar.feedback.visible": false,
 }
