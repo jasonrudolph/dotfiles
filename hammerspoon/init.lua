@@ -10,7 +10,6 @@ require("hs.ipc")
 require('airpods')
 require('do-not-disturb')
 require('layout')
-require('posture-reminder')
 require('screen-sharing')
 require('wifi')
 
