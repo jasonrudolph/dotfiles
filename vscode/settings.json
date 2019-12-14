@@ -61,7 +61,6 @@
         },
     },
     "ruby.useBundler": true,
-    "ruby.useLanguageServer": true,
     "search.location": "panel",
     "telemetry.enableTelemetry": false,
     "window.zoomLevel": 1,
