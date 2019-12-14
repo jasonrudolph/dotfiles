@@ -193,6 +193,53 @@
         "command": "editor.action.transformToLowercase"
     },
 
+    // Use the MetaGo extension (https://github.com/metaseed/metaGo) to mimic
+    // Vim's "zt", "zb", and "zz" motions:
+    //
+    // ctrl+. t: Mimic Vim's "zt" motion -- Scroll the view such that the line
+    // containing the cursor is at the top of the view.
+    //
+    // ctrl+. b: Mimic Vim's "zb" motion -- Scroll the view such that the line
+    // containing the cursor is at the bottom of the view.
+    //
+    // ctrl+. z: Mimic Vim's "zz" motion -- Scroll the view such that the line
+    // containing the cursor is vertically centered in the view.
+    {
+        "key": "ctrl+. z",
+        "command": "metaGo.currentLineToCenter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+m",
+        "command": "-metaGo.currentLineToCenter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+. t",
+        "command": "metaGo.currentLineToTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "-metaGo.currentLineToTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+. b",
+        "command": "metaGo.currentLineToBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "-metaGo.currentLineToBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-metaGo.delete.softDelete",
+        "when": "editorTextFocus"
+    },
+
     // Miscellaneous extension customizations
     {
         "key": "alt+d",
