@@ -1,76 +1,76 @@
 {
-    "window.zoomLevel": 1,
-    "editor.fontSize": 11,
-    "telemetry.enableTelemetry": false,
-    "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "git.enableCommitSigning": true,
-    "editor.tabSize": 2,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "editor.tabCompletion": "on",
-    "workbench.colorTheme": "Default Dark+",
-    "dayNightThemeSwitcher.dayTheme": "Default Light+",
-    "dayNightThemeSwitcher.nightTheme": "Default Dark+",
-    "dayNightThemeSwitcher.dayThemeCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "dayNightThemeSwitcher.nightThemeCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "editor.minimap.enabled": false,
-    "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
-    },
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.formatOnSave": false,
     },
-    "workbench.statusBar.feedback.visible": false,
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "search.location": "panel",
+    "atomKeymap.promptV3Features": true,
     "cSpell.diagnosticLevel": "Warning",
     "cSpell.enabledLanguageIds": [
         "markdown",
         "plaintext",
     ],
+    "dayNightThemeSwitcher.dayTheme": "Default Light+",
+    "dayNightThemeSwitcher.dayThemeCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "dayNightThemeSwitcher.nightTheme": "Default Dark+",
+    "dayNightThemeSwitcher.nightThemeCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "diffEditor.renderSideBySide": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.fontSize": 11,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "erb": "html",
+        "njk": "html",
+    },
     "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.enableCommitSigning": true,
+    "git.untrackedChanges": "separate",
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "markdown.extension.toc.githubCompatibility": true,
+    "problems.showCurrentInStatus": true,
     "ruby.codeCompletion": "rcodetools",
     "ruby.format": "rubocop",
+    "ruby.intellisense": "rubyLocate",
     "ruby.lint": {
         "rubocop": {
             "useBundler": true
         },
     },
-    "ruby.intellisense": "rubyLocate",
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
-    "workbench.iconTheme": "file-icons",
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "emmet.includeLanguages": {
-        "erb": "html",
-        "njk": "html",
+    "search.location": "panel",
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 1,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
     },
-    "explorer.openEditors.visible": 0,
-    "diffEditor.renderSideBySide": false,
-    "markdown.extension.toc.githubCompatibility": true,
-    "explorer.confirmDragAndDrop": false,
-    "files.insertFinalNewline": true,
-    "git.untrackedChanges": "separate",
-    "editor.copyWithSyntaxHighlighting": false,
-    "problems.showCurrentInStatus": true,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "file-icons",
+    "workbench.statusBar.feedback.visible": false,
 }
