@@ -62,7 +62,8 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "emmet.includeLanguages": {
-        "erb": "html"
+        "erb": "html",
+        "njk": "html",
     },
     "explorer.openEditors.visible": 0,
     "diffEditor.renderSideBySide": false,
