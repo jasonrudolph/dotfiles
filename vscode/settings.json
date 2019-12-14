@@ -69,4 +69,5 @@
     "markdown.extension.toc.githubCompatibility": true,
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
+    "problems.showCurrentInStatus": true,
 }
