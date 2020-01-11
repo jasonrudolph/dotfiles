@@ -55,6 +55,10 @@ alias rt='rails test'
 alias rdfl='rake db:fixtures:load'
 alias rdm='rails db:migrate'
 
+# scripts to rule them all (https://github.blog/2015-06-30-scripts-to-rule-them-all)
+alias sc='script/console'
+alias st='script/test'
+
 # iterm2 profile switching
 alias td='echo -e "\033]50;SetProfile=Dark\a"'
 alias tl='echo -e "\033]50;SetProfile=Light\a"'
