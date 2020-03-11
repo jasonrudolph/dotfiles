@@ -206,32 +206,32 @@
     // containing the cursor is vertically centered in the view.
     {
         "key": "ctrl+. z",
-        "command": "metaGo.currentLineToCenter",
+        "command": "metaGo.scrollCurrentLineToMiddle",
         "when": "editorTextFocus"
     },
     {
         "key": "alt+m",
-        "command": "-metaGo.currentLineToCenter",
+        "command": "-metaGo.scrollCurrentLineToMiddle",
         "when": "editorTextFocus"
     },
     {
         "key": "ctrl+. t",
-        "command": "metaGo.currentLineToTop",
+        "command": "metaGo.scrollCurrentLineToTop",
         "when": "editorTextFocus"
     },
     {
         "key": "alt+t",
-        "command": "-metaGo.currentLineToTop",
+        "command": "-metaGo.scrollCurrentLineToTop",
         "when": "editorTextFocus"
     },
     {
         "key": "ctrl+. b",
-        "command": "metaGo.currentLineToBottom",
+        "command": "metaGo.scrollCurrentLineToBottom",
         "when": "editorTextFocus"
     },
     {
         "key": "alt+b",
-        "command": "-metaGo.currentLineToBottom",
+        "command": "-metaGo.scrollCurrentLineToBottom",
         "when": "editorTextFocus"
     },
     {
