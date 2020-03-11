@@ -61,7 +61,6 @@
         },
     },
     "ruby.useBundler": true,
-    "search.location": "panel",
     "telemetry.enableTelemetry": false,
     "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
@@ -73,4 +72,11 @@
     "workbench.iconTheme": "Monokai Pro Icons",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.statusBar.feedback.visible": false,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "search.enableSearchEditorPreview": true,
+    "extensions.ignoreRecommendations": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.useLanguageServer": true,
+    "search.searchOnType": false,
 }
