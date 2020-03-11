@@ -3,15 +3,11 @@ require('do-not-disturb')
 -- If an app has windows, and the app is not in this list, entering screen
 -- sharing mode will quit that app.
 WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
-  'Atom',
-  'Atom Beta',
-  'Atom Nightly',
   'Bartender 3',
   'Code',
   'Dash',
   'Dashboard',
-  'Google Chrome',
-  'Hackable Slack Client',
+  'Firefox',
   'Hammerspoon',
   'LaunchBar',
   'iTerm2',
