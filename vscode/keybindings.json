@@ -11,26 +11,26 @@
         "command": "workbench.action.splitEditorOrthogonal"
     },
 
-    // Vim-style navigation between editor groups
-    // - Use control+h to focus the editor group on the left
-    // - Use control+j to focus the editor group on the left
-    // - Use control+k to focus the editor group on the left
-    // - Use control+l to focus the editor group on the left
+    // Vim-style navigation between panes
+    // - Use control+h to focus the pane on the left
+    // - Use control+j to focus the pane below
+    // - Use control+k to focus the pane above
+    // - Use control+l to focus the pane on the right
     {
         "key": "ctrl-h",
-        "command": "workbench.action.focusLeftGroup"
+        "command": "workbench.action.navigateLeft"
     },
     {
         "key": "ctrl-j",
-        "command": "workbench.action.focusAboveGroup"
+        "command": "workbench.action.navigateDown"
     },
     {
         "key": "ctrl-k",
-        "command": "workbench.action.focusBelowGroup"
+        "command": "workbench.action.navigateUp"
     },
     {
         "key": "ctrl-l",
-        "command": "workbench.action.focusRightGroup"
+        "command": "workbench.action.navigateRight"
     },
 
     // Use control+g j to go down to the next change
