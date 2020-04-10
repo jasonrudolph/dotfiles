@@ -111,6 +111,28 @@
         "command": "git.openFile"
     },
 
+    // SCM: Within the diff view, use j/k to navigate to the next/previous diff respectively
+    {
+        "key": "j",
+        "command": "editor.action.diffReview.next",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "f7",
+        "command": "-editor.action.diffReview.next",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "k",
+        "command": "editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+
     // SCM Workbench: Use command+enter to stage selected changes in the diff view
     {
         "key": "cmd+enter",
