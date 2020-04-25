@@ -7,6 +7,7 @@
 # brew bundle --file=<path-to-Brewfile>
 
 tap "homebrew/bundle"
+tap "heroku/brew"
 
 brew "bash-git-prompt"
 brew "bash"
