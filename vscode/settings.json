@@ -21,6 +21,7 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
+    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.fontSize": 11,
@@ -42,6 +43,7 @@
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
+    "extensions.ignoreRecommendations": false,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -50,6 +52,7 @@
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "go.useLanguageServer": true,
     "markdown.extension.toc.githubCompatibility": true,
     "problems.showCurrentInStatus": true,
     "ruby.codeCompletion": "rcodetools",
@@ -61,7 +64,10 @@
         },
     },
     "ruby.useBundler": true,
+    "search.enableSearchEditorPreview": true,
+    "search.searchOnType": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.rendererType": "experimentalWebgl",
     "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
         "statusBar.background": "#303030",
@@ -72,13 +78,7 @@
     "workbench.iconTheme": "Monokai Pro Icons",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.statusBar.feedback.visible": false,
-    "terminal.integrated.rendererType": "experimentalWebgl",
-    "search.enableSearchEditorPreview": true,
-    "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "go.useLanguageServer": true,
-    "search.searchOnType": false,
     "yaml.schemas": {
         "kubernetes": ["/config/kubernetes/*.yaml"]
     }
