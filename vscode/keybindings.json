@@ -46,6 +46,16 @@
         "when": "editorTextFocus"
     },
 
+    // Use command+l to go to a specific line number
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+
     // Explorer: Use command+\ to show/hide the explorer sidebar
     {
         "key": "cmd+\\",
