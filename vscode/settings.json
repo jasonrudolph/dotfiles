@@ -79,4 +79,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "go.useLanguageServer": true,
     "search.searchOnType": false,
+    "yaml.schemas": {
+        "kubernetes": ["/config/kubernetes/*.yaml"]
+    }
 }
