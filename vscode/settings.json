@@ -55,9 +55,7 @@
     "go.useLanguageServer": true,
     "markdown.extension.toc.githubCompatibility": true,
     "problems.showCurrentInStatus": true,
-    "ruby.codeCompletion": "rcodetools",
     "ruby.format": "rubocop",
-    "ruby.intellisense": "rubyLocate",
     "ruby.lint": {
         "rubocop": {
             "useBundler": true
