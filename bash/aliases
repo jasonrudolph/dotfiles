@@ -57,6 +57,7 @@ alias rdm='rails db:migrate'
 
 # scripts to rule them all (https://github.blog/2015-06-30-scripts-to-rule-them-all)
 alias sc='script/console'
+alias sl='script/lint'
 alias st='script/test'
 
 # iterm2 profile switching
