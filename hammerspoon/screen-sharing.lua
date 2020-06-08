@@ -2,7 +2,7 @@ require('do-not-disturb')
 
 -- If an app has windows, and the app is not in this list, entering screen
 -- sharing mode will quit that app.
-WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE = {
+WINDOWED_APPS_ALLOWLISTED_FOR_SCREEN_SHARING_MODE = {
   'Bartender 3',
   'Code',
   'Dash',
@@ -64,12 +64,12 @@ function appsWithWindows()
   return namesToApps
 end
 
-function killAppsNotWhitelistedForScreenSharing()
+function killAppsNotAllowlistedForScreenSharing()
   local appsToKill = hs.fnutils.filter(appsWithWindows(), function(app)
-    local isAppWhitelisted =
-      hs.fnutils.contains(WINDOWED_APPS_WHITELISTED_FOR_SCREEN_SHARING_MODE, app:name())
+    local isAppAllowlisted =
+      hs.fnutils.contains(WINDOWED_APPS_ALLOWLISTED_FOR_SCREEN_SHARING_MODE, app:name())
 
-    return (not isAppWhitelisted)
+    return (not isAppAllowlisted)
   end)
 
   hs.fnutils.each(appsToKill, function(app)
@@ -115,7 +115,7 @@ function toggleScreenSharingMode()
     hs.alert('Say goodbye to screen sharing mode 👋')
   else
     killAppsExclusiveToNonScreenSharingMode()
-    killAppsNotWhitelistedForScreenSharing()
+    killAppsNotAllowlistedForScreenSharing()
     setDoNotDisturb(true)
 
     hs.alert("It's probably safe to share your screen now. Just don't do anything stupid, OK? 😇")
