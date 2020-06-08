@@ -118,7 +118,8 @@
     // SCM: Within the diff view for a file, use command-o to open the normal editor for the file
     {
         "key": "cmd+o",
-        "command": "git.openFile"
+        "command": "git.openFile",
+        "when": "isInDiffEditor"
     },
 
     // SCM: Within the diff view, use j/k to navigate to the next/previous diff respectively
