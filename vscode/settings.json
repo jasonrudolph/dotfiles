@@ -66,6 +66,16 @@
     "ruby.useLanguageServer": true,
     "search.enableSearchEditorPreview": true,
     "search.searchOnType": false,
+    "shebang.associations": [
+        {
+            "pattern": "^#!/bin/bash$",
+            "language": "shellscript"
+        },
+        {
+            "pattern": "^#!/usr/bin/env bin/rails runner$",
+            "language": "ruby"
+        }
+    ],
     "telemetry.enableTelemetry": false,
     "terminal.integrated.rendererType": "experimentalWebgl",
     "window.zoomLevel": 1,
