@@ -21,7 +21,7 @@ I use bash as my shell.
 
 This repo began as a fork of [Ryan Bates's dotfiles](https://github.com/ryanb/dotfiles). Thanks to Ryan for providing the structure of the project, for creating the handy installation process, and for populating the repo with so many niceties.
 
-I've [customized the project](https://github.com/jasonrudolph/dotfiles/compare/2e9813c...master) to my liking, but [as Ryan Tomayko says about his dotfiles](https://github.com/rtomayko/dotfiles/blob/f95faec/README#L65) ...
+I've [customized the project](https://github.com/jasonrudolph/dotfiles/compare/2e9813c...main) to my liking, but [as Ryan Tomayko says about his dotfiles](https://github.com/rtomayko/dotfiles/blob/f95faec/README#L65) ...
 
 > I didn't write all of this stuff, or even most of it.
 > I've tried to include proper attribution [inline in each file for everything that] I found elsewhere.
