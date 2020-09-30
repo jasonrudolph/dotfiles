@@ -9,7 +9,7 @@
         "markdown",
         "plaintext",
     ],
-    "dayNightThemeSwitcher.dayTheme": "Default Light+",
+    "dayNightThemeSwitcher.dayTheme": "Quiet Light",
     "dayNightThemeSwitcher.dayThemeCustomizations": {
         "statusBar.background": "#303030",
         "statusBar.noFolderBackground": "#222225",
@@ -91,5 +91,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "yaml.schemas": {
         "kubernetes": ["/config/kubernetes/*.yaml"]
-    }
+    },
+    "workbench.preferredLightColorTheme": "Quiet Light"
 }
