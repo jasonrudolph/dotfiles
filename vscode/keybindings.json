@@ -279,20 +279,6 @@
         "when": "editorTextFocus"
     },
 
-    // Use cmd+i to run queries via the PostgreSQL extension
-    // (https://github.com/Borvik/vscode-postgres), which matches the keybinding
-    // I use for running scripts via the Code Runner extension
-    {
-        "key": "cmd+i",
-        "command": "vscode-postgres.runQuery",
-        "when": "editorLangId == 'postgres'"
-    },
-    {
-        "key": "f5",
-        "command": "-vscode-postgres.runQuery",
-        "when": "editorLangId == 'postgres'"
-    },
-
     // Miscellaneous extension customizations
     {
         "key": "alt+d",
@@ -338,5 +324,19 @@
     {
         "key": "alt+g h",
         "command": "openInGitHub.openFileHistory"
+    },
+
+    // Use cmd+i to run queries via the PostgreSQL extension
+    // (https://github.com/Borvik/vscode-postgres), which matches the keybinding
+    // I use for running scripts via the Code Runner extension
+    {
+        "key": "cmd+i",
+        "command": "vscode-postgres.runQuery",
+        // "when": "editorLangId == 'postgres'"
+    },
+    {
+        "key": "f5",
+        "command": "-vscode-postgres.runQuery",
+        "when": "editorLangId == 'postgres'"
     },
 ]
