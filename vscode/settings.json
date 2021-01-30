@@ -42,6 +42,7 @@
         "njk": "html",
     },
     "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": false,
