@@ -33,6 +33,28 @@
         "command": "workbench.action.navigateRight"
     },
 
+    // Vim-esque (kinda) navigation for moving an editor to another pane
+    // - Use control+shift+h to move the editor to the pane on the left
+    // - Use control+shift+j to move the editor to the pane below
+    // - Use control+shift+k to move the editor to the pane above
+    // - Use control+shift+l to move the editor to the pane on the right
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+
     // Use control+g j to go down to the next change
     // Use control+g k to go up to the previous change
     {
