@@ -46,6 +46,9 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": false,
+    "files.associations": {
+        "*.pgsql": "postgres"
+    },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
