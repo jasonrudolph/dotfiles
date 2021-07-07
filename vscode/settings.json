@@ -71,6 +71,7 @@
     "ruby.useLanguageServer": true,
     "search.enableSearchEditorPreview": true,
     "search.searchOnType": false,
+    "security.workspace.trust.startupPrompt": "never",
     "shebang.associations": [
         {
             "pattern": "^#!/bin/bash$",
