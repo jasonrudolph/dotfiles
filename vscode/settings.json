@@ -49,6 +49,7 @@
     "files.associations": {
         "*.pgsql": "postgres"
     },
+    "cSpell.enabled": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -57,9 +58,12 @@
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "gitlens.views.searchAndCompare.pullRequests.enabled": false,
     "go.useLanguageServer": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "markdown.extension.toc.githubCompatibility": true,
     "problems.showCurrentInStatus": true,
+    "redhat.telemetry.enabled": false,
     "ruby.format": "rubocop",
     "ruby.intellisense": "rubyLocate",
     "ruby.lint": {
@@ -91,12 +95,10 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "workbench.colorTheme": "Monokai Pro",
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.iconTheme": "Monokai Pro Icons",
     "workbench.list.automaticKeyboardNavigation": false,
-    "workbench.statusBar.feedback.visible": false,
+    "workbench.preferredLightColorTheme": "Quiet Light",
     "workbench.startupEditor": "newUntitledFile",
-    "yaml.schemas": {
-        "kubernetes": ["/config/kubernetes/*.yaml"]
-    },
-    "workbench.preferredLightColorTheme": "Quiet Light"
+    "workbench.statusBar.feedback.visible": false
 }
