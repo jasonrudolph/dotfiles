@@ -100,5 +100,8 @@
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.preferredLightColorTheme": "Quiet Light",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
 }
