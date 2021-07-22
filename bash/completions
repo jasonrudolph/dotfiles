@@ -9,4 +9,3 @@ fi
 source ~/.bash/completion_scripts/git_completion
 source ~/.bash/completion_scripts/ssh_completion
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
-complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
