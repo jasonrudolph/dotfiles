@@ -87,6 +87,7 @@
         }
     ],
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.rendererType": "experimentalWebgl",
     "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
