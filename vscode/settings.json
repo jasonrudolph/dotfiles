@@ -54,7 +54,6 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.enableCommitSigning": true,
-    "git.untrackedChanges": "separate",
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
