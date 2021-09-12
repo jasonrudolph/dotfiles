@@ -128,11 +128,6 @@
     // SCM: Use control+9 to show/hide the SCM sidebar
     {
         "key": "ctrl+9",
-        "command": "workbench.view.scm",
-        "when": "activeViewlet != 'workbench.view.scm'"
-    },
-    {
-        "key": "ctrl+9",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "activeViewlet == 'workbench.view.scm'"
     },
@@ -360,5 +355,13 @@
         "key": "f5",
         "command": "-vscode-postgres.runQuery",
         "when": "editorLangId == 'postgres'"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "magit.status"
+    },
+    {
+        "key": "alt+x g",
+        "command": "-magit.status"
     },
 ]
