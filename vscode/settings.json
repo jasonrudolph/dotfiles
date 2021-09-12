@@ -1,4 +1,7 @@
 {
+    "[git-commit]": {
+        "workbench.editor.languageDetection": false
+    },
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.formatOnSave": false,
