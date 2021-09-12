@@ -47,7 +47,8 @@
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": false,
     "files.associations": {
-        "*.pgsql": "postgres"
+        "*.pgsql": "postgres",
+        "COMMIT_EDITMSG": "git-commit"
     },
     "cSpell.enabled": true,
     "files.insertFinalNewline": true,
