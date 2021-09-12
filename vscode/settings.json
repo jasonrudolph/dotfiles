@@ -24,6 +24,7 @@
     "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
+    "editor.bracketPairColorization.enabled": true,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.fontSize": 11,
     "editor.minimap.enabled": false,
