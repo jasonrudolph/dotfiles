@@ -2,9 +2,7 @@ function command_exists {
   type "$1" &> /dev/null
 }
 
-if command_exists brew && [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 source ~/.bash/completion_scripts/git_completion
 source ~/.bash/completion_scripts/ssh_completion
