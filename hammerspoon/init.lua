@@ -7,7 +7,6 @@ require("hs.ipc")
 --------------------------------------------------------------------------------
 -- Load Hammerspoon bits from https://github.com/jasonrudolph/dotfiles
 --------------------------------------------------------------------------------
-require('airpods')
 require('do-not-disturb')
 require('night-shift')
 require('layout')
