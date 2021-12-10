@@ -93,6 +93,7 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.rendererType": "experimentalWebgl",
+    "terminal.integrated.scrollback": 100000,
     "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
         "statusBar.background": "#303030",
