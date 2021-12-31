@@ -8,3 +8,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
+
+# Silence noise that occurs when using debug gem in Rails
+export RUBY_DEBUG_LOG_LEVEL=ERROR
