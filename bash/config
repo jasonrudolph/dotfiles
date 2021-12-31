@@ -8,5 +8,3 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
-
-export CARGO_INCREMENTAL=1
