@@ -5,7 +5,11 @@
   "[markdown]": {
     "editor.wordWrap": "on",
     "editor.formatOnSave": false,
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "atomKeymap.promptV3Features": true,
   "cSpell.diagnosticLevel": "Warning",
@@ -40,8 +44,10 @@
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
     "erb": "html",
+    "html.erb": "html",
     "njk": "html"
   },
+  "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -75,7 +81,6 @@
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "search.enableSearchEditorPreview": true,
-  "search.searchOnType": false,
   "security.workspace.trust.startupPrompt": "never",
   "shebang.associations": [
     {
@@ -91,7 +96,6 @@
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.rendererType": "experimentalWebgl",
   "terminal.integrated.scrollback": 100000,
-  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#303030",
     "statusBar.noFolderBackground": "#222225",
@@ -107,5 +111,22 @@
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.preferredLightColorTheme": "Quiet Light",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false
+  "workbench.statusBar.feedback.visible": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "️": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
