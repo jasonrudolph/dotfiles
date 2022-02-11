@@ -1,114 +1,111 @@
 {
-    "[git-commit]": {
-        "workbench.editor.languageDetection": false
+  "[git-commit]": {
+    "workbench.editor.languageDetection": false
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false,
+    "editor.quickSuggestions": false
+  },
+  "atomKeymap.promptV3Features": true,
+  "cSpell.diagnosticLevel": "Warning",
+  "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
+  "dayNightThemeSwitcher.dayTheme": "Quiet Light",
+  "dayNightThemeSwitcher.dayThemeCustomizations": {
+    "statusBar.background": "#303030",
+    "statusBar.noFolderBackground": "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+  },
+  "dayNightThemeSwitcher.nightThemeCustomizations": {
+    "statusBar.background": "#303030",
+    "statusBar.noFolderBackground": "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+  },
+  "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.fontSize": 11,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "njk": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.pgsql": "postgres",
+    "COMMIT_EDITMSG": "git-commit"
+  },
+  "cSpell.enabled": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enableCommitSigning": true,
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.views.searchAndCompare.pullRequests.enabled": false,
+  "go.useLanguageServer": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.extension.toc.githubCompatibility": true,
+  "problems.showCurrentInStatus": true,
+  "redhat.telemetry.enabled": false,
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    }
+  },
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "search.enableSearchEditorPreview": true,
+  "search.searchOnType": false,
+  "security.workspace.trust.startupPrompt": "never",
+  "shebang.associations": [
+    {
+      "pattern": "^#!/bin/bash$",
+      "language": "shellscript"
     },
-    "[markdown]": {
-        "editor.wordWrap": "on",
-        "editor.formatOnSave": false,
-        "editor.quickSuggestions": false,
-    },
-    "atomKeymap.promptV3Features": true,
-    "cSpell.diagnosticLevel": "Warning",
-    "cSpell.enabledLanguageIds": [
-        "markdown",
-        "plaintext",
-    ],
-    "dayNightThemeSwitcher.dayTheme": "Quiet Light",
-    "dayNightThemeSwitcher.dayThemeCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "dayNightThemeSwitcher.nightThemeCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": false,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.copyWithSyntaxHighlighting": false,
-    "editor.fontSize": 11,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
-    },
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
-    "editor.tabCompletion": "on",
-    "editor.tabSize": 2,
-    "emmet.includeLanguages": {
-        "erb": "html",
-        "njk": "html",
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
-    "extensions.ignoreRecommendations": false,
-    "files.associations": {
-        "*.pgsql": "postgres",
-        "COMMIT_EDITMSG": "git-commit"
-    },
-    "cSpell.enabled": true,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.enableCommitSigning": true,
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.views.searchAndCompare.pullRequests.enabled": false,
-    "go.useLanguageServer": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "markdown.extension.toc.githubCompatibility": true,
-    "problems.showCurrentInStatus": true,
-    "redhat.telemetry.enabled": false,
-    "ruby.format": "rubocop",
-    "ruby.intellisense": "rubyLocate",
-    "ruby.lint": {
-        "rubocop": {
-            "useBundler": true
-        },
-    },
-    "ruby.useBundler": true,
-    "ruby.useLanguageServer": true,
-    "search.enableSearchEditorPreview": true,
-    "search.searchOnType": false,
-    "security.workspace.trust.startupPrompt": "never",
-    "shebang.associations": [
-        {
-            "pattern": "^#!/bin/bash$",
-            "language": "shellscript"
-        },
-        {
-            "pattern": "^#!/usr/bin/env bin/rails runner$",
-            "language": "ruby"
-        }
-    ],
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.defaultLocation": "editor",
-    "terminal.integrated.rendererType": "experimentalWebgl",
-    "terminal.integrated.scrollback": 100000,
-    "window.zoomLevel": 1,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#303030",
-        "statusBar.noFolderBackground": "#222225",
-        "statusBar.debuggingBackground": "#511f1f"
-    },
-    "workbench.colorTheme": "Monokai Pro",
-    "workbench.editor.decorations.colors": false,
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.editorAssociations": {
-        "git-rebase-todo": "default"
-    },
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.list.automaticKeyboardNavigation": false,
-    "workbench.preferredLightColorTheme": "Quiet Light",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false
+    {
+      "pattern": "^#!/usr/bin/env bin/rails runner$",
+      "language": "ruby"
+    }
+  ],
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.rendererType": "experimentalWebgl",
+  "terminal.integrated.scrollback": 100000,
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#303030",
+    "statusBar.noFolderBackground": "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+  },
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.editor.decorations.colors": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.preferredLightColorTheme": "Quiet Light",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false
 }
