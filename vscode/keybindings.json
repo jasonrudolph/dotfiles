@@ -369,4 +369,14 @@
         "key": "alt+x g",
         "command": "-magit.status"
     },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
 ]
