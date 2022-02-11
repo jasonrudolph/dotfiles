@@ -1,382 +1,382 @@
 [
-    // Semantic pane splitting
-    // - Use control+| to split panes vertically
-    // - Use control+- to split panes horizontally
-    {
-        "key": "ctrl+shift+\\",
-        "command": "workbench.action.splitEditor"
-    },
-    {
-        "key": "ctrl--",
-        "command": "workbench.action.splitEditorOrthogonal"
-    },
+  // Semantic pane splitting
+  // - Use control+| to split panes vertically
+  // - Use control+- to split panes horizontally
+  {
+    "key": "ctrl+shift+\\",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl--",
+    "command": "workbench.action.splitEditorOrthogonal"
+  },
 
-    // Vim-style navigation between panes
-    // - Use control+h to focus the pane on the left
-    // - Use control+j to focus the pane below
-    // - Use control+k to focus the pane above
-    // - Use control+l to focus the pane on the right
-    {
-        "key": "ctrl-h",
-        "command": "workbench.action.navigateLeft"
-    },
-    {
-        "key": "ctrl-j",
-        "command": "workbench.action.navigateDown"
-    },
-    {
-        "key": "ctrl-k",
-        "command": "workbench.action.navigateUp"
-    },
-    {
-        "key": "ctrl-l",
-        "command": "workbench.action.navigateRight"
-    },
+  // Vim-style navigation between panes
+  // - Use control+h to focus the pane on the left
+  // - Use control+j to focus the pane below
+  // - Use control+k to focus the pane above
+  // - Use control+l to focus the pane on the right
+  {
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight"
+  },
 
-    // Vim-esque (kinda) navigation for moving an editor to another pane
-    // - Use control+shift+h to move the editor to the pane on the left
-    // - Use control+shift+j to move the editor to the pane below
-    // - Use control+shift+k to move the editor to the pane above
-    // - Use control+shift+l to move the editor to the pane on the right
-    {
-        "key": "ctrl+shift+l",
-        "command": "workbench.action.moveEditorToRightGroup"
-    },
-    {
-        "key": "ctrl+shift+h",
-        "command": "workbench.action.moveEditorToLeftGroup"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "workbench.action.moveEditorToAboveGroup"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.moveEditorToBelowGroup"
-    },
+  // Vim-esque (kinda) navigation for moving an editor to another pane
+  // - Use control+shift+h to move the editor to the pane on the left
+  // - Use control+shift+j to move the editor to the pane below
+  // - Use control+shift+k to move the editor to the pane above
+  // - Use control+shift+l to move the editor to the pane on the right
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  },
 
-    // Use control+g j to go down to the next change
-    // Use control+g k to go up to the previous change
-    {
-        "key": "ctrl+g j",
-        "command": "workbench.action.editor.nextChange",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+g k",
-        "command": "workbench.action.editor.previousChange",
-        "when": "editorTextFocus"
-    },
+  // Use control+g j to go down to the next change
+  // Use control+g k to go up to the previous change
+  {
+    "key": "ctrl+g j",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+g k",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus"
+  },
 
-    // Use command+l to go to a specific line number
-    {
-        "key": "cmd+l",
-        "command": "workbench.action.gotoLine"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
+  // Use command+l to go to a specific line number
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
 
-    // Explorer: Use command+\ to show/hide the explorer sidebar
-    {
-        "key": "cmd+\\",
-        "command": "workbench.files.action.focusFilesExplorer",
-        "when": "activeViewlet != 'workbench.view.explorer'"
-    },
-    {
-        "key": "cmd+\\",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "activeViewlet = 'workbench.view.explorer'"
-    },
+  // Explorer: Use command+\ to show/hide the explorer sidebar
+  {
+    "key": "cmd+\\",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "activeViewlet != 'workbench.view.explorer'"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "activeViewlet = 'workbench.view.explorer'"
+  },
 
-    // Explorer: Use d to duplicate file
-    {
-        "key": "d",
-        "command": "fileutils.duplicateFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
+  // Explorer: Use d to duplicate file
+  {
+    "key": "d",
+    "command": "fileutils.duplicateFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
 
-    // Explorer: Use m to rename file
-    {
-        "key": "m",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    {
-        "key": "enter",
-        "command": "-renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
+  // Explorer: Use m to rename file
+  {
+    "key": "m",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
 
-    // Panel: Use control-p to show/hide the panel (i.e., the terminal, the debug console, etc.)
-    {
-        "key": "cmd+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.togglePanel"
-    },
+  // Panel: Use control-p to show/hide the panel (i.e., the terminal, the debug console, etc.)
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.togglePanel"
+  },
 
-    // Panel: Use control-shift-p to toggle the maximized panel
-    {
-        "key": "ctrl+shift+p",
-        "command": "workbench.action.toggleMaximizedPanel"
-    },
+  // Panel: Use control-shift-p to toggle the maximized panel
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
 
-    // SCM: Use control+9 to show/hide the SCM sidebar
-    {
-        "key": "ctrl+9",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "activeViewlet == 'workbench.view.scm'"
-    },
+  // SCM: Use control+9 to show/hide the SCM sidebar
+  {
+    "key": "ctrl+9",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
 
-    // SCM: Within the diff view for a file, use command-o to open the normal editor for the file
-    {
-        "key": "cmd+o",
-        "command": "git.openFile",
-        "when": "isInDiffEditor"
-    },
+  // SCM: Within the diff view for a file, use command-o to open the normal editor for the file
+  {
+    "key": "cmd+o",
+    "command": "git.openFile",
+    "when": "isInDiffEditor"
+  },
 
-    // SCM: Within the diff view, use j/k to navigate to the next/previous diff respectively
-    {
-        "key": "j",
-        "command": "editor.action.diffReview.next",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "f7",
-        "command": "-editor.action.diffReview.next",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "k",
-        "command": "editor.action.diffReview.prev",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "shift+f7",
-        "command": "-editor.action.diffReview.prev",
-        "when": "isInDiffEditor"
-    },
+  // SCM: Within the diff view, use j/k to navigate to the next/previous diff respectively
+  {
+    "key": "j",
+    "command": "editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+f7",
+    "command": "-editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+  },
 
-    // SCM Workbench: Use command+enter to stage selected changes in the diff view
-    {
-        "key": "cmd+enter",
-        "command": "git.stageSelectedRanges",
-        "when": "activeViewlet == 'workbench.view.scm'"
-    },
+  // SCM Workbench: Use command+enter to stage selected changes in the diff view
+  {
+    "key": "cmd+enter",
+    "command": "git.stageSelectedRanges",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
 
-    // SCM Workbench: Use command+enter to commit after typing commit message
-    {
-        "key": "cmd+enter",
-        "command": "git.commit",
-        "when": "activeViewlet == 'workbench.view.scm' && !isInDiffEditor"
-    },
+  // SCM Workbench: Use command+enter to commit after typing commit message
+  {
+    "key": "cmd+enter",
+    "command": "git.commit",
+    "when": "activeViewlet == 'workbench.view.scm' && !isInDiffEditor"
+  },
 
-    // Use standard macOS tab navigation to go to previous/next "tabs" in the panel
-    {
-        "key": "cmd+shift+[",
-        "command": "workbench.action.previousPanelView",
-        "when": "panelFocus"
-    },
-    {
-        "key": "cmd+shift+]",
-        "command": "workbench.action.nextPanelView",
-        "when": "panelFocus"
-    },
+  // Use standard macOS tab navigation to go to previous/next "tabs" in the panel
+  {
+    "key": "cmd+shift+[",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "cmd+shift+]",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
 
-    // Use alt+command+down to go to definition
-    // Use alt+command+up to go back
-    {
-        "key": "alt+cmd+down",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "alt+cmd+up",
-        "command": "workbench.action.navigateBack"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "-workbench.action.navigateBack"
-    },
+  // Use alt+command+down to go to definition
+  // Use alt+command+up to go back
+  {
+    "key": "alt+cmd+down",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+  },
 
-    // Use cmd+k cmd+9 to unfold all
-    {
-        "key": "cmd+k cmd+9",
-        "command": "editor.unfoldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+cmd+]",
-        "command": "-editor.unfoldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+k cmd+9",
-        "command": "editor.unfoldAll",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "cmd+k cmd+j",
-        "command": "-editor.unfoldAll",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "cmd+k cmd+9",
-        "command": "-editor.unfoldAllMarkerRegions",
-        "when": "editorTextFocus && foldingEnabled"
-    },
+  // Use cmd+k cmd+9 to unfold all
+  {
+    "key": "cmd+k cmd+9",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+cmd+]",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+9",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+j",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+9",
+    "command": "-editor.unfoldAllMarkerRegions",
+    "when": "editorTextFocus && foldingEnabled"
+  },
 
-    // Miscellaneous core customizations
-    {
-        "key": "cmd+p",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "cmd+k cmd+u",
-        "command": "editor.action.transformToUppercase"
-    },
-    {
-        "key": "cmd+k cmd+l",
-        "command": "editor.action.transformToLowercase"
-    },
+  // Miscellaneous core customizations
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+k cmd+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "cmd+k cmd+l",
+    "command": "editor.action.transformToLowercase"
+  },
 
-    // Use the MetaGo extension (https://github.com/metaseed/metaGo) to mimic
-    // Vim's "zt", "zb", and "zz" motions:
-    //
-    // ctrl+. t: Mimic Vim's "zt" motion -- Scroll the view such that the line
-    // containing the cursor is at the top of the view.
-    //
-    // ctrl+. b: Mimic Vim's "zb" motion -- Scroll the view such that the line
-    // containing the cursor is at the bottom of the view.
-    //
-    // ctrl+. z: Mimic Vim's "zz" motion -- Scroll the view such that the line
-    // containing the cursor is vertically centered in the view.
-    {
-        "key": "ctrl+. z",
-        "command": "metaGo.scrollCurrentLineToMiddle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+m",
-        "command": "-metaGo.scrollCurrentLineToMiddle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+. t",
-        "command": "metaGo.scrollCurrentLineToTop",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+t",
-        "command": "-metaGo.scrollCurrentLineToTop",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+. b",
-        "command": "metaGo.scrollCurrentLineToBottom",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+b",
-        "command": "-metaGo.scrollCurrentLineToBottom",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+backspace",
-        "command": "-metaGo.delete.softDelete",
-        "when": "editorTextFocus"
-    },
+  // Use the MetaGo extension (https://github.com/metaseed/metaGo) to mimic
+  // Vim's "zt", "zb", and "zz" motions:
+  //
+  // ctrl+. t: Mimic Vim's "zt" motion -- Scroll the view such that the line
+  // containing the cursor is at the top of the view.
+  //
+  // ctrl+. b: Mimic Vim's "zb" motion -- Scroll the view such that the line
+  // containing the cursor is at the bottom of the view.
+  //
+  // ctrl+. z: Mimic Vim's "zz" motion -- Scroll the view such that the line
+  // containing the cursor is vertically centered in the view.
+  {
+    "key": "ctrl+. z",
+    "command": "metaGo.scrollCurrentLineToMiddle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "-metaGo.scrollCurrentLineToMiddle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+. t",
+    "command": "metaGo.scrollCurrentLineToTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "-metaGo.scrollCurrentLineToTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+. b",
+    "command": "metaGo.scrollCurrentLineToBottom",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "-metaGo.scrollCurrentLineToBottom",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+backspace",
+    "command": "-metaGo.delete.softDelete",
+    "when": "editorTextFocus"
+  },
 
-    // Miscellaneous extension customizations
-    {
-        "key": "alt+d",
-        "command": "-markdown.todo.toggleDone",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "cmd+i",
-        "command": "code-runner.run"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-code-runner.run"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "markdown.extension.checkTaskList",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+c",
-        "command": "-markdown.extension.checkTaskList",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+g c",
-        "command": "extension.gitHubUrlPerma",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+l c",
-        "command": "-extension.gitHubUrlPerma",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+g o",
-        "command": "openInGitHub.openFile"
-    },
-    {
-        "key": "alt+g b",
-        "command": "openInGitHub.openFileBlame"
-    },
-    {
-        "key": "alt+g h",
-        "command": "openInGitHub.openFileHistory"
-    },
-    {
-        "key": "shift+backspace",
-        "command": "-deleteAllLeft",
-        "when": "editorTextFocus && !editorReadonly"
-    },
+  // Miscellaneous extension customizations
+  {
+    "key": "alt+d",
+    "command": "-markdown.todo.toggleDone",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+i",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "markdown.extension.checkTaskList",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+c",
+    "command": "-markdown.extension.checkTaskList",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+g c",
+    "command": "extension.gitHubUrlPerma",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+l c",
+    "command": "-extension.gitHubUrlPerma",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g o",
+    "command": "openInGitHub.openFile"
+  },
+  {
+    "key": "alt+g b",
+    "command": "openInGitHub.openFileBlame"
+  },
+  {
+    "key": "alt+g h",
+    "command": "openInGitHub.openFileHistory"
+  },
+  {
+    "key": "shift+backspace",
+    "command": "-deleteAllLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
 
-    // Use cmd+i to run queries via the PostgreSQL extension
-    // (https://github.com/Borvik/vscode-postgres), which matches the keybinding
-    // I use for running scripts via the Code Runner extension
-    {
-        "key": "cmd+i",
-        "command": "vscode-postgres.runQuery",
-        // "when": "editorLangId == 'postgres'"
-    },
-    {
-        "key": "f5",
-        "command": "-vscode-postgres.runQuery",
-        "when": "editorLangId == 'postgres'"
-    },
-    {
-        "key": "ctrl+9",
-        "command": "magit.status"
-    },
-    {
-        "key": "alt+x g",
-        "command": "-magit.status"
-    },
-    {
-        "key": "cmd+k cmd+k",
-        "command": "workbench.action.terminal.clear",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "cmd+k",
-        "command": "-workbench.action.terminal.clear",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
+  // Use cmd+i to run queries via the PostgreSQL extension
+  // (https://github.com/Borvik/vscode-postgres), which matches the keybinding
+  // I use for running scripts via the Code Runner extension
+  {
+    "key": "cmd+i",
+    "command": "vscode-postgres.runQuery"
+    // "when": "editorLangId == 'postgres'"
+  },
+  {
+    "key": "f5",
+    "command": "-vscode-postgres.runQuery",
+    "when": "editorLangId == 'postgres'"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "magit.status"
+  },
+  {
+    "key": "alt+x g",
+    "command": "-magit.status"
+  },
+  {
+    "key": "cmd+k cmd+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-workbench.action.terminal.clear",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  }
 ]
