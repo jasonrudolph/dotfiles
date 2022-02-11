@@ -342,6 +342,11 @@
         "key": "alt+g h",
         "command": "openInGitHub.openFileHistory"
     },
+    {
+        "key": "shift+backspace",
+        "command": "-deleteAllLeft",
+        "when": "editorTextFocus && !editorReadonly"
+    },
 
     // Use cmd+i to run queries via the PostgreSQL extension
     // (https://github.com/Borvik/vscode-postgres), which matches the keybinding
