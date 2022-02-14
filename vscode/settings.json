@@ -1,15 +1,4 @@
 {
-  "[git-commit]": {
-    "workbench.editor.languageDetection": false
-  },
-  "[markdown]": {
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
-  },
   "atomKeymap.promptV3Features": true,
   "cSpell.diagnosticLevel": "Warning",
   "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
@@ -96,6 +85,7 @@
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.rendererType": "experimentalWebgl",
   "terminal.integrated.scrollback": 100000,
+  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#303030",
     "statusBar.noFolderBackground": "#222225",
@@ -115,11 +105,10 @@
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "[git-commit]": {
+    "workbench.editor.languageDetection": false
   },
-  "[yaml]": {
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
@@ -131,5 +120,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "window.zoomLevel": 1
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }
