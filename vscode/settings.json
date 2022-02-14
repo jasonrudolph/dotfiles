@@ -4,7 +4,6 @@
   },
   "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.formatOnSave": false,
     "editor.quickSuggestions": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -31,6 +30,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.fontSize": 11,
+  "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.quickSuggestions": {
@@ -116,17 +116,20 @@
     "️": true
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
-  "editor.formatOnSave": true,
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
-  "window.zoomLevel": 1,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "window.zoomLevel": 1
 }
