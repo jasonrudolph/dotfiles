@@ -5,4 +5,4 @@
 # Credit: https://github.com/smashwilson/dotfiles/blob/9369a4acca/bin/git-delete-local-merged
 # Based on script from @tekkub
 
-git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`
+git branch -d `git branch --merged | grep -v '^[*]' | grep -v 'master' | grep -v 'main' | tr -d '\n'`
