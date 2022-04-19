@@ -62,11 +62,7 @@
   "redhat.telemetry.enabled": false,
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
-  "ruby.lint": {
-    "rubocop": {
-      "useBundler": true
-    }
-  },
+  "ruby.rubocop.useBundler": true,
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "search.enableSearchEditorPreview": true,
