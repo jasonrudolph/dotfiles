@@ -89,6 +89,7 @@
   },
   "workbench.colorTheme": "Monokai Pro",
   "workbench.editor.decorations.colors": false,
+  "workbench.editor.historyBasedLanguageDetection": true,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editorAssociations": {
     "git-rebase-todo": "default"
