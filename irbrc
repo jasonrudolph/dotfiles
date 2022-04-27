@@ -5,6 +5,7 @@ require 'irb/ext/save-history'
 begin
   IRB.conf[:SAVE_HISTORY] = 1000
   IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+  IRB.conf[:EVAL_HISTORY] = 20
 
   IRB.conf[:PROMPT][:CUSTOM] = {
     :PROMPT_N => "#{RUBY_VERSION}> ",
