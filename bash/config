@@ -6,7 +6,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # See http://blog.macromates.com/2008/working-with-history-in-bash/
 export HISTCONTROL=erasedups
-export HISTSIZE=10000
+export HISTSIZE=50000
 shopt -s histappend
 
 # Silence noise that occurs when using debug gem in Rails
