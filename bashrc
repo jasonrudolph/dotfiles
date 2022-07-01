@@ -29,3 +29,5 @@ nvmify() {
   nvm use
   true
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
