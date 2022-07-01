@@ -118,9 +118,13 @@
     "editor.formatOnSave": true
   },
   "[markdown]": {
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.wordWrap": "on"
   },
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
