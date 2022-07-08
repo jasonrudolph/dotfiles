@@ -2,18 +2,6 @@
   "atomKeymap.promptV3Features": true,
   "cSpell.diagnosticLevel": "Warning",
   "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
-  "dayNightThemeSwitcher.dayTheme": "Quiet Light",
-  "dayNightThemeSwitcher.dayThemeCustomizations": {
-    "statusBar.background": "#303030",
-    "statusBar.noFolderBackground": "#222225",
-    "statusBar.debuggingBackground": "#511f1f"
-  },
-  "dayNightThemeSwitcher.nightThemeCustomizations": {
-    "statusBar.background": "#303030",
-    "statusBar.noFolderBackground": "#222225",
-    "statusBar.debuggingBackground": "#511f1f"
-  },
-  "dayNightThemeSwitcher.nightTheme": "Monokai Pro",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.copyWithSyntaxHighlighting": false,
@@ -96,7 +84,10 @@
   },
   "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.preferredDarkColorTheme": "Monokai Pro",
   "workbench.preferredLightColorTheme": "Quiet Light",
+  "workbench.preferredHighContrastColorTheme": "Light High Contrast Theme",
+  "workbench.preferredHighContrastLightColorTheme": "Default High Contrast",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "editor.unicodeHighlight.allowedCharacters": {
