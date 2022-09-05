@@ -72,7 +72,6 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias h?="history | grep "
 alias top-10-shell-commands="history | cut -c8- | cut -d' ' -f1 | sort | uniq -c | sort -nr | head"
 alias brewup="echo_and_run brew update && echo_and_run brew cleanup && echo_and_run brew outdated && echo_and_run brew doctor"
-alias decaf='decaffeinate --keep-commonjs --prefer-const --loose-default-params --loose-for-expressions --loose-for-of --loose-includes'
 
 # ip addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
