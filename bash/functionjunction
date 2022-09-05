@@ -43,3 +43,31 @@ gcl() {
 touchp() {
   mkdir -p "$(dirname "$1")/" && touch "$1"
 }
+
+# open the Xcode workspace or project located in the present directory
+xcode() {
+  XCODE="Xcode-beta"
+
+  get_first_match() {
+    find . -maxdepth 1 -type d -name "$1" | head -1
+  }
+
+  open_in_xcode() {
+    (
+      set -x &&
+      open "$1" -a "$XCODE"
+    )
+  }
+
+  WORKSPACE=$(get_first_match "*.xcworkspace")
+  PROJECT=$(get_first_match "*.xcodeproj")
+
+  if [[ -n "${WORKSPACE}" ]]; then
+    open_in_xcode "$WORKSPACE"
+  elif [[ -n "${PROJECT}" ]]; then
+    open_in_xcode "$PROJECT"
+  else
+    echo "No Xcode workspace or project found in $(PWD)"
+    return 1
+  fi
+}
