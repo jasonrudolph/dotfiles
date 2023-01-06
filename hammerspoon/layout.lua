@@ -1,17 +1,50 @@
-local laptopDisplay = 'Color LCD'
-local thunderboltDisplay = 'Thunderbolt Display'
-hs.layout.left40 = { x = 0, y = 0, w = 0.4, h = 1 }
-hs.layout.right60 = { x = 0.4, y = 0, w = 0.6, h = 1 }
-local windowLayout = {
-  { 'Atom',          nil, thunderboltDisplay, hs.layout.right60,   nil, nil },
+local log = hs.logger.new('init.lua', 'debug')
 
-  { 'Slack',         nil, thunderboltDisplay, hs.layout.left40,    nil, nil },
-  { 'Google Chrome', nil, thunderboltDisplay, hs.layout.left40,    nil, nil },
-  { 'iTerm2',        nil, thunderboltDisplay, hs.layout.left40,    nil, nil },
-  { 'Slack',         nil, thunderboltDisplay, hs.layout.left40,    nil, nil },
+function launchOrFocus(appName)
+  local app = hs.application.get(appName)
+  if app then
+    app:activate()
+  else
+    hs.application.launchOrFocus(appName)
+  end
+end
 
-  { 'Sonos',         nil, laptopDisplay,      hs.layout.maximized, nil, nil },
-}
+function layoutForXcodeDev()
+  local frame = hs.screen.mainScreen():frame()
+
+  -- Bring Simulator to front
+  local simulator = hs.application.get('Simulator')
+  launchOrFocus(simulator:name())
+
+  -- Position Simulator at right of screen
+  local simulatorWindow = simulator:mainWindow()
+  local simulatorSize = simulatorWindow:size()
+  simulatorWindow:move(
+    hs.geometry.rect(
+      frame.w - simulatorSize.w,
+      frame.y,
+      simulatorSize.w,
+      simulatorSize.h
+    )
+  )
+
+  -- Bring Xcode to front of screen
+  local xcode = hs.application.get('Xcode')
+  launchOrFocus(xcode:name())
+
+  -- Position Xcode at left of screen and resize it to take up remaining screen real estate
+  local xcodeWindow = xcode:mainWindow()
+  local xcodeSize = xcodeWindow:size()
+  xcodeWindow:move(
+    hs.geometry.rect(
+      frame.x,
+      frame.y,
+      frame.w - simulatorSize.w,
+      frame.h
+    )
+  )
+end
+
 hs.hotkey.bind({'shift', 'ctrl', 'alt', 'cmd'}, '1', function()
-  hs.layout.apply(windowLayout)
+  layoutForXcodeDev()
 end)
