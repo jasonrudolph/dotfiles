@@ -7,15 +7,11 @@
 # brew bundle --file=<path-to-Brewfile>
 
 tap "homebrew/bundle"
-tap "heroku/brew"
 
 brew "bash-git-prompt"
 brew "bash"
 brew "git"
-brew "gnupg"
-brew "heroku"
 brew "hub"
-brew "jq"
 brew "node"
 brew "rbenv"
 brew "smudge/smudge/nightlight"
