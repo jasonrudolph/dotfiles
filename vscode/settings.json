@@ -16,6 +16,7 @@
   },
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
+  "editor.rulers": [100],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
